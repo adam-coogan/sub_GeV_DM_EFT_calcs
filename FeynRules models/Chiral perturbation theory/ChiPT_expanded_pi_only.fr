@@ -1,0 +1,213 @@
+(* ::Package:: *)
+
+(**********************************************************)
+(*                                                        *)
+(*  Model for Chiral perturbation Theory at lowest order  *)
+(*  Follows Scherer's conventions                         *)
+(*                                                        *)
+(**********************************************************)
+
+(*
+TODO:
+-NOTE: earlier versions of FeynRules have a bug where del[..., m] will not work correctly unless Expand is called on its argument or the argument's head is Plus or Minus.
+-NOTE: vertices with more than two mesons will be dropped below to speed up model file generation.
+-Put in widths!
+*)
+
+M$ModelName = "ChiPT_expanded_pi_only";
+
+M$Information = {
+    Authors -> {"Adam Coogan", "Logan Morrison"},
+    Date->"2/13/2018",
+    Institutions -> {"UC Santa Cruz"},
+    Emails -> {"acoogan@ucsc.edu", "loanmorr@ucsc.edu"},
+    Version -> 1
+};
+
+(***** Gauge group information *****)
+FeynmanGauge = True;
+
+M$GaugeGroups = {
+    U1EM == {
+        Abelian -> True,
+        CouplingConstant -> qe,
+        GaugeBoson -> A,
+        Charge -> Q
+    }
+};
+
+(***** Parameter list. ALL UNITS ARE IN GeV! *****)
+M$Parameters = {
+    fpi == {
+        ParameterType -> External,
+        Value -> 0.093,
+        TeX -> ComposedChar["f", "\\pi"],
+        Description->"pion decay constant"
+    },
+
+    b0 == {
+        ParameterType -> External,
+        Description -> "mass term coefficient",
+        TeX -> ComposedChar["B", "0"],
+        Value -> 2.617 (* ((mpi0 + mpi)/2)^2 / (mu + md) *)
+    },
+
+    fv == {
+        ParameterType -> External,
+        Description -> "vector coupling F_V",
+        TeX -> ComposedChar["F", "V"],
+        Value -> 0.165 (* MeV *)
+    },
+
+    gv == {
+        ParameterType -> External,
+        Description -> "vector coupling G_V",
+        TeX -> ComposedChar["G", "V"],
+        Value -> 0.055 (* MeV *)
+    },
+
+    muq == {
+        ParameterType -> External,
+        Value -> 0.0024,
+        TeX -> ComposedChar["m", "u"],
+        Description->"mass of the up quark"
+    },
+
+    mdq == {
+        ParameterType -> External,
+        Value -> 0.0048,
+        TeX -> ComposedChar["m", "d"],
+        Description->"mass of the down quark"
+    },
+
+    mrho == {
+        ParameterType -> External,
+        TeX -> ComposedChar["m", "\\rho"],
+        Description->"rho0 mass"
+    },
+
+    rhowidth == {
+        ParameterType -> External,
+        TeX -> ComposedChar["\\Gamma", "\\rho"],
+        Description->"rho0 width"
+    },
+
+    qe == {
+        ParameterType -> External,
+        Value -> Sqrt[4 Pi / 137.],
+        TeX -> "e",
+        Description -> "electric coupling constant"
+    }
+};
+
+(***** Particle classes list ******)
+M$ClassesDescription = {
+    (* Neutral Pion *)
+    S[1] == {
+        ClassName -> pi0,
+        SelfConjugate -> True,
+        Mass -> {mpi0, 0.13498},
+        Width -> 0,
+        ParticleName -> "pi0",
+        TeXParticleName -> ComposedChar["\\pi", Null, "0"],
+        PropagatorLabel -> ComposedChar["\\pi", Null, "0"]
+    },
+
+    (* Charged Pion *)
+    S[2] == {
+        ClassName -> pim,
+        SelfConjugate -> False,
+        Mass -> {mpi, 0.13957},
+        QuantumNumbers -> {Q -> -1},
+        Width -> 0,
+        ParticleName -> "pim",
+        AntiParticleName -> "pip",
+        TeXParticleName -> ComposedChar["\\pi", Null, "-"],
+        TeXAntiParticleName -> ComposedChar["\\pi", Null, "+"],
+        PropagatorLabel -> ComposedChar["\\pi", Null, "-"],
+        PropagatorArrow -> Forward
+    },
+
+    (* Photon *)
+    V[1] == {
+        ClassName -> A,
+        SelfConjugate -> True,
+        Mass -> 0,
+        Width -> 0,
+        ParticleName -> "A",
+        TeXParticleName -> "\\Gamma"
+    },
+
+    (* Rho *)
+    V[2] == {
+        ClassName -> rho,
+        SelfConjugate -> True,
+        Mass -> mrho,
+        Width -> rhowidth,
+        ParticleName -> "\\rho",
+        PropagatorLabel -> "\\rho"
+    }
+}
+
+(***** Gauge parameters for FeynArts *****)
+GaugeXi[V[1]] = GaugeXi[A];
+
+(* Need both of these terms to use the pip and kp field names *)
+pip = anti[pim];
+pipbar = pim;
+
+(*** Lagrangian ***)
+LphotonFree = Module[{m, n}, 
+    -1/4 FS[A, m, n] FS[A, m, n]
+];
+
+LrhoKin = Module[{m, n}, 
+    -1/4 FS[rho, m, n] FS[rho, m, n]
+];
+
+LrhoMass = Module[{m, n}, 
+    1/2 mrho^2 rho[m] rho[m]
+];
+
+LrhoFree = LrhoKin + LrhoMass;
+
+Lkin0 = Module[{m, coeff, term1, term2},
+    coeff = 1/4;
+    term1 = 4 DC[pip, m] DC[pim, m];
+    term2 = 2 DC[pi0, m] DC[pi0, m];
+
+    coeff (term1 + term2)
+];
+
+Lkin2 = Module[{m, coeff, term1, term2, term3, term4, term5, term6, term7},
+    coeff = 1/(6 fpi^2);
+    term1 = -2 pip pim DC[pip, m] DC[pim, m];
+    term2 = pip pip DC[pim, m] DC[pim, m];
+    term3 = pim pim DC[pip, m] DC[pip, m];
+    term4 = -2 pip pim DC[pi0, m] DC[pi0, m];
+    term5 = 2 pi0 pim DC[pi0, m] DC[pip, m];
+    term6 = 2 pi0 pip DC[pi0, m] DC[pim, m];
+    term7 = -2 pi0^2 DC[pip, m] DC[pim, m];
+
+    coeff (term1 + term2 + term3 + term4 + term5 + term6 + term7)
+];
+
+Lmass0 = -(b0 / 2) (pi0 pi0 + 2 pip pim) (muq + mdq);
+
+Lmass2 = b0 / (24 fpi^2) (muq + mdq) (pi0^2 + 2 pip pim)^2;
+
+Lfv = Module[{m, n, term1, term2},
+    term1 = -fv qe / (2 mrho) FS[A, m, n] FS[rho, m, n];
+    term2 = fv qe / (2 fpi^2 mrho) pip pim FS[A, m, n] FS[rho, m, n];
+
+    term1 + term2
+];
+
+Lgv = Module[{m, n, coeff, term},
+    coeff = -I gv / (mrho fpi^2) FS[rho, m, n];
+    term = DC[pip, m] DC[pim, n] - DC[pim, m] DC[pip, n];
+
+    coeff term
+];
+
+LManifestGaugeInvar = LphotonFree + LrhoFree + Lkin0 + Lkin2 + Lmass0 + Lmass2 + Lfv + Lgv;

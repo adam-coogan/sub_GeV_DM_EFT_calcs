@@ -413,7 +413,7 @@ HCDCS[FF_, mu_] := HC[DCS[FF, mu]];
 
 (* Pseudocalar *)
 LKineticP := Block[{mu},
-    1 / 2 * del[p, mu] * del[p, mu] - 1 / 2 * mp^2 * p * p
+    1 / 2 * del[pt, mu] * del[pt, mu] - 1 / 2 * mpt^2 * pt * pt
 ];
 
 (* DM *)
@@ -450,15 +450,15 @@ LKinetic := LKineticP + LKineticDM + LKineticMes + LMassMes + LGauge + LKineticL
 (*****************************************************************)
 
 (* p-l interaction *)
-LIntPLL := -gpll p lbar.(ProjP - ProjM).l;
+LIntPLL := -gpll pt lbar.(ProjP - ProjM).l;
 
 (* p-x interaction *)
-LIntPXX := -gpxx * p * xbar.(ProjP - ProjM).x;
+LIntPXX := -gpxx * pt * xbar.(ProjP - ProjM).x;
 
 (* Effective interaction between s and photons *)
 LIntPFF := Block[{m, n},
     (* NOTE: Eps[...] in FR has a minus sign relative to P&S and Schwartz!!! *)
-    alphaEM / (4 Pi) gpFF p / vh FS[A, m, n] (1/2 Eps[m, n, r, s] FS[A, r, s])
+    alphaEM / (4 Pi) gpFF pt / vh FS[A, m, n] (1/2 Eps[m, n, r, s] FS[A, r, s])
 ];
 
 LIntMesPMass := Module[{coeff1, coeff2, interaction},

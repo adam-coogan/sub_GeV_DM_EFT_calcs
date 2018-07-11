@@ -320,7 +320,7 @@ M$ClassesDescription = {
         ClassName -> pt,
         Unphysical -> True,
         SelfConjugate -> True,
-        Definitions -> {pi0t :> cosbeta * p + sinbeta * pi0}
+        Definitions -> {pt :> cosbeta * p + sinbeta * pi0}
     }
 }
 

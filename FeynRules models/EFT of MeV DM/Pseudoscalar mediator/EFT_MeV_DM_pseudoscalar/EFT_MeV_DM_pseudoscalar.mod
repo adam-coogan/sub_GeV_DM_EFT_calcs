@@ -13,7 +13,7 @@ FR$ModelInformation={
   Emails -> {"acoogan@ucsc.edu", "loanmorr@ucsc.edu"},
   Version -> 1};
 
-FR$ClassesTranslation={pi0 -> S[1], pim -> S[2], k0 -> S[3], km -> S[4], eta -> S[5], p -> S[6], A -> V[1], vl -> F[1], l -> F[2], x -> F[3]};
+FR$ClassesTranslation={};
 
 FR$InteractionOrderPerturbativeExpansion={};
 
@@ -26,93 +26,92 @@ FR$GoldstoneList={};
 M$ClassesDescription = {
 S[1] == {
     SelfConjugate -> True,
+    PropagatorLabel -> ComposedChar["\\pi", Null, "0"],
     PropagatorType -> ScalarDash,
     PropagatorArrow -> None,
     Mass -> mpi0,
-    Indices -> {},
-    PropagatorLabel -> "pi0" },
+    Indices -> {} },
 
 S[2] == {
     SelfConjugate -> False,
     QuantumNumbers -> {-Q},
+    PropagatorLabel -> ComposedChar["\\pi", Null, "-"],
     PropagatorArrow -> Forward,
     PropagatorType -> ScalarDash,
     Mass -> mpi,
-    Indices -> {},
-    PropagatorLabel -> "pim" },
+    Indices -> {} },
 
 S[3] == {
     SelfConjugate -> False,
+    PropagatorLabel -> ComposedChar["K", Null, "0"],
     PropagatorArrow -> Forward,
     PropagatorType -> ScalarDash,
     Mass -> mk0,
-    Indices -> {},
-    PropagatorLabel -> "k0" },
+    Indices -> {} },
 
 S[4] == {
     SelfConjugate -> False,
     QuantumNumbers -> {-Q},
+    PropagatorLabel -> ComposedChar["K", Null, "-"],
     PropagatorArrow -> Forward,
     PropagatorType -> ScalarDash,
     Mass -> mk,
-    Indices -> {},
-    PropagatorLabel -> "km" },
+    Indices -> {} },
 
 S[5] == {
     SelfConjugate -> True,
+    PropagatorLabel -> "\\eta",
     PropagatorType -> ScalarDash,
     PropagatorArrow -> None,
     Mass -> meta,
-    Indices -> {},
-    PropagatorLabel -> "eta" },
+    Indices -> {} },
 
-S[6] == {
+S[7] == {
     SelfConjugate -> True,
+    PropagatorLabel -> p,
     PropagatorType -> ScalarDash,
     PropagatorArrow -> None,
     Mass -> mp,
-    Indices -> {},
-    PropagatorLabel -> "p" },
+    Indices -> {} },
 
 V[1] == {
     SelfConjugate -> True,
+    PropagatorLabel -> A,
     PropagatorType -> Sine,
     PropagatorArrow -> None,
     Mass -> 0,
-    Indices -> {},
-    PropagatorLabel -> "A" },
+    Indices -> {} },
 
 F[1] == {
     SelfConjugate -> False,
     QuantumNumbers -> {LeptonNumber},
+    PropagatorLabel -> "v",
     PropagatorType -> Straight,
     PropagatorArrow -> Forward,
     Mass -> 0,
-    Indices -> {},
-    PropagatorLabel -> "vl" },
+    Indices -> {} },
 
 F[2] == {
     SelfConjugate -> False,
     QuantumNumbers -> {-Q, LeptonNumber},
+    PropagatorLabel -> "l",
     PropagatorType -> Straight,
     PropagatorArrow -> Forward,
     Mass -> ml,
-    Indices -> {},
-    PropagatorLabel -> "l" },
+    Indices -> {} },
 
 F[3] == {
     SelfConjugate -> False,
+    PropagatorLabel -> "\\chi",
     PropagatorArrow -> Forward,
     PropagatorType -> Straight,
     Mass -> mx,
-    Indices -> {},
-    PropagatorLabel -> "x" }
+    Indices -> {} }
 }
 
 
 (*        Definitions       *)
 
-GaugeXi[ S[6] ] = GaugeXi[S[7]];
 GaugeXi[ V[1] ] = GaugeXi[A];
 
 mpi0[ ___ ] := mpi0;
@@ -131,157 +130,153 @@ mx[ ___ ] := mx;
 
 M$CouplingMatrices = {
 
-C[ S[5] , S[5] , S[5] , S[77] ] == {{I*gc1, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[5] , S[5] , S[7] ] == {{I*gc1, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[5] , S[3] , -S[3] , S[77] ] == {{I*gc2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[3] , -S[3] , S[7] ] == {{(-4*I)*b0*cosbeta*fpi*gc2*(gpGG*msq + gpss*vh), 0}, {I*gc2*sinbeta*vh, 0}, {I*gc2*sinbeta*vh, 0}, {(-2*I)*gc2*sinbeta*vh, 0}, {(-2*I)*gc2*sinbeta*vh, 0}, {I*gc2*sinbeta*vh, 0}, {I*gc2*sinbeta*vh, 0}},
 
-C[ S[5] , S[4] , -S[4] , S[77] ] == {{I*gc3, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[4] , -S[4] , S[7] ] == {{(4*I)*b0*cosbeta*fpi*gc3*(gpGG*msq + gpss*vh), 0}, {I*gc3*sinbeta*vh, 0}, {I*gc3*sinbeta*vh, 0}, {(-2*I)*gc3*sinbeta*vh, 0}, {(-2*I)*gc3*sinbeta*vh, 0}, {I*gc3*sinbeta*vh, 0}, {I*gc3*sinbeta*vh, 0}},
 
-C[ S[5] , S[5] , S[1] , S[77] ] == {{I*gc4, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[5] , S[7] , S[1] ] == {{I*gc4, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[3] , -S[3] , S[1] , S[77] ] == {{I*gc5, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[3] , -S[3] , S[7] , S[1] ] == {{(-4*I)*b0*fpi*gc5*(cosbeta^2 - sinbeta^2)*(gpGG*(2*mdq + msq) + (2*gpdd + gpss)*vh), 0}, {(2*I)*cosbeta*gc5*sinbeta*vh, 0}, {(-I)*cosbeta*gc5*sinbeta*vh, 0}, {(-I)*cosbeta*gc5*sinbeta*vh, 0}, {(-I)*cosbeta*gc5*sinbeta*vh, 0}, {(-I)*cosbeta*gc5*sinbeta*vh, 0}, {(2*I)*cosbeta*gc5*sinbeta*vh, 0}},
 
-C[ S[4] , -S[4] , S[1] , S[77] ] == {{I*gc6, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[4] , -S[4] , S[7] , S[1] ] == {{(4*I)*b0*fpi*gc6*(cosbeta^2 - sinbeta^2)*(gpGG*(msq + 2*muq) + (gpss + 2*gpuu)*vh), 0}, {(2*I)*cosbeta*gc6*sinbeta*vh, 0}, {(-I)*cosbeta*gc6*sinbeta*vh, 0}, {(-I)*cosbeta*gc6*sinbeta*vh, 0}, {(-I)*cosbeta*gc6*sinbeta*vh, 0}, {(-I)*cosbeta*gc6*sinbeta*vh, 0}, {(2*I)*cosbeta*gc6*sinbeta*vh, 0}},
 
-C[ S[5] , S[1] , S[1] , S[77] ] == {{I*gc7, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[7] , S[1] , S[1] ] == {{I*gc7, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[1] , S[1] , S[1] , S[77] ] == {{I*gc8, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[7] , S[1] , S[1] , S[1] ] == {{I*gc8, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -S[3] , -S[4] , S[2] , S[77] ] == {{I*gc9, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -S[3] , -S[4] , S[7] , S[2] ] == {{(-4*I)*b0*cosbeta*fpi*gc9*(gpGG*(mdq + msq + muq) + (gpdd + gpss + gpuu)*vh), 0}, {0, 0}, {(3*I)*gc9*sinbeta*vh, 0}, {(-3*I)*gc9*sinbeta*vh, 0}, {(-3*I)*gc9*sinbeta*vh, 0}, {(3*I)*gc9*sinbeta*vh, 0}, {0, 0}},
 
-C[ S[3] , S[4] , -S[2] , S[77] ] == {{I*gc10, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[3] , S[4] , S[7] , -S[2] ] == {{(-4*I)*b0*cosbeta*fpi*gc10*(gpGG*(mdq + msq + muq) + (gpdd + gpss + gpuu)*vh), 0}, {0, 0}, {(3*I)*gc10*sinbeta*vh, 0}, {(-3*I)*gc10*sinbeta*vh, 0}, {(-3*I)*gc10*sinbeta*vh, 0}, {(3*I)*gc10*sinbeta*vh, 0}, {0, 0}},
 
-C[ S[5] , S[2] , -S[2] , S[77] ] == {{I*gc11, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[7] , S[2] , -S[2] ] == {{I*gc11, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[1] , S[2] , -S[2] , S[77] ] == {{I*gc12, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[7] , S[1] , S[2] , -S[2] ] == {{(-I)*b0*fpi*gc12*(cosbeta^2 - sinbeta^2)*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh), 0}, {(2*I)*cosbeta*gc12*sinbeta*vh, 0}, {(-I)*cosbeta*gc12*sinbeta*vh, 0}, {(-I)*cosbeta*gc12*sinbeta*vh, 0}, {(-I)*cosbeta*gc12*sinbeta*vh, 0}, {(-I)*cosbeta*gc12*sinbeta*vh, 0}, {(2*I)*cosbeta*gc12*sinbeta*vh, 0}},
 
-C[ S[5] , S[5] , S[6] , S[77] ] == {{I*gc13, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[5] , S[7] , S[7] ] == {{I*gc13, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[3] , -S[3] , S[6] , S[77] ] == {{I*gc14, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[3] , -S[3] , S[7] , S[7] ] == {{(-8*I)*b0*cosbeta*fpi*gc14*(gpGG*(2*mdq + msq) + (2*gpdd + gpss)*vh), 0}, {(2*I)*gc14*sinbeta*vh, 0}, {(-I)*gc14*sinbeta*vh, 0}, {(-I)*gc14*sinbeta*vh, 0}, {(-I)*gc14*sinbeta*vh, 0}, {(-I)*gc14*sinbeta*vh, 0}, {(2*I)*gc14*sinbeta*vh, 0}},
 
-C[ S[4] , -S[4] , S[6] , S[77] ] == {{I*gc15, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[4] , -S[4] , S[7] , S[7] ] == {{(8*I)*b0*cosbeta*fpi*gc15*(gpGG*(msq + 2*muq) + (gpss + 2*gpuu)*vh), 0}, {(2*I)*gc15*sinbeta*vh, 0}, {(-I)*gc15*sinbeta*vh, 0}, {(-I)*gc15*sinbeta*vh, 0}, {(-I)*gc15*sinbeta*vh, 0}, {(-I)*gc15*sinbeta*vh, 0}, {(2*I)*gc15*sinbeta*vh, 0}},
 
-C[ S[5] , S[6] , S[1] , S[77] ] == {{I*gc16, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[5] , S[5] , S[1] ] == {{I*gc16, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[6] , S[1] , S[1] , S[77] ] == {{I*gc17, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[3] , -S[3] , S[1] ] == {{(4*I)*b0*fpi*gc17*sinbeta*(gpGG*msq + gpss*vh), 0}, {I*cosbeta*gc17*vh, 0}, {I*cosbeta*gc17*vh, 0}, {(-2*I)*cosbeta*gc17*vh, 0}, {(-2*I)*cosbeta*gc17*vh, 0}, {I*cosbeta*gc17*vh, 0}, {I*cosbeta*gc17*vh, 0}},
 
-C[ S[6] , S[2] , -S[2] , S[77] ] == {{I*gc18, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[4] , -S[4] , S[1] ] == {{(-4*I)*b0*fpi*gc18*sinbeta*(gpGG*msq + gpss*vh), 0}, {I*cosbeta*gc18*vh, 0}, {I*cosbeta*gc18*vh, 0}, {(-2*I)*cosbeta*gc18*vh, 0}, {(-2*I)*cosbeta*gc18*vh, 0}, {I*cosbeta*gc18*vh, 0}, {I*cosbeta*gc18*vh, 0}},
 
-C[ S[5] , S[6] , S[6] , S[77] ] == {{I*gc19, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[7] , S[7] , S[1] ] == {{I*gc19, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[6] , S[6] , S[1] , S[77] ] == {{I*gc20, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[5] , S[1] , S[1] ] == {{I*gc20, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[6] , S[6] , S[6] , S[77] ] == {{I*gc21, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[3] , -S[3] , S[1] , S[1] ] == {{(8*I)*b0*fpi*gc21*sinbeta*(gpGG*(2*mdq + msq) + (2*gpdd + gpss)*vh), 0}, {(2*I)*cosbeta*gc21*vh, 0}, {(-I)*cosbeta*gc21*vh, 0}, {(-I)*cosbeta*gc21*vh, 0}, {(-I)*cosbeta*gc21*vh, 0}, {(-I)*cosbeta*gc21*vh, 0}, {(2*I)*cosbeta*gc21*vh, 0}},
+
+C[ S[4] , -S[4] , S[1] , S[1] ] == {{(-8*I)*b0*fpi*gc22*sinbeta*(gpGG*(msq + 2*muq) + (gpss + 2*gpuu)*vh), 0}, {(2*I)*cosbeta*gc22*vh, 0}, {(-I)*cosbeta*gc22*vh, 0}, {(-I)*cosbeta*gc22*vh, 0}, {(-I)*cosbeta*gc22*vh, 0}, {(-I)*cosbeta*gc22*vh, 0}, {(2*I)*cosbeta*gc22*vh, 0}},
+
+C[ S[7] , S[7] , S[1] , S[1] ] == {{I*gc23, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+
+C[ S[5] , S[1] , S[1] , S[1] ] == {{I*gc24, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+
+C[ S[1] , S[1] , S[1] , S[1] ] == {{I*gc25, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+
+C[ -S[3] , -S[4] , S[1] , S[2] ] == {{(4*I)*b0*fpi*gc26*sinbeta*(gpGG*(mdq + msq + muq) + (gpdd + gpss + gpuu)*vh), 0}, {0, 0}, {(3*I)*cosbeta*gc26*vh, 0}, {(-3*I)*cosbeta*gc26*vh, 0}, {(-3*I)*cosbeta*gc26*vh, 0}, {(3*I)*cosbeta*gc26*vh, 0}, {0, 0}},
+
+C[ S[3] , S[4] , S[1] , -S[2] ] == {{(4*I)*b0*fpi*gc27*sinbeta*(gpGG*(mdq + msq + muq) + (gpdd + gpss + gpuu)*vh), 0}, {0, 0}, {(3*I)*cosbeta*gc27*vh, 0}, {(-3*I)*cosbeta*gc27*vh, 0}, {(-3*I)*cosbeta*gc27*vh, 0}, {(3*I)*cosbeta*gc27*vh, 0}, {0, 0}},
+
+C[ S[7] , S[7] , S[2] , -S[2] ] == {{(-2*I)*b0*cosbeta*fpi*gc28*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh), 0}, {(2*I)*gc28*sinbeta*vh, 0}, {(-I)*gc28*sinbeta*vh, 0}, {(-I)*gc28*sinbeta*vh, 0}, {(-I)*gc28*sinbeta*vh, 0}, {(-I)*gc28*sinbeta*vh, 0}, {(2*I)*gc28*sinbeta*vh, 0}},
+
+C[ S[5] , S[1] , S[2] , -S[2] ] == {{I*gc29, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+
+C[ S[1] , S[1] , S[2] , -S[2] ] == {{(2*I)*b0*fpi*gc30*sinbeta*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh), 0}, {(2*I)*cosbeta*gc30*vh, 0}, {(-I)*cosbeta*gc30*vh, 0}, {(-I)*cosbeta*gc30*vh, 0}, {(-I)*cosbeta*gc30*vh, 0}, {(-I)*cosbeta*gc30*vh, 0}, {(2*I)*cosbeta*gc30*vh, 0}},
+
+C[ S[5] , S[7] , S[7] , S[7] ] == {{I*gc31, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+
+C[ S[7] , S[7] , S[7] , S[1] ] == {{I*gc32, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+
+C[ S[7] , S[7] , S[7] , S[7] ] == {{I*gc33, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
 C[ S[4] , -S[4] , V[1] , V[1] ] == {{(2*I)*qe^2, 0}},
 
 C[ S[2] , -S[2] , V[1] , V[1] ] == {{(2*I)*qe^2, 0}},
 
-C[ S[5] , -S[3] , -S[4] , S[2] , V[1] ] == {{(3*I)*gc24, 0}, {(-3*I)*gc24, 0}, {(-I)*gc24, 0}, {I*gc24, 0}},
+C[ S[5] , -S[3] , -S[4] , S[2] , V[1] ] == {{(3*I)*gc36, 0}, {(-3*I)*gc36, 0}, {(-I)*gc36, 0}, {I*gc36, 0}},
 
-C[ S[5] , S[3] , S[4] , -S[2] , V[1] ] == {{(3*I)*gc25, 0}, {(-3*I)*gc25, 0}, {(-I)*gc25, 0}, {I*gc25, 0}},
+C[ S[5] , S[3] , S[4] , -S[2] , V[1] ] == {{(3*I)*gc37, 0}, {(-3*I)*gc37, 0}, {(-I)*gc37, 0}, {I*gc37, 0}},
 
-C[ S[5] , S[5] , S[3] , -S[3] ] == {{0, 0}, {(2*I)*gc26, 0}, {(-I)*gc26, 0}, {(-I)*gc26, 0}, {(-I)*gc26, 0}, {(-I)*gc26, 0}, {(2*I)*gc26, 0}},
+C[ S[5] , S[5] , S[3] , -S[3] ] == {{0, 0}, {(2*I)*gc38, 0}, {(-I)*gc38, 0}, {(-I)*gc38, 0}, {(-I)*gc38, 0}, {(-I)*gc38, 0}, {(2*I)*gc38, 0}},
 
-C[ S[5] , S[5] , S[4] , -S[4] ] == {{0, 0}, {(2*I)*gc27, 0}, {(-I)*gc27, 0}, {(-I)*gc27, 0}, {(-I)*gc27, 0}, {(-I)*gc27, 0}, {(2*I)*gc27, 0}},
+C[ S[5] , S[5] , S[4] , -S[4] ] == {{0, 0}, {(2*I)*gc39, 0}, {(-I)*gc39, 0}, {(-I)*gc39, 0}, {(-I)*gc39, 0}, {(-I)*gc39, 0}, {(2*I)*gc39, 0}},
 
-C[ S[3] , -S[3] , S[4] , -S[4] , V[1] ] == {{(3*I)*gc28, 0}, {(-3*I)*gc28, 0}, {(-I)*gc28, 0}, {I*gc28, 0}},
+C[ S[3] , -S[3] , S[4] , -S[4] , V[1] ] == {{(3*I)*gc40, 0}, {(-3*I)*gc40, 0}, {(-I)*gc40, 0}, {I*gc40, 0}},
 
-C[ S[3] , S[4] , S[1] , -S[2] , V[1] ] == {{I*gc29, 0}, {(-I)*gc29, 0}, {(-I)*gc29, 0}, {I*gc29, 0}},
+C[ S[3] , S[4] , S[1] , -S[2] , V[1] ] == {{I*gc41, 0}, {(-I)*gc41, 0}, {(-I)*gc41, 0}, {I*gc41, 0}},
 
-C[ S[3] , -S[3] , S[2] , -S[2] , V[1] ] == {{(-3*I)*gc30, 0}, {(3*I)*gc30, 0}, {(-I)*gc30, 0}, {I*gc30, 0}},
+C[ S[3] , -S[3] , S[2] , -S[2] , V[1] ] == {{(-3*I)*gc42, 0}, {(3*I)*gc42, 0}, {(-I)*gc42, 0}, {I*gc42, 0}},
 
-C[ S[3] , S[4] , S[6] , -S[2] , V[1] ] == {{I*gc31, 0}, {(-I)*gc31, 0}, {(-I)*gc31, 0}, {I*gc31, 0}},
+C[ S[3] , S[4] , S[7] , -S[2] , V[1] ] == {{I*gc43, 0}, {(-I)*gc43, 0}, {(-I)*gc43, 0}, {I*gc43, 0}},
 
-C[ S[5] , S[3] , -S[3] , S[1] ] == {{0, 0}, {I*gc32, 0}, {I*gc32, 0}, {(-2*I)*gc32, 0}, {(-2*I)*gc32, 0}, {I*gc32, 0}, {I*gc32, 0}},
+C[ S[5] , S[3] , S[4] , -S[2] ] == {{0, 0}, {I*gc44, 0}, {I*gc44, 0}, {(-2*I)*gc44, 0}, {(-2*I)*gc44, 0}, {I*gc44, 0}, {I*gc44, 0}},
 
-C[ S[5] , S[3] , S[4] , -S[2] ] == {{0, 0}, {I*gc33, 0}, {I*gc33, 0}, {(-2*I)*gc33, 0}, {(-2*I)*gc33, 0}, {I*gc33, 0}, {I*gc33, 0}},
+C[ S[3] , S[3] , -S[3] , -S[3] ] == {{0, 0}, {(2*I)*gc45, 0}, {(-I)*gc45, 0}, {(-I)*gc45, 0}, {(-I)*gc45, 0}, {(-I)*gc45, 0}, {(2*I)*gc45, 0}},
 
-C[ S[5] , S[3] , -S[3] , S[6] ] == {{0, 0}, {I*gc34, 0}, {I*gc34, 0}, {(-2*I)*gc34, 0}, {(-2*I)*gc34, 0}, {I*gc34, 0}, {I*gc34, 0}},
+C[ -S[3] , -S[4] , S[1] , S[2] , V[1] ] == {{I*gc46, 0}, {(-I)*gc46, 0}, {(-I)*gc46, 0}, {I*gc46, 0}},
 
-C[ S[3] , S[3] , -S[3] , -S[3] ] == {{0, 0}, {(2*I)*gc35, 0}, {(-I)*gc35, 0}, {(-I)*gc35, 0}, {(-I)*gc35, 0}, {(-I)*gc35, 0}, {(2*I)*gc35, 0}},
+C[ -S[3] , -S[4] , S[7] , S[2] , V[1] ] == {{I*gc47, 0}, {(-I)*gc47, 0}, {(-I)*gc47, 0}, {I*gc47, 0}},
 
-C[ -S[3] , -S[4] , S[1] , S[2] , V[1] ] == {{I*gc36, 0}, {(-I)*gc36, 0}, {(-I)*gc36, 0}, {I*gc36, 0}},
+C[ S[5] , -S[3] , -S[4] , S[2] ] == {{0, 0}, {I*gc48, 0}, {I*gc48, 0}, {(-2*I)*gc48, 0}, {(-2*I)*gc48, 0}, {I*gc48, 0}, {I*gc48, 0}},
 
-C[ -S[3] , -S[4] , S[6] , S[2] , V[1] ] == {{I*gc37, 0}, {(-I)*gc37, 0}, {(-I)*gc37, 0}, {I*gc37, 0}},
+C[ S[3] , -S[3] , S[4] , -S[4] ] == {{0, 0}, {I*gc49, 0}, {I*gc49, 0}, {(-2*I)*gc49, 0}, {(-2*I)*gc49, 0}, {I*gc49, 0}, {I*gc49, 0}},
 
-C[ S[5] , -S[3] , -S[4] , S[2] ] == {{0, 0}, {I*gc38, 0}, {I*gc38, 0}, {(-2*I)*gc38, 0}, {(-2*I)*gc38, 0}, {I*gc38, 0}, {I*gc38, 0}},
+C[ S[3] , -S[3] , S[2] , -S[2] ] == {{0, 0}, {I*gc50, 0}, {(-2*I)*gc50, 0}, {I*gc50, 0}, {I*gc50, 0}, {(-2*I)*gc50, 0}, {I*gc50, 0}},
 
-C[ S[3] , -S[3] , S[4] , -S[4] ] == {{0, 0}, {I*gc39, 0}, {I*gc39, 0}, {(-2*I)*gc39, 0}, {(-2*I)*gc39, 0}, {I*gc39, 0}, {I*gc39, 0}},
+C[ S[4] , -S[4] , V[1] ] == {{(-I)*gc51, 0}, {I*gc51, 0}},
 
-C[ S[3] , -S[3] , S[1] , S[1] ] == {{0, 0}, {(2*I)*gc40, 0}, {(-I)*gc40, 0}, {(-I)*gc40, 0}, {(-I)*gc40, 0}, {(-I)*gc40, 0}, {(2*I)*gc40, 0}},
+C[ S[5] , S[5] , S[4] , -S[4] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc52, 0}, {I*gc52, 0}},
 
-C[ S[3] , -S[3] , S[2] , -S[2] ] == {{0, 0}, {I*gc41, 0}, {(-2*I)*gc41, 0}, {I*gc41, 0}, {I*gc41, 0}, {(-2*I)*gc41, 0}, {I*gc41, 0}},
+C[ S[4] , S[4] , -S[4] , -S[4] , V[1] ] == {{(-I)*gc53, 0}, {(-I)*gc53, 0}, {I*gc53, 0}, {I*gc53, 0}},
 
-C[ S[3] , -S[3] , S[6] , S[1] ] == {{0, 0}, {(2*I)*gc42, 0}, {(-I)*gc42, 0}, {(-I)*gc42, 0}, {(-I)*gc42, 0}, {(-I)*gc42, 0}, {(2*I)*gc42, 0}},
+C[ S[5] , S[4] , -S[4] , S[1] , V[1] ] == {{0, 0}, {(-I)*gc54, 0}, {I*gc54, 0}, {0, 0}},
 
-C[ S[3] , -S[3] , S[6] , S[6] ] == {{0, 0}, {(2*I)*gc43, 0}, {(-I)*gc43, 0}, {(-I)*gc43, 0}, {(-I)*gc43, 0}, {(-I)*gc43, 0}, {(2*I)*gc43, 0}},
+C[ S[4] , -S[4] , S[1] , S[1] , V[1] ] == {{(-I)*gc55, 0}, {I*gc55, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , -S[4] , V[1] ] == {{(-I)*gc44, 0}, {I*gc44, 0}},
+C[ S[4] , -S[4] , S[2] , -S[2] , V[1] ] == {{(-I)*gc56, 0}, {I*gc56, 0}, {(-I)*gc56, 0}, {I*gc56, 0}},
 
-C[ S[5] , S[5] , S[4] , -S[4] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc45, 0}, {I*gc45, 0}},
+C[ S[5] , S[4] , -S[4] , S[7] , V[1] ] == {{0, 0}, {(-I)*gc57, 0}, {I*gc57, 0}, {0, 0}},
 
-C[ S[4] , S[4] , -S[4] , -S[4] , V[1] ] == {{(-I)*gc46, 0}, {(-I)*gc46, 0}, {I*gc46, 0}, {I*gc46, 0}},
+C[ S[4] , -S[4] , S[7] , S[1] , V[1] ] == {{(-I)*gc58, 0}, {I*gc58, 0}, {0, 0}, {0, 0}},
 
-C[ S[5] , S[4] , -S[4] , S[1] , V[1] ] == {{0, 0}, {(-I)*gc47, 0}, {I*gc47, 0}, {0, 0}},
+C[ S[4] , -S[4] , S[7] , S[7] , V[1] ] == {{(-I)*gc59, 0}, {I*gc59, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , -S[4] , S[1] , S[1] , V[1] ] == {{(-I)*gc48, 0}, {I*gc48, 0}, {0, 0}, {0, 0}},
+C[ S[4] , S[4] , -S[4] , -S[4] ] == {{0, 0}, {(2*I)*gc60, 0}, {(-I)*gc60, 0}, {(-I)*gc60, 0}, {(-I)*gc60, 0}, {(-I)*gc60, 0}, {(2*I)*gc60, 0}},
 
-C[ S[4] , -S[4] , S[2] , -S[2] , V[1] ] == {{(-I)*gc49, 0}, {I*gc49, 0}, {(-I)*gc49, 0}, {I*gc49, 0}},
+C[ S[4] , -S[4] , S[2] , -S[2] ] == {{0, 0}, {I*gc61, 0}, {(-2*I)*gc61, 0}, {I*gc61, 0}, {I*gc61, 0}, {(-2*I)*gc61, 0}, {I*gc61, 0}},
 
-C[ S[5] , S[4] , -S[4] , S[6] , V[1] ] == {{0, 0}, {(-I)*gc50, 0}, {I*gc50, 0}, {0, 0}},
+C[ S[2] , -S[2] , V[1] ] == {{(-I)*gc62, 0}, {I*gc62, 0}},
 
-C[ S[4] , -S[4] , S[6] , S[1] , V[1] ] == {{(-I)*gc51, 0}, {I*gc51, 0}, {0, 0}, {0, 0}},
+C[ S[1] , S[1] , S[2] , -S[2] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc63, 0}, {I*gc63, 0}},
 
-C[ S[4] , -S[4] , S[6] , S[6] , V[1] ] == {{(-I)*gc52, 0}, {I*gc52, 0}, {0, 0}, {0, 0}},
+C[ S[2] , S[2] , -S[2] , -S[2] , V[1] ] == {{(-I)*gc64, 0}, {(-I)*gc64, 0}, {I*gc64, 0}, {I*gc64, 0}},
 
-C[ S[5] , S[4] , -S[4] , S[1] ] == {{0, 0}, {I*gc53, 0}, {I*gc53, 0}, {(-2*I)*gc53, 0}, {(-2*I)*gc53, 0}, {I*gc53, 0}, {I*gc53, 0}},
+C[ S[7] , S[1] , S[2] , -S[2] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc65, 0}, {I*gc65, 0}},
 
-C[ S[5] , S[4] , -S[4] , S[6] ] == {{0, 0}, {I*gc54, 0}, {I*gc54, 0}, {(-2*I)*gc54, 0}, {(-2*I)*gc54, 0}, {I*gc54, 0}, {I*gc54, 0}},
+C[ S[7] , S[7] , S[2] , -S[2] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc66, 0}, {I*gc66, 0}},
 
-C[ S[4] , S[4] , -S[4] , -S[4] ] == {{0, 0}, {(2*I)*gc55, 0}, {(-I)*gc55, 0}, {(-I)*gc55, 0}, {(-I)*gc55, 0}, {(-I)*gc55, 0}, {(2*I)*gc55, 0}},
+C[ S[2] , S[2] , -S[2] , -S[2] ] == {{0, 0}, {(2*I)*gc67, 0}, {(-I)*gc67, 0}, {(-I)*gc67, 0}, {(-I)*gc67, 0}, {(-I)*gc67, 0}, {(2*I)*gc67, 0}},
 
-C[ S[4] , -S[4] , S[1] , S[1] ] == {{0, 0}, {(2*I)*gc56, 0}, {(-I)*gc56, 0}, {(-I)*gc56, 0}, {(-I)*gc56, 0}, {(-I)*gc56, 0}, {(2*I)*gc56, 0}},
+C[ S[7] , V[1] , V[1] ] == {{(I*alphaEM*cosbeta*gpFF)/(Pi*vh), 0}},
 
-C[ S[4] , -S[4] , S[2] , -S[2] ] == {{0, 0}, {I*gc57, 0}, {(-2*I)*gc57, 0}, {I*gc57, 0}, {I*gc57, 0}, {(-2*I)*gc57, 0}, {I*gc57, 0}},
+C[ S[1] , V[1] , V[1] ] == {{(I*alphaEM*gpFF*sinbeta)/(Pi*vh), 0}},
 
-C[ S[4] , -S[4] , S[6] , S[1] ] == {{0, 0}, {(2*I)*gc58, 0}, {(-I)*gc58, 0}, {(-I)*gc58, 0}, {(-I)*gc58, 0}, {(-I)*gc58, 0}, {(2*I)*gc58, 0}},
+C[ -F[2] , F[2] , V[1] ] == {{I*gc70, 0}, {I*gc70, 0}},
 
-C[ S[4] , -S[4] , S[6] , S[6] ] == {{0, 0}, {(2*I)*gc59, 0}, {(-I)*gc59, 0}, {(-I)*gc59, 0}, {(-I)*gc59, 0}, {(-I)*gc59, 0}, {(2*I)*gc59, 0}},
+C[ -F[2] , F[2] , S[7] ] == {{I*gc71L, 0}, {I*gc71R, 0}},
 
-C[ S[3] , S[4] , S[6] , -S[2] ] == {{0, 0}, {0, 0}, {I*gc60, 0}, {(-I)*gc60, 0}, {(-I)*gc60, 0}, {I*gc60, 0}, {0, 0}},
+C[ -F[2] , F[2] , S[1] ] == {{I*gc72L, 0}, {I*gc72R, 0}},
 
-C[ -S[3] , -S[4] , S[6] , S[2] ] == {{0, 0}, {0, 0}, {I*gc61, 0}, {(-I)*gc61, 0}, {(-I)*gc61, 0}, {I*gc61, 0}, {0, 0}},
+C[ -F[3] , F[3] , S[7] ] == {{I*gc73L, 0}, {I*gc73R, 0}},
 
-C[ S[6] , S[6] , S[2] , -S[2] ] == {{0, 0}, {(2*I)*gc62, 0}, {(-I)*gc62, 0}, {(-I)*gc62, 0}, {(-I)*gc62, 0}, {(-I)*gc62, 0}, {(2*I)*gc62, 0}},
-
-C[ S[3] , S[4] , S[1] , -S[2] ] == {{0, 0}, {0, 0}, {I*gc63, 0}, {(-I)*gc63, 0}, {(-I)*gc63, 0}, {I*gc63, 0}, {0, 0}},
-
-C[ -S[3] , -S[4] , S[1] , S[2] ] == {{0, 0}, {0, 0}, {I*gc64, 0}, {(-I)*gc64, 0}, {(-I)*gc64, 0}, {I*gc64, 0}, {0, 0}},
-
-C[ S[6] , S[1] , S[2] , -S[2] ] == {{0, 0}, {(2*I)*gc65, 0}, {(-I)*gc65, 0}, {(-I)*gc65, 0}, {(-I)*gc65, 0}, {(-I)*gc65, 0}, {(2*I)*gc65, 0}},
-
-C[ S[1] , S[1] , S[2] , -S[2] ] == {{0, 0}, {(2*I)*gc66, 0}, {(-I)*gc66, 0}, {(-I)*gc66, 0}, {(-I)*gc66, 0}, {(-I)*gc66, 0}, {(2*I)*gc66, 0}},
-
-C[ S[2] , -S[2] , V[1] ] == {{(-I)*gc67, 0}, {I*gc67, 0}},
-
-C[ S[1] , S[1] , S[2] , -S[2] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc68, 0}, {I*gc68, 0}},
-
-C[ S[2] , S[2] , -S[2] , -S[2] , V[1] ] == {{(-I)*gc69, 0}, {(-I)*gc69, 0}, {I*gc69, 0}, {I*gc69, 0}},
-
-C[ S[6] , S[1] , S[2] , -S[2] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc70, 0}, {I*gc70, 0}},
-
-C[ S[6] , S[6] , S[2] , -S[2] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc71, 0}, {I*gc71, 0}},
-
-C[ S[2] , S[2] , -S[2] , -S[2] ] == {{0, 0}, {(2*I)*gc72, 0}, {(-I)*gc72, 0}, {(-I)*gc72, 0}, {(-I)*gc72, 0}, {(-I)*gc72, 0}, {(2*I)*gc72, 0}},
-
-C[ S[77] , V[1] , V[1] ] == {{(I*alphaEM*gpFF)/(Pi*vh), 0}},
-
-C[ -F[2] , F[2] , V[1] ] == {{I*gc74, 0}, {I*gc74, 0}},
-
-C[ -F[2] , F[2] , S[77] ] == {{I*gc75L, 0}, {I*gc75R, 0}},
-
-C[ -F[3] , F[3] , S[77] ] == {{I*gc76L, 0}, {I*gc76R, 0}}
+C[ -F[3] , F[3] , S[1] ] == {{I*gc74L, 0}, {I*gc74R, 0}}
 
 }
 
@@ -292,79 +287,78 @@ C[ -F[3] , F[3] , S[77] ] == {{I*gc76L, 0}, {I*gc76R, 0}}
 (* FA Couplings *)
 
 M$FACouplings = {
-     gc1 -> -(b0*(gpGG*(mdq - 8*msq + muq) + (gpdd - 8*gpss + gpuu)*vh))/(3*Sqrt[3]*fpi*vh),
-     gc2 -> (b0*(gpGG*msq + gpss*vh))/(Sqrt[3]*fpi*vh),
-     gc3 -> (b0*(gpGG*msq + gpss*vh))/(Sqrt[3]*fpi*vh),
-     gc4 -> (b0*cosbeta*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(3*fpi*vh),
-     gc5 -> (b0*cosbeta*(gpGG*(2*mdq + msq) + (2*gpdd + gpss)*vh))/(3*fpi*vh),
-     gc6 -> -(b0*cosbeta*(gpGG*(msq + 2*muq) + (gpss + 2*gpuu)*vh))/(3*fpi*vh),
-     gc7 -> -((b0*cosbeta^2*(gpGG*(mdq + muq) + (gpdd + gpuu)*vh))/(Sqrt[3]*fpi*vh)),
-     gc8 -> (b0*cosbeta^3*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(fpi*vh),
-     gc9 -> -(Sqrt[2]*b0*(gpGG*(mdq + msq + muq) + (gpdd + gpss + gpuu)*vh))/(3*fpi*vh),
-     gc10 -> -(Sqrt[2]*b0*(gpGG*(mdq + msq + muq) + (gpdd + gpss + gpuu)*vh))/(3*fpi*vh),
-     gc11 -> -((b0*(gpGG*(mdq + muq) + (gpdd + gpuu)*vh))/(Sqrt[3]*fpi*vh)),
-     gc12 -> (b0*cosbeta*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(3*fpi*vh),
-     gc13 -> -(b0*sinbeta*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(3*fpi*vh),
-     gc14 -> -(b0*sinbeta*(gpGG*(2*mdq + msq) + (2*gpdd + gpss)*vh))/(3*fpi*vh),
-     gc15 -> (b0*sinbeta*(gpGG*(msq + 2*muq) + (gpss + 2*gpuu)*vh))/(3*fpi*vh),
-     gc16 -> (b0*cosbeta*sinbeta*(gpGG*(mdq + muq) + (gpdd + gpuu)*vh))/(Sqrt[3]*fpi*vh),
-     gc17 -> -((b0*cosbeta^2*sinbeta*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(fpi*vh)),
-     gc18 -> -(b0*sinbeta*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(3*fpi*vh),
-     gc19 -> -((b0*sinbeta^2*(gpGG*(mdq + muq) + (gpdd + gpuu)*vh))/(Sqrt[3]*fpi*vh)),
-     gc20 -> (b0*cosbeta*sinbeta^2*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(fpi*vh),
-     gc21 -> -((b0*sinbeta^3*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(fpi*vh)),
-     gc24 -> -qe/(2*Sqrt[6]*fpi^2),
-     gc25 -> qe/(2*Sqrt[6]*fpi^2),
-     gc26 -> 1/(4*fpi^2),
-     gc27 -> 1/(4*fpi^2),
-     gc28 -> -qe/(6*fpi^2),
-     gc29 -> (cosbeta*qe)/(2*Sqrt[2]*fpi^2),
-     gc30 -> -qe/(6*fpi^2),
-     gc31 -> -(qe*sinbeta)/(2*Sqrt[2]*fpi^2),
-     gc32 -> cosbeta/(4*Sqrt[3]*fpi^2),
-     gc33 -> -1/(2*Sqrt[6]*fpi^2),
-     gc34 -> -sinbeta/(4*Sqrt[3]*fpi^2),
-     gc35 -> -1/(3*fpi^2),
-     gc36 -> -(cosbeta*qe)/(2*Sqrt[2]*fpi^2),
-     gc37 -> (qe*sinbeta)/(2*Sqrt[2]*fpi^2),
-     gc38 -> -1/(2*Sqrt[6]*fpi^2),
-     gc39 -> 1/(6*fpi^2),
-     gc40 -> cosbeta^2/(12*fpi^2),
-     gc41 -> 1/(6*fpi^2),
-     gc42 -> -(cosbeta*sinbeta)/(12*fpi^2),
-     gc43 -> sinbeta^2/(12*fpi^2),
-     gc44 -> qe,
-     gc45 -> -qe/(2*fpi^2),
-     gc46 -> (-4*qe)/(3*fpi^2),
-     gc47 -> -(cosbeta*qe)/(2*Sqrt[3]*fpi^2),
-     gc48 -> -(cosbeta^2*qe)/(6*fpi^2),
-     gc49 -> (-2*qe)/(3*fpi^2),
-     gc50 -> (qe*sinbeta)/(2*Sqrt[3]*fpi^2),
-     gc51 -> (cosbeta*qe*sinbeta)/(6*fpi^2),
-     gc52 -> -(qe*sinbeta^2)/(6*fpi^2),
-     gc53 -> -cosbeta/(4*Sqrt[3]*fpi^2),
-     gc54 -> sinbeta/(4*Sqrt[3]*fpi^2),
-     gc55 -> -1/(3*fpi^2),
-     gc56 -> cosbeta^2/(12*fpi^2),
-     gc57 -> 1/(6*fpi^2),
-     gc58 -> -(cosbeta*sinbeta)/(12*fpi^2),
-     gc59 -> sinbeta^2/(12*fpi^2),
-     gc60 -> sinbeta/(2*Sqrt[2]*fpi^2),
-     gc61 -> sinbeta/(2*Sqrt[2]*fpi^2),
-     gc62 -> sinbeta^2/(3*fpi^2),
-     gc63 -> -cosbeta/(2*Sqrt[2]*fpi^2),
-     gc64 -> -cosbeta/(2*Sqrt[2]*fpi^2),
-     gc65 -> -(cosbeta*sinbeta)/(3*fpi^2),
-     gc66 -> cosbeta^2/(3*fpi^2),
-     gc67 -> qe,
-     gc68 -> (-2*cosbeta^2*qe)/(3*fpi^2),
-     gc69 -> (-4*qe)/(3*fpi^2),
-     gc70 -> (2*cosbeta*qe*sinbeta)/(3*fpi^2),
-     gc71 -> (-2*qe*sinbeta^2)/(3*fpi^2),
-     gc72 -> -1/(3*fpi^2),
-     gc74 -> -qe,
-     gc75L -> gpll,
-     gc75R -> -gpll,
-     gc76L -> gpxx,
-     gc76R -> -gpxx};
+     gc1 -> -(b0*cosbeta*(gpGG*(mdq - 8*msq + muq) + (gpdd - 8*gpss + gpuu)*vh))/(3*Sqrt[3]*fpi*vh),
+     gc2 -> -1/(4*Sqrt[3]*fpi^2*vh),
+     gc3 -> 1/(4*Sqrt[3]*fpi^2*vh),
+     gc4 -> (b0*(cosbeta^2 - sinbeta^2)*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(3*fpi*vh),
+     gc5 -> -1/(12*fpi^2*vh),
+     gc6 -> -1/(12*fpi^2*vh),
+     gc7 -> -((b0*cosbeta*(cosbeta^2 - 2*sinbeta^2)*(gpGG*(mdq + muq) + (gpdd + gpuu)*vh))/(Sqrt[3]*fpi*vh)),
+     gc8 -> (b0*cosbeta^2*(cosbeta^2 - 3*sinbeta^2)*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(fpi*vh),
+     gc9 -> 1/(6*Sqrt[2]*fpi^2*vh),
+     gc10 -> 1/(6*Sqrt[2]*fpi^2*vh),
+     gc11 -> -((b0*cosbeta*(gpGG*(mdq + muq) + (gpdd + gpuu)*vh))/(Sqrt[3]*fpi*vh)),
+     gc12 -> -1/(3*fpi^2*vh),
+     gc13 -> (-2*b0*cosbeta*sinbeta*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(3*fpi*vh),
+     gc14 -> sinbeta/(12*fpi^2*vh),
+     gc15 -> sinbeta/(12*fpi^2*vh),
+     gc16 -> -(b0*sinbeta*(gpGG*(mdq - 8*msq + muq) + (gpdd - 8*gpss + gpuu)*vh))/(3*Sqrt[3]*fpi*vh),
+     gc17 -> 1/(4*Sqrt[3]*fpi^2*vh),
+     gc18 -> -1/(4*Sqrt[3]*fpi^2*vh),
+     gc19 -> -((b0*sinbeta*(-2*cosbeta^2 + sinbeta^2)*(gpGG*(mdq + muq) + (gpdd + gpuu)*vh))/(Sqrt[3]*fpi*vh)),
+     gc20 -> (2*b0*cosbeta*sinbeta*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(3*fpi*vh),
+     gc21 -> cosbeta/(12*fpi^2*vh),
+     gc22 -> cosbeta/(12*fpi^2*vh),
+     gc23 -> (-2*b0*cosbeta*sinbeta*(cosbeta^2 - sinbeta^2)*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(fpi*vh),
+     gc24 -> -((Sqrt[3]*b0*cosbeta^2*sinbeta*(gpGG*(mdq + muq) + (gpdd + gpuu)*vh))/(fpi*vh)),
+     gc25 -> (4*b0*cosbeta^3*sinbeta*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(fpi*vh),
+     gc26 -> -1/(6*Sqrt[2]*fpi^2*vh),
+     gc27 -> -1/(6*Sqrt[2]*fpi^2*vh),
+     gc28 -> sinbeta/(3*fpi^2*vh),
+     gc29 -> -((b0*sinbeta*(gpGG*(mdq + muq) + (gpdd + gpuu)*vh))/(Sqrt[3]*fpi*vh)),
+     gc30 -> cosbeta/(3*fpi^2*vh),
+     gc31 -> -((Sqrt[3]*b0*cosbeta*sinbeta^2*(gpGG*(mdq + muq) + (gpdd + gpuu)*vh))/(fpi*vh)),
+     gc32 -> -((b0*sinbeta^2*(-3*cosbeta^2 + sinbeta^2)*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(fpi*vh)),
+     gc33 -> (-4*b0*cosbeta*sinbeta^3*(gpGG*(mdq - muq) + (gpdd - gpuu)*vh))/(fpi*vh),
+     gc36 -> -qe/(2*Sqrt[6]*fpi^2),
+     gc37 -> qe/(2*Sqrt[6]*fpi^2),
+     gc38 -> 1/(4*fpi^2),
+     gc39 -> 1/(4*fpi^2),
+     gc40 -> -qe/(6*fpi^2),
+     gc41 -> (cosbeta*qe)/(2*Sqrt[2]*fpi^2),
+     gc42 -> -qe/(6*fpi^2),
+     gc43 -> -(qe*sinbeta)/(2*Sqrt[2]*fpi^2),
+     gc44 -> -1/(2*Sqrt[6]*fpi^2),
+     gc45 -> -1/(3*fpi^2),
+     gc46 -> -(cosbeta*qe)/(2*Sqrt[2]*fpi^2),
+     gc47 -> (qe*sinbeta)/(2*Sqrt[2]*fpi^2),
+     gc48 -> -1/(2*Sqrt[6]*fpi^2),
+     gc49 -> 1/(6*fpi^2),
+     gc50 -> 1/(6*fpi^2),
+     gc51 -> qe,
+     gc52 -> -qe/(2*fpi^2),
+     gc53 -> (-4*qe)/(3*fpi^2),
+     gc54 -> -(cosbeta*qe)/(2*Sqrt[3]*fpi^2),
+     gc55 -> -(cosbeta^2*qe)/(6*fpi^2),
+     gc56 -> (-2*qe)/(3*fpi^2),
+     gc57 -> (qe*sinbeta)/(2*Sqrt[3]*fpi^2),
+     gc58 -> (cosbeta*qe*sinbeta)/(6*fpi^2),
+     gc59 -> -(qe*sinbeta^2)/(6*fpi^2),
+     gc60 -> -1/(3*fpi^2),
+     gc61 -> 1/(6*fpi^2),
+     gc62 -> qe,
+     gc63 -> (-2*cosbeta^2*qe)/(3*fpi^2),
+     gc64 -> (-4*qe)/(3*fpi^2),
+     gc65 -> (2*cosbeta*qe*sinbeta)/(3*fpi^2),
+     gc66 -> (-2*qe*sinbeta^2)/(3*fpi^2),
+     gc67 -> -1/(3*fpi^2),
+     gc70 -> -qe,
+     gc71L -> cosbeta*gpll,
+     gc71R -> -(cosbeta*gpll),
+     gc72L -> gpll*sinbeta,
+     gc72R -> -(gpll*sinbeta),
+     gc73L -> cosbeta*gpxx,
+     gc73R -> -(cosbeta*gpxx),
+     gc74L -> gpxx*sinbeta,
+     gc74R -> -(gpxx*sinbeta)};
 

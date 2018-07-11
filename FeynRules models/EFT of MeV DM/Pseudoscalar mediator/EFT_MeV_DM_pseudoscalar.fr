@@ -179,6 +179,14 @@ M$Parameters = {
         Value -> Sqrt[4 Pi alphaEM],
         TeX -> "e",
         Description -> "electric coupling constant"
+    },
+    sinbeta == {
+        ParameterType -> Internal,
+        TeX -> ComposedChar["Sin", "\\beta"]
+    },
+    cosbeta == {
+        ParameterType -> Internal,
+        TeX -> ComposedChar["Cos", "\\beta"]
     }
 };
 
@@ -299,6 +307,20 @@ M$ClassesDescription = {
         TeXAntiParticleName -> ComposedChar["\\chi", Null, Null, "\\bar"],
         PropagatorLabel -> "\\chi",
         PropagatorArrow -> Forward
+    },
+    (* Unphysical Fields *)
+    S[11] == {
+        ClassName -> pi0t,
+        Unphysical -> True,
+        SelfConjugate -> True,
+        Definitions -> {pi0t :> cosbeta * pi0 - sinbeta * p}
+    },
+    (* Unphysical Fields *)
+    S[77] == {
+        ClassName -> pt,
+        Unphysical -> True,
+        SelfConjugate -> True,
+        Definitions -> {pi0t :> cosbeta * p + sinbeta * pi0}
     }
 }
 
@@ -326,8 +348,8 @@ PCouplingMatrix = DiagonalMatrix[{gpuu, gpdd, gpss}];
 (*** Set up building blocks for the Lagrangian ***)
 (* Matrix of mesons *)
 (* Set eta-eta' mixing angle to 0 for now! *)
-Phi = {{pi0 + eta / Sqrt[3], Sqrt[2] * pip, Sqrt[2] * kp},
-        {Sqrt[2] * pim, -pi0 + eta / Sqrt[3], Sqrt[2] * k0},
+Phi = {{pi0t + eta / Sqrt[3], Sqrt[2] * pip, Sqrt[2] * kp},
+        {Sqrt[2] * pim, -pi0t + eta / Sqrt[3], Sqrt[2] * k0},
         {Sqrt[2] * km, Sqrt[2] * k0bar, -2 * eta / Sqrt[3]}};
 
 (* Golstone Matrix *)
@@ -442,7 +464,7 @@ LIntPFF := Block[{m, n},
 LIntMesPMass := Module[{coeff1, coeff2, interaction},
     coeff = I fpi^2  b0 / 2;
 
-    interaction = coeff p Tr[(PCouplingMatrix + gpGG/vh QuarkMassMatrix) . (SigmaDag4 - Sigma4)];
+    interaction = coeff pt Tr[(PCouplingMatrix + gpGG/vh QuarkMassMatrix) . (SigmaDag4 - Sigma4)];
 
     FpiExpand[interaction, 4]
 ];

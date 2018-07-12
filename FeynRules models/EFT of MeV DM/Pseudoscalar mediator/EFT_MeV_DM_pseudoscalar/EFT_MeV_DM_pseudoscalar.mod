@@ -276,13 +276,13 @@ C[ S[1] , V[1] , V[1] ] == {{(-I)*cosbeta*gc72*vh, 0}, {I*cosbeta*gc72*vh, 0}, {
 
 C[ -F[2] , F[2] , V[1] ] == {{I*gc73, 0}, {I*gc73, 0}},
 
-C[ -F[2] , F[2] , S[7] ] == {{I*gc74L, 0}, {I*gc74R, 0}},
+C[ -F[2] , F[2] , S[7] ] == {{gc74L, 0}, {gc74R, 0}},
 
-C[ -F[2] , F[2] , S[1] ] == {{I*gc75L, 0}, {I*gc75R, 0}},
+C[ -F[2] , F[2] , S[1] ] == {{gc75L, 0}, {gc75R, 0}},
 
-C[ -F[3] , F[3] , S[7] ] == {{I*gc76L, 0}, {I*gc76R, 0}},
+C[ -F[3] , F[3] , S[7] ] == {{gc76L, 0}, {gc76R, 0}},
 
-C[ -F[3] , F[3] , S[1] ] == {{I*gc77L, 0}, {I*gc77R, 0}}
+C[ -F[3] , F[3] , S[1] ] == {{gc77L, 0}, {gc77R, 0}}
 
 }
 
@@ -364,12 +364,12 @@ M$FACouplings = {
      gc71 -> alphaEM/(2*Pi*vh),
      gc72 -> alphaEM/(2*Pi*vh),
      gc73 -> -qe,
-     gc74L -> -(cosbeta*gpll),
-     gc74R -> cosbeta*gpll,
-     gc75L -> -(gpll*sinbeta),
-     gc75R -> gpll*sinbeta,
-     gc76L -> -(cosbeta*gpxx),
-     gc76R -> cosbeta*gpxx,
-     gc77L -> -(gpxx*sinbeta),
-     gc77R -> gpxx*sinbeta};
+     gc74L -> cosbeta*gpll,
+     gc74R -> -(cosbeta*gpll),
+     gc75L -> gpll*sinbeta,
+     gc75R -> -(gpll*sinbeta),
+     gc76L -> cosbeta*gpxx,
+     gc76R -> -(cosbeta*gpxx),
+     gc77L -> gpxx*sinbeta,
+     gc77R -> -(gpxx*sinbeta)};
 

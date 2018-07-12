@@ -452,10 +452,10 @@ LKinetic := LKineticP + LKineticDM + LKineticMes + LMassMes + LGauge + LKineticL
 (*****************************************************************)
 
 (* p-l interaction *)
-LIntPLL := gpll pt lbar.(ProjP - ProjM).l;
+LIntPLL := I gpll pt lbar.(ProjP - ProjM).l;
 
 (* p-x interaction *)
-LIntPXX := gpxx * pt * xbar.(ProjP - ProjM).x;
+LIntPXX := I gpxx * pt * xbar.(ProjP - ProjM).x;
 
 (* Effective interaction between s and photons *)
 LIntPFF := Block[{m, n, r, s},

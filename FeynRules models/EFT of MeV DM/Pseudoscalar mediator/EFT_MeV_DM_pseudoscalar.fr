@@ -369,8 +369,10 @@ SqrtSigma[order_] := Module[{coeff},
 ];
 
 (* Convenient definitions *)
+Sigma2 = Sigma[2];
 Sigma3 = Sigma[3];
 Sigma4 = Sigma[4];
+SigmaDag2 = HC[Sigma[2]];
 SigmaDag3 = HC[Sigma[3]];
 SigmaDag4 = HC[Sigma[4]];
 
@@ -423,12 +425,12 @@ LKineticDM := Block[{mu},
 
 (* Mesons Kinetic Term *)
 LKineticMes := Block[{mu, kinetic},
-    kinetic = fpi^2 / 4 * Tr[DCS[Sigma3, mu] . HCDCS[Sigma3, mu]];
+    kinetic = fpi^2 / 4 * Tr[DCS[Sigma4, mu] . HCDCS[Sigma4, mu]];
     FpiExpand[kinetic, 4]
 ];
 
 (* Mesons Mass Term *)
-LMassMes := b0 * fpi^2 / 2 * Tr[QuarkMassMatrix . (Sigma3 + SigmaDag3)];
+LMassMes := b0 * fpi^2 / 2 * Tr[QuarkMassMatrix . (Sigma4 + SigmaDag4)];
 
 
 (* Photon kinetic term *)
@@ -456,7 +458,7 @@ LIntPLL := -gpll pt lbar.(ProjP - ProjM).l;
 LIntPXX := -gpxx * pt * xbar.(ProjP - ProjM).x;
 
 (* Effective interaction between s and photons *)
-LIntPFF := Block[{m, n},
+LIntPFF := Block[{m, n, r, s},
     (* NOTE: Eps[...] in FR has a minus sign relative to P&S and Schwartz!!! *)
     alphaEM / (4 Pi) gpFF pt / vh FS[A, m, n] (1/2 Eps[m, n, r, s] FS[A, r, s])
 ];
@@ -469,7 +471,12 @@ LIntMesPMass := Module[{coeff1, coeff2, interaction},
     FpiExpand[interaction, 4]
 ];
 
-LInt := LIntPLL + LIntPXX + LIntPFF + LIntMesPMass;
+(* EM part of Wess-Zumino-Witten Lagrangian. Can ignore everything except the term with pi0 g g, since all others have more fields. *)
+LWZW := Block[{coeff, m, n, r, s, term},
+    3 alphaEM / (2 Pi) Eps[m, n, r, s] del[A[r], n] A[s] Tr[QuarkChargeMatrix . QuarkChargeMatrix . del[Phi, m]]
+];
+
+LInt := LIntPLL + LIntPXX + LIntPFF + LIntMesPMass + LWZW;
 
 
 (* Full Lagrangian *)

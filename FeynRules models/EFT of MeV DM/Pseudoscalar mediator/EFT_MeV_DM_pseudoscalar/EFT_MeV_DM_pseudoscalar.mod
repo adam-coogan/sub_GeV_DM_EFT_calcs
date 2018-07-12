@@ -364,12 +364,12 @@ M$FACouplings = {
      gc71 -> alphaEM/(2*Pi*vh),
      gc72 -> alphaEM/(2*Pi*vh),
      gc73 -> -qe,
-     gc74L -> cosbeta*gpll,
-     gc74R -> -(cosbeta*gpll),
-     gc75L -> gpll*sinbeta,
-     gc75R -> -(gpll*sinbeta),
-     gc76L -> cosbeta*gpxx,
-     gc76R -> -(cosbeta*gpxx),
-     gc77L -> gpxx*sinbeta,
-     gc77R -> -(gpxx*sinbeta)};
+     gc74L -> -(cosbeta*gpll),
+     gc74R -> cosbeta*gpll,
+     gc75L -> -(gpll*sinbeta),
+     gc75R -> gpll*sinbeta,
+     gc76L -> -(cosbeta*gpxx),
+     gc76R -> cosbeta*gpxx,
+     gc77L -> -(gpxx*sinbeta),
+     gc77R -> gpxx*sinbeta};
 

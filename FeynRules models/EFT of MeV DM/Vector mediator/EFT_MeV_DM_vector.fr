@@ -611,7 +611,8 @@ z13[m_, n_, r_, s_] := -I scSigmaL[m] . scSigmaL[n] . scSigmaL[r] . lhNoWeak[s] 
 z[m_, n_, r_, s_] := z1[m, n, r, s] + z2[m, n, r, s] + z3[m, n, r, s] + z4[m, n, r, s] + z5[m, n, r, s] + z6[m, n, r, s] + z7[m, n, r, s] + z8[m, n, r, s] + z9[m, n, r, s] + z10[m, n, r, s] + z11[m, n, r, s] + z12[m, n, r, s] + z13[m, n, r, s];
 
 LWZW := Block[{m, n, r, s, coeff},
-    coeff = -I / (48 Pi^2);
+     (* This is positive since I'm using P&S and Schwartz' sign convention for Eps! Shouldn't affect anything since none of the amplitudes coming from L_WZW interfere with amplitudes coming from the rest of the Lagrangian. *)
+    coeff = I / (48 Pi^2);
 
     3 coeff Eps[m, n, r, s] Tr[FpiExpand[z[m, n, r, s], 3]]
 ];

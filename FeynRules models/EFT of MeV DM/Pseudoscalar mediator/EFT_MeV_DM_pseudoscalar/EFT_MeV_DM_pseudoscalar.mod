@@ -270,9 +270,9 @@ C[ S[7] , S[7] , S[2] , -S[2] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc69, 0}, {I*gc
 
 C[ S[5] , V[1] , V[1] ] == {{(-I)*gc70, 0}, {I*gc70, 0}, {0, 0}},
 
-C[ S[7] , V[1] , V[1] ] == {{I*gc71*sinbeta*vh, 0}, {(-I)*gc71*sinbeta*vh, 0}, {(2*I)*cosbeta*gc71*gpFF, 0}},
+C[ S[7] , V[1] , V[1] ] == {{(-I)*gc71*sinbeta*vh, 0}, {I*gc71*sinbeta*vh, 0}, {(2*I)*cosbeta*fpi*gc71*gpFF, 0}},
 
-C[ S[1] , V[1] , V[1] ] == {{(-I)*cosbeta*gc72*vh, 0}, {I*cosbeta*gc72*vh, 0}, {(2*I)*gc72*gpFF*sinbeta, 0}},
+C[ S[1] , V[1] , V[1] ] == {{I*cosbeta*gc72*vh, 0}, {(-I)*cosbeta*gc72*vh, 0}, {(2*I)*fpi*gc72*gpFF*sinbeta, 0}},
 
 C[ -F[2] , F[2] , V[1] ] == {{I*gc73, 0}, {I*gc73, 0}},
 
@@ -360,9 +360,9 @@ M$FACouplings = {
      gc67 -> (-4*qe)/(3*fpi^2),
      gc68 -> (2*cosbeta*qe*sinbeta)/(3*fpi^2),
      gc69 -> (-2*qe*sinbeta^2)/(3*fpi^2),
-     gc70 -> alphaEM/(2*Sqrt[3]*Pi),
-     gc71 -> alphaEM/(2*Pi*vh),
-     gc72 -> alphaEM/(2*Pi*vh),
+     gc70 -> -alphaEM/(2*Sqrt[3]*fpi*Pi),
+     gc71 -> alphaEM/(2*fpi*Pi*vh),
+     gc72 -> alphaEM/(2*fpi*Pi*vh),
      gc73 -> -qe,
      gc74L -> cosbeta*gpll,
      gc74R -> -(cosbeta*gpll),

@@ -1,2 +1,2 @@
-(alphaEM**2*mp**3*(gpFF - beta*gpFF + beta*vh)*(gpFF + beta*(gpFF + vh)))/
-  (128.*Pi**3*vh**2)
+-(alphaEM**2*mp**3*((1 + beta)*fpi*gpFF - beta*vh)*
+     ((-1 + beta)*fpi*gpFF + beta*vh))/(128.*fpi**2*Pi**3*vh**2)

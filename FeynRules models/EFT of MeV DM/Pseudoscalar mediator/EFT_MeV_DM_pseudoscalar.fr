@@ -473,7 +473,7 @@ LIntMesPMass := Module[{coeff1, coeff2, interaction},
 
 (* EM part of Wess-Zumino-Witten Lagrangian. Can ignore everything except the term with pi0 g g, since all others have more fields. *)
 LWZW := Block[{coeff, m, n, r, s, term},
-    3 alphaEM / (2 Pi) Eps[m, n, r, s] del[A[r], n] A[s] Tr[QuarkChargeMatrix . QuarkChargeMatrix . del[Phi, m]]
+    -3 alphaEM / (2 Pi fpi) Eps[m, n, r, s] del[A[r], n] A[s] Tr[QuarkChargeMatrix . QuarkChargeMatrix . del[Phi, m]] (* this is negative since I'm using P&S and Schwartz' sign convention for Eps! *)
 ];
 
 LInt := LIntPLL + LIntPXX + LIntPFF + LIntMesPMass + LWZW;

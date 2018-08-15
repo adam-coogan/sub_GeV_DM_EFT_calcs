@@ -129,7 +129,7 @@ M$Parameters = {
         Description->"mass of A"
     },
 
-    vwidth == {
+    awidth == {
         ParameterType -> External,
         TeX -> ComposedChar["\\Gamma", "A"],
         Description->"width of A"
@@ -239,7 +239,7 @@ M$ClassesDescription = {
         ClassName -> Ax,
         SelfConjugate -> True,
         Mass -> mv,
-        Width -> vwidth,
+        Width -> awidth,
         ParticleName -> "Ax",
         PropagatorLabel -> "Ax"
     },
@@ -416,36 +416,7 @@ LIntAXX := Block[{m},
     gaxx Ax[m] xbar . Ga[m] . (ProjP - ProjM) . x
 ];
 
-(* WZW Lagrangian, ignoring terms from the weak LH current *)
-scSigmaL[m_] := SigmaDag2 . del[Sigma3, m];
-scSigmaR[m_] := Sigma2 . HC[del[Sigma3, m]];
-
-z1[m_, n_, r_, s_] := 1/2 Sigma3 . lh[m] . SigmaDag3 . rh[n] . Sigma3 . lh[r] . SigmaDag3 . rh[s];
-z2[m_, n_, r_, s_] := Sigma3 . lh[m] . lh[n] . lh[r] . SigmaDag3 . rh[s] - SigmaDag3 . rh[m] . rh[n] . rh[r] . Sigma3 . lh[s];
-z3[m_, n_, r_, s_] := I Sigma3 . del[lh[n], m] . lh[r] . SigmaDag3 . rh[s] - I SigmaDag3 . del[rh[n], m] . rh[r] . Sigma3 . lh[s];
-z4[m_, n_, r_, s_] := I del[rh[n], m] . Sigma3 . lh[r] . SigmaDag3 . rh[s] - I del[lh[n], m] . SigmaDag3 . rh[r] . Sigma3 . lh[s];
-z5[m_, n_, r_, s_] := -I scSigmaL[m] . lh[n] . SigmaDag2 . rh[r] . Sigma2 . lh[s] + I scSigmaR[m] . rh[n] . Sigma2 . lh[r] . SigmaDag2 . rh[s];
-z6[m_, n_, r_, s_] := -I scSigmaL[m] . lh[n] . lh[r] . lh[s] + I scSigmaR[m] . rh[n] . rh[r] . rh[s];
-z7[m_, n_, r_, s_] := 1/2 scSigmaL[m] . SigmaDag2 . del[rh[r], n] . Sigma2 . lh[s] - 1/2 scSigmaR[m] . Sigma2 . del[lh[r], n] . SigmaDag2 . rh[s];
-z8[m_, n_, r_, s_] := 1/2 scSigmaL[m] . SigmaDag2 . rh[n] . Sigma2 . del[lh[s], r] - 1/2 scSigmaR[m] . Sigma2 . lh[n] . SigmaDag2 . del[rh[s], r];
-z9[m_, n_, r_, s_] := -scSigmaL[m] . scSigmaL[n] . SigmaDag1 . rh[r] . Sigma1 . lh[s] + scSigmaR[m] . scSigmaR[n] . Sigma1 . lh[r] . SigmaDag1 . rh[s];
-z10[m_, n_, r_, s_] := scSigmaL[m] . lh[n] . del[lh[s], r] - scSigmaR[m] . rh[n] . del[rh[s], r];
-z11[m_, n_, r_, s_] := scSigmaL[m] . del[lh[r], n] . lh[s] - scSigmaR[m] . del[rh[r], n] . rh[s];
-z12[m_, n_, r_, s_] := 1/2 scSigmaL[m] . lh[n] . scSigmaL[r] . lh[s] - 1/2 scSigmaR[m] . rh[n] . scSigmaR[r] . rh[s];
-z13[m_, n_, r_, s_] := -I scSigmaL[m] . scSigmaL[n] . scSigmaL[r] . lh[s] + I scSigmaR[m] . scSigmaR[n] . scSigmaR[r] . rh[s];
-
-z[m_, n_, r_, s_] := z1[m, n, r, s] + z2[m, n, r, s] + z3[m, n, r, s] + z4[m, n, r, s] + z5[m, n, r, s] + z6[m, n, r, s] + z7[m, n, r, s] + z8[m, n, r, s] + z9[m, n, r, s] + z10[m, n, r, s] + z11[m, n, r, s] + z12[m, n, r, s] + z13[m, n, r, s];
-
-LWZW := Block[{m, n, r, s, coeff},
-    coeff = -I / (48 Pi^2);
-
-    3 coeff Eps[m, n, r, s] Tr[FpiExpand[z[m, n, r, s], 3]]
-];
-
-
-LInt := LIntALL + LIntAXX + LWZW;
-
-
+LInt := LIntALL + LIntAXX;
 
 (* Full Lagrangian *)
 L := LKinetic + LInt;

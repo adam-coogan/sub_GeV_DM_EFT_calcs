@@ -453,6 +453,50 @@ DCS[FF_, mu_] := del[FF, mu] - I * rh[mu] . FF + I * FF . lh[mu];
 HCDCS[FF_, mu_] := HC[DCS[FF, mu]];
 
 
+(* Resonance matrix *)
+ResonanceMatrix[mu_] := rho[mu] / Sqrt[2] * DiagonalMatrix[{1, -1, 0}];
+
+commutator[AA_, BB_] := AA . BB - BB . AA;
+
+(* Connection to define Resonance Covariant Derivative *)
+ResConnection[m_] := Block[{derTerm1, derTerm2, curTerm1, curTerm2, tot},
+    derTerm1 = 1 / 2 * SqrtSigmaDag3 . del[SqrtSigma4, m];
+    curTerm1 = -I / 2 * SqrtSigmaDag4 . rhNoWeak[m] . SqrtSigma4;
+
+    derTerm2 = 1 / 2 * SqrtSigma3 . del[SqrtSigmaDag4, m];
+    curTerm2 = -I / 2 * SqrtSigma4 . lhNoWeak[m] . SqrtSigmaDag4;
+
+    tot = derTerm1 + derTerm2 + curTerm1 + curTerm2;
+
+    FpiExpand[tot, 2]
+];
+
+(* Resonance Field Strength *)
+ResonanceFS[m_, n_] := Block[{derivTerm, connectTerm1, connectTerm2, tot},
+    derivTerm = del[ResonanceMatrix[n], m] - del[ResonanceMatrix[m], n];
+
+    (* These are already expanded to O(f^-2) *)
+    connectTerm1 = commutator[ResConnection[m], ResonanceMatrix[n]];
+    connectTerm2 = commutator[ResConnection[n], ResonanceMatrix[m]];
+
+    tot = derivTerm + connectTerm1 + connectTerm2
+];
+
+(* Octet tensor current, dropping leptonic terms *)
+FSRight[m_, n_] := FS[rhNoWeak, m, n];
+FSLeft[m_, n_] := FS[lhNoWeak, m, n];
+
+FSOctetLeft[mu_, nu_] := SqrtSigma4 . FSLeft[mu, nu] . SqrtSigmaDag4;
+FSOctetRight[mu_, nu_] := SqrtSigmaDag4 . FSRight[mu, nu] . SqrtSigma4;
+FSOctetPlus[mu_, nu_] := FSOctetLeft[mu, nu] + FSOctetRight[mu, nu];
+FSOctetMinus[mu_, nu_] := FSOctetLeft[mu, nu] - FSOctetRight[mu, nu];
+
+(* Octet meson current *)
+SqrtSigmaMu[m_] := I * SqrtSigmaDag2 . DCS[Sigma4, m] . SqrtSigmaDag2;
+
+(* J2 resonance interaction term *)
+ResonanceJ2[mu_, nu_] := -fv / (2 * Sqrt[2]) * FSOctetPlus[mu, nu] -I * gv / Sqrt[2] SqrtSigmaMu[mu] . SqrtSigmaMu[nu];
+
 (* Unphysical parameters for fpi and b0 *)
 fpiT = (3 * fpi) / Sqrt[9 + (4 * gsGG * vs) / Lam];
 b0T = (b0 * (9 * Lam + 4 * gsGG * vs) * (-2 * gsGG * vh * vs + 3 * Lam * (vh - gsff * vs))) / (27 * Lam^2 * vh);
@@ -505,8 +549,14 @@ LKineticLep := Block[{m},
     I * (lbar . Ga[m] . DC[l, m] - ml lbar . l)
 ];
 
+LKineticRho := Block[{mu, nu, kinetic, mass},
+    kinetic = -1 / 4 * Tr[ResonanceFS[mu, nu] . ResonanceFS[mu, nu]];
+    mass = mrho^2 / 2 * Tr[ResonanceMatrix[mu] . ResonanceMatrix[mu]];
+    kinetic + mass;
+    FpiExpand[kinetic + mass, 2]
+];
 
-LKinetic := LKineticS + LKineticDM + LKineticMes + LMassMes + LGauge + LKineticNu +  LKineticLep;
+LKinetic := LKineticS + LKineticDM + LKineticMes + LMassMes + LGauge + LKineticNu +  LKineticLep + LKineticRho;
 
 
 
@@ -525,7 +575,7 @@ LIntSFF := Block[{m, n},
     (alphaEM * gsFF) / (4 * Lam * Pi) * s * FS[A, m, n] * FS[A, m, n]
 ];
 
-(* Interactions between s and mesons through meson kinetic term *)
+(* Interactions between s and mesons *)
 LIntMesSKin := Module[{mu, coeff, kinetic, interaction},
     coeff = (fpiT^2 * gsGG) / (9 * Lam);
 
@@ -536,7 +586,6 @@ LIntMesSKin := Module[{mu, coeff, kinetic, interaction},
     FpiExpand[interaction, 4]
 ];
 
-(* Interactions between s and mesons through meson mass term *)
 LIntMesSMass := Module[{coeff1, coeff2, interaction},
     coeff1 = (b0T*fpiT^2 * (2 * gsGG * vh * (9 * Lam - 4 * gsGG * vs) + 9 * gsff * Lam * (3 * Lam + 4 * gsGG * vs))) / (54 * Lam^2 * vh);
 
@@ -548,7 +597,22 @@ LIntMesSMass := Module[{coeff1, coeff2, interaction},
     FpiExpand[interaction, 4]
 ];
 
-LInt := LIntSLL + LIntSXX + LIntSFF + LIntMesSKin + LIntMesSMass;
+(* rho-pi-pi, S-rho-gamma, S-rho-pi-pi, S-rho-pi-pi-gamma terms *)
+LIntRhoMes := Module[{m, n},
+    (1 + 2 gsGG / (3 vh) * (vs + s)) / mrhoT Tr[ResonanceFS[m, n] . ResonanceJ2[m, n]] // FpiExpand[#, 2]&
+];
+
+(* Contact interactions required to correct the rho propagator *)
+LContactRho := Block[{m, n, term},
+    term = -rhoContactCoeff (1 + 4 gsGG / (3 v) (vs + s) + (2 gsGG vs / (3 v))^2) / mrhoT^2 Tr[ResonanceJ2[m, n] . ResonanceJ2[m, n]];
+
+    term = FpiExpand[term, 4];
+
+    term // Series[#, {qe, 0, 1}]& // Normal
+];
+
+LInt := LIntSLL + LIntSXX + LIntSFF + LIntMesSKin + LIntMesSMass + LIntRhoMes + LContactRho;
+
 
 (* Full Lagrangian *)
 L := LKinetic + LInt // ReplaceAll[#, {GF -> fCounter GF}]& // Series[#, {fCounter, 0, 1}]& // Normal // ReplaceAll[#, {fCounter -> 1}]&;

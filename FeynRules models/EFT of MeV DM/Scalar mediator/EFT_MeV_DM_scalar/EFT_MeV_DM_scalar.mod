@@ -93,9 +93,9 @@ V[2] == {
 F[1] == {
     SelfConjugate -> False,
     QuantumNumbers -> {LeptonNumber},
-    PropagatorLabel -> "\\nu",
-    PropagatorArrow -> Forward,
+    PropagatorLabel -> "v",
     PropagatorType -> Straight,
+    PropagatorArrow -> Forward,
     Mass -> 0,
     Indices -> {} },
 
@@ -103,8 +103,8 @@ F[2] == {
     SelfConjugate -> False,
     QuantumNumbers -> {-Q, LeptonNumber},
     PropagatorLabel -> "l",
-    PropagatorArrow -> Forward,
     PropagatorType -> Straight,
+    PropagatorArrow -> Forward,
     Mass -> ml,
     Indices -> {} },
 
@@ -187,65 +187,65 @@ C[ S[1] , S[1] , S[2] , -S[2] ] == {{I*b0*gc23*(mdq + muq), 0}, {(2*I)*gc23, 0},
 
 C[ S[2] , S[2] , -S[2] , -S[2] ] == {{(-2*I)*b0*gc24*(mdq + muq), 0}, {(2*I)*gc24, 0}, {(-I)*gc24, 0}, {(-I)*gc24, 0}, {(-I)*gc24, 0}, {(-I)*gc24, 0}, {(2*I)*gc24, 0}},
 
-C[ S[5] , S[5] , S[7] ] == {{I*b0*gc25*(mdq + 4*msq + muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(324*I)*gc25*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[5] , S[7] ] == {{(-I)*b0*gc25*(mdq + 4*msq + muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(972*I)*gc25*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}},
 
 C[ S[5] , S[5] , S[5] , S[5] , S[7] ] == {{I*gc26, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[3] , -S[3] , S[7] ] == {{I*b0*gc27*(mdq + msq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(108*I)*gc27*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}},
+C[ S[3] , -S[3] , S[7] ] == {{(-I)*b0*gc27*(mdq + msq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(324*I)*gc27*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}},
 
-C[ S[5] , S[5] , S[3] , -S[3] , S[7] ] == {{I*b0*gc28*(mdq + 3*msq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(324*I)*gc28*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-162*I)*gc28*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-162*I)*gc28*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-162*I)*gc28*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-162*I)*gc28*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(324*I)*gc28*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[5] , S[3] , -S[3] , S[7] ] == {{(-I)*b0*gc28*(mdq + 3*msq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(972*I)*gc28*gsGG*Lam^3*vh^2, 0}, {(-486*I)*gc28*gsGG*Lam^3*vh^2, 0}, {(-486*I)*gc28*gsGG*Lam^3*vh^2, 0}, {(-486*I)*gc28*gsGG*Lam^3*vh^2, 0}, {(-486*I)*gc28*gsGG*Lam^3*vh^2, 0}, {(972*I)*gc28*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[3] , S[3] , -S[3] , -S[3] , S[7] ] == {{(-I)*b0*gc29*(mdq + msq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(108*I)*gc29*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc29*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc29*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc29*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc29*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc29*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[3] , S[3] , -S[3] , -S[3] , S[7] ] == {{I*b0*gc29*(mdq + msq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(324*I)*gc29*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc29*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc29*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc29*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc29*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc29*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[3] , -S[3] , S[4] , -S[4] , S[7] ] == {{I*b0*gc30*(mdq + 2*msq + muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(108*I)*gc30*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc30*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-216*I)*gc30*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-216*I)*gc30*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc30*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc30*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[3] , -S[3] , S[4] , -S[4] , S[7] ] == {{(-I)*b0*gc30*(mdq + 2*msq + muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(324*I)*gc30*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc30*gsGG*Lam^3*vh^2, 0}, {(-648*I)*gc30*gsGG*Lam^3*vh^2, 0}, {(-648*I)*gc30*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc30*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc30*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , -S[4] , S[7] ] == {{I*b0*gc31*(msq + muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(108*I)*gc31*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}},
+C[ S[4] , -S[4] , S[7] ] == {{(-I)*b0*gc31*(msq + muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(324*I)*gc31*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}},
 
-C[ S[5] , S[5] , S[4] , -S[4] , S[7] ] == {{I*b0*gc32*(3*msq + muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(324*I)*gc32*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-162*I)*gc32*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-162*I)*gc32*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-162*I)*gc32*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-162*I)*gc32*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(324*I)*gc32*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[5] , S[4] , -S[4] , S[7] ] == {{(-I)*b0*gc32*(3*msq + muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(972*I)*gc32*gsGG*Lam^3*vh^2, 0}, {(-486*I)*gc32*gsGG*Lam^3*vh^2, 0}, {(-486*I)*gc32*gsGG*Lam^3*vh^2, 0}, {(-486*I)*gc32*gsGG*Lam^3*vh^2, 0}, {(-486*I)*gc32*gsGG*Lam^3*vh^2, 0}, {(972*I)*gc32*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , S[4] , -S[4] , -S[4] , S[7] ] == {{(-I)*b0*gc33*(msq + muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(108*I)*gc33*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc33*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc33*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc33*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc33*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc33*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[4] , S[4] , -S[4] , -S[4] , S[7] ] == {{I*b0*gc33*(msq + muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(324*I)*gc33*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc33*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc33*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc33*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc33*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc33*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
 C[ S[5] , S[1] , S[7] ] == {{I*gc34, 0}, {0, 0}, {0, 0}, {0, 0}},
 
 C[ S[5] , S[5] , S[5] , S[1] , S[7] ] == {{I*gc35, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[5] , S[3] , -S[3] , S[1] , S[7] ] == {{(-I)*b0*gc36*(mdq - msq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(162*I)*gc36*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(162*I)*gc36*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-324*I)*gc36*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-324*I)*gc36*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(162*I)*gc36*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(162*I)*gc36*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[3] , -S[3] , S[1] , S[7] ] == {{I*b0*gc36*(mdq - msq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(486*I)*gc36*gsGG*Lam^3*vh^2, 0}, {(486*I)*gc36*gsGG*Lam^3*vh^2, 0}, {(-972*I)*gc36*gsGG*Lam^3*vh^2, 0}, {(-972*I)*gc36*gsGG*Lam^3*vh^2, 0}, {(486*I)*gc36*gsGG*Lam^3*vh^2, 0}, {(486*I)*gc36*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[5] , S[4] , -S[4] , S[1] , S[7] ] == {{I*b0*gc37*(msq - muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(162*I)*gc37*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(162*I)*gc37*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-324*I)*gc37*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-324*I)*gc37*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(162*I)*gc37*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(162*I)*gc37*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[4] , -S[4] , S[1] , S[7] ] == {{(-I)*b0*gc37*(msq - muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(486*I)*gc37*gsGG*Lam^3*vh^2, 0}, {(486*I)*gc37*gsGG*Lam^3*vh^2, 0}, {(-972*I)*gc37*gsGG*Lam^3*vh^2, 0}, {(-972*I)*gc37*gsGG*Lam^3*vh^2, 0}, {(486*I)*gc37*gsGG*Lam^3*vh^2, 0}, {(486*I)*gc37*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[1] , S[1] , S[7] ] == {{I*b0*gc38*(mdq + muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(108*I)*gc38*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}},
+C[ S[1] , S[1] , S[7] ] == {{(-I)*b0*gc38*(mdq + muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(324*I)*gc38*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}},
 
 C[ S[5] , S[5] , S[1] , S[1] , S[7] ] == {{I*gc39, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[3] , -S[3] , S[1] , S[1] , S[7] ] == {{I*b0*gc40*(3*mdq + msq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(108*I)*gc40*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc40*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc40*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc40*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc40*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc40*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[3] , -S[3] , S[1] , S[1] , S[7] ] == {{(-I)*b0*gc40*(3*mdq + msq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(324*I)*gc40*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc40*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc40*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc40*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc40*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc40*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , -S[4] , S[1] , S[1] , S[7] ] == {{I*b0*gc41*(msq + 3*muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(108*I)*gc41*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc41*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc41*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc41*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc41*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc41*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[4] , -S[4] , S[1] , S[1] , S[7] ] == {{(-I)*b0*gc41*(msq + 3*muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(324*I)*gc41*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc41*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc41*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc41*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc41*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc41*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
 C[ S[5] , S[1] , S[1] , S[1] , S[7] ] == {{I*gc42, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
 C[ S[1] , S[1] , S[1] , S[1] , S[7] ] == {{I*gc43, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[5] , -S[3] , -S[4] , S[2] , S[7] ] == {{(-I)*b0*gc44*(mdq - 2*msq + muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(324*I)*gc44*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(324*I)*gc44*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-648*I)*gc44*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-648*I)*gc44*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(324*I)*gc44*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(324*I)*gc44*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , -S[3] , -S[4] , S[2] , S[7] ] == {{I*b0*gc44*(mdq - 2*msq + muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(972*I)*gc44*gsGG*Lam^3*vh^2, 0}, {(972*I)*gc44*gsGG*Lam^3*vh^2, 0}, {(-1944*I)*gc44*gsGG*Lam^3*vh^2, 0}, {(-1944*I)*gc44*gsGG*Lam^3*vh^2, 0}, {(972*I)*gc44*gsGG*Lam^3*vh^2, 0}, {(972*I)*gc44*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -S[3] , -S[4] , S[1] , S[2] , S[7] ] == {{I*b0*gc45*(mdq - muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {0, 0}, {(324*I)*gc45*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-324*I)*gc45*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-324*I)*gc45*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(324*I)*gc45*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -S[3] , -S[4] , S[1] , S[2] , S[7] ] == {{(-I)*b0*gc45*(mdq - muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {0, 0}, {(972*I)*gc45*gsGG*Lam^3*vh^2, 0}, {(-972*I)*gc45*gsGG*Lam^3*vh^2, 0}, {(-972*I)*gc45*gsGG*Lam^3*vh^2, 0}, {(972*I)*gc45*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[5] , S[3] , S[4] , -S[2] , S[7] ] == {{(-I)*b0*gc46*(mdq - 2*msq + muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(324*I)*gc46*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(324*I)*gc46*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-648*I)*gc46*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-648*I)*gc46*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(324*I)*gc46*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(324*I)*gc46*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[3] , S[4] , -S[2] , S[7] ] == {{I*b0*gc46*(mdq - 2*msq + muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(972*I)*gc46*gsGG*Lam^3*vh^2, 0}, {(972*I)*gc46*gsGG*Lam^3*vh^2, 0}, {(-1944*I)*gc46*gsGG*Lam^3*vh^2, 0}, {(-1944*I)*gc46*gsGG*Lam^3*vh^2, 0}, {(972*I)*gc46*gsGG*Lam^3*vh^2, 0}, {(972*I)*gc46*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[3] , S[4] , S[1] , -S[2] , S[7] ] == {{I*b0*gc47*(mdq - muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {0, 0}, {(324*I)*gc47*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-324*I)*gc47*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-324*I)*gc47*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(324*I)*gc47*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[3] , S[4] , S[1] , -S[2] , S[7] ] == {{(-I)*b0*gc47*(mdq - muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {0, 0}, {(972*I)*gc47*gsGG*Lam^3*vh^2, 0}, {(-972*I)*gc47*gsGG*Lam^3*vh^2, 0}, {(-972*I)*gc47*gsGG*Lam^3*vh^2, 0}, {(972*I)*gc47*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[2] , -S[2] , S[7] ] == {{I*b0*gc48*(mdq + muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(108*I)*gc48*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}},
+C[ S[2] , -S[2] , S[7] ] == {{(-I)*b0*gc48*(mdq + muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(324*I)*gc48*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}},
 
 C[ S[5] , S[5] , S[2] , -S[2] , S[7] ] == {{I*gc49, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[3] , -S[3] , S[2] , -S[2] , S[7] ] == {{I*b0*gc50*(2*mdq + msq + muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(108*I)*gc50*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-216*I)*gc50*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc50*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc50*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-216*I)*gc50*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc50*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[3] , -S[3] , S[2] , -S[2] , S[7] ] == {{(-I)*b0*gc50*(2*mdq + msq + muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(324*I)*gc50*gsGG*Lam^3*vh^2, 0}, {(-648*I)*gc50*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc50*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc50*gsGG*Lam^3*vh^2, 0}, {(-648*I)*gc50*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc50*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , -S[4] , S[2] , -S[2] , S[7] ] == {{I*b0*gc51*(mdq + msq + 2*muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(108*I)*gc51*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-216*I)*gc51*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc51*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc51*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-216*I)*gc51*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc51*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[4] , -S[4] , S[2] , -S[2] , S[7] ] == {{(-I)*b0*gc51*(mdq + msq + 2*muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(324*I)*gc51*gsGG*Lam^3*vh^2, 0}, {(-648*I)*gc51*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc51*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc51*gsGG*Lam^3*vh^2, 0}, {(-648*I)*gc51*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc51*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
 C[ S[5] , S[1] , S[2] , -S[2] , S[7] ] == {{I*gc52, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[1] , S[1] , S[2] , -S[2] , S[7] ] == {{I*b0*gc53*(mdq + muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(216*I)*gc53*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-108*I)*gc53*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-108*I)*gc53*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-108*I)*gc53*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-108*I)*gc53*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(216*I)*gc53*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[1] , S[1] , S[2] , -S[2] , S[7] ] == {{(-I)*b0*gc53*(mdq + muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(648*I)*gc53*gsGG*Lam^3*vh^2, 0}, {(-324*I)*gc53*gsGG*Lam^3*vh^2, 0}, {(-324*I)*gc53*gsGG*Lam^3*vh^2, 0}, {(-324*I)*gc53*gsGG*Lam^3*vh^2, 0}, {(-324*I)*gc53*gsGG*Lam^3*vh^2, 0}, {(648*I)*gc53*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[2] , S[2] , -S[2] , -S[2] , S[7] ] == {{(-I)*b0*gc54*(mdq + muq)*(9*vh + 4*(3*gsGG)*vs)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)), 0}, {(108*I)*gc54*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc54*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc54*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc54*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(-54*I)*gc54*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {(108*I)*gc54*(3*gsGG)*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[2] , S[2] , -S[2] , -S[2] , S[7] ] == {{I*b0*gc54*(mdq + muq)*(9*Lam + 4*gsGG*vs)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)), 0}, {(324*I)*gc54*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc54*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc54*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc54*gsGG*Lam^3*vh^2, 0}, {(-162*I)*gc54*gsGG*Lam^3*vh^2, 0}, {(324*I)*gc54*gsGG*Lam^3*vh^2, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
 C[ S[5] , S[5] , S[7] , S[7] ] == {{I*gc55, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
@@ -259,291 +259,203 @@ C[ S[1] , S[1] , S[7] , S[7] ] == {{I*gc59, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, 
 
 C[ S[2] , -S[2] , S[7] , S[7] ] == {{I*gc60, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , -S[4] , V[1] , V[1] ] == {{I*gc61, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[4] , -S[4] , V[1] , V[1] ] == {{(2*I)*qe^2, 0}},
 
-C[ S[2] , -S[2] , V[1] , V[1] ] == {{I*gc62, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[2] , -S[2] , V[1] , V[1] ] == {{(2*I)*qe^2, 0}},
 
-C[ S[4] , -S[4] , S[7] , V[1] , V[1] ] == {{((8*I)*(3*gsGG)*qe^2)/(9*vh + 4*(3*gsGG)*vs), 0}},
+C[ S[4] , -S[4] , S[7] , V[1] , V[1] ] == {{((8*I)*gsGG*qe^2)/(9*Lam + 4*gsGG*vs), 0}},
 
-C[ S[2] , -S[2] , S[7] , V[1] , V[1] ] == {{((8*I)*(3*gsGG)*qe^2)/(9*vh + 4*(3*gsGG)*vs), 0}},
+C[ S[2] , -S[2] , S[7] , V[1] , V[1] ] == {{((8*I)*gsGG*qe^2)/(9*Lam + 4*gsGG*vs), 0}},
 
-C[ S[5] , -S[3] , -S[4] , S[2] , V[1] ] == {{(3*I)*gc65, 0}, {(-3*I)*gc65, 0}, {(-I)*gc65, 0}, {I*gc65, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , -S[3] , -S[4] , S[2] , V[1] ] == {{(3*I)*gc65, 0}, {(-3*I)*gc65, 0}, {(-I)*gc65, 0}, {I*gc65, 0}},
 
-C[ S[5] , S[3] , S[4] , -S[2] , V[1] ] == {{(3*I)*gc66, 0}, {(-3*I)*gc66, 0}, {(-I)*gc66, 0}, {I*gc66, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[3] , S[4] , -S[2] , V[1] ] == {{(3*I)*gc66, 0}, {(-3*I)*gc66, 0}, {(-I)*gc66, 0}, {I*gc66, 0}},
 
-C[ S[3] , -S[3] , S[4] , -S[4] , V[1] ] == {{(3*I)*gc67, 0}, {(-3*I)*gc67, 0}, {(-I)*gc67, 0}, {I*gc67, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[3] , -S[3] , S[4] , -S[4] , V[1] ] == {{(3*I)*gc67, 0}, {(-3*I)*gc67, 0}, {(-I)*gc67, 0}, {I*gc67, 0}},
 
-C[ S[3] , S[4] , S[1] , -S[2] , V[1] ] == {{I*gc68, 0}, {(-I)*gc68, 0}, {(-I)*gc68, 0}, {I*gc68, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[3] , S[4] , S[1] , -S[2] , V[1] ] == {{I*gc68, 0}, {(-I)*gc68, 0}, {(-I)*gc68, 0}, {I*gc68, 0}},
 
-C[ S[3] , -S[3] , S[2] , -S[2] , V[1] ] == {{(-3*I)*gc69, 0}, {(3*I)*gc69, 0}, {(-I)*gc69, 0}, {I*gc69, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[3] , -S[3] , S[2] , -S[2] , V[1] ] == {{(-3*I)*gc69, 0}, {(3*I)*gc69, 0}, {(-I)*gc69, 0}, {I*gc69, 0}},
 
-C[ -S[3] , -S[4] , S[1] , S[2] , V[1] ] == {{I*gc70, 0}, {(-I)*gc70, 0}, {(-I)*gc70, 0}, {I*gc70, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -S[3] , -S[4] , S[1] , S[2] , V[1] ] == {{I*gc70, 0}, {(-I)*gc70, 0}, {(-I)*gc70, 0}, {I*gc70, 0}},
 
-C[ S[4] , -S[4] , V[1] ] == {{(-I)*gc71, 0}, {I*gc71, 0}, {0, 0}, {0, 0}},
+C[ S[4] , -S[4] , V[1] ] == {{(-I)*gc71, 0}, {I*gc71, 0}},
 
-C[ S[5] , S[5] , S[4] , -S[4] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc72, 0}, {I*gc72, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[5] , S[4] , -S[4] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc72, 0}, {I*gc72, 0}},
 
-C[ S[4] , S[4] , -S[4] , -S[4] , V[1] ] == {{(-I)*gc73, 0}, {(-I)*gc73, 0}, {I*gc73, 0}, {I*gc73, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[4] , S[4] , -S[4] , -S[4] , V[1] ] == {{(-I)*gc73, 0}, {(-I)*gc73, 0}, {I*gc73, 0}, {I*gc73, 0}},
 
-C[ S[5] , S[4] , -S[4] , S[1] , V[1] ] == {{0, 0}, {(-I)*gc74, 0}, {I*gc74, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[5] , S[4] , -S[4] , S[1] , V[1] ] == {{0, 0}, {(-I)*gc74, 0}, {I*gc74, 0}, {0, 0}},
 
-C[ S[4] , -S[4] , S[1] , S[1] , V[1] ] == {{(-I)*gc75, 0}, {I*gc75, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[4] , -S[4] , S[1] , S[1] , V[1] ] == {{(-I)*gc75, 0}, {I*gc75, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , -S[4] , S[2] , -S[2] , V[1] ] == {{(-I)*gc76, 0}, {I*gc76, 0}, {(-I)*gc76, 0}, {I*gc76, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[4] , -S[4] , S[2] , -S[2] , V[1] ] == {{(-I)*gc76, 0}, {I*gc76, 0}, {(-I)*gc76, 0}, {I*gc76, 0}},
 
-C[ S[4] , -S[4] , S[7] , V[1] ] == {{(-81*I)*fpi^2*gc77*mrhoT^2*vh^2, 0}, {(81*I)*fpi^2*gc77*mrhoT^2*vh^2, 0}, {(-2*I)*contactRhoSCoeff*fv*gc77*gv*(9*vh + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs), 0}, {(2*I)*contactRhoSCoeff*fv*gc77*gv*(9*vh + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[4] , -S[4] , S[7] , V[1] ] == {{(-I)*gc77, 0}, {I*gc77, 0}, {0, 0}},
 
-C[ S[2] , -S[2] , V[1] ] == {{(-I)*gc78, 0}, {I*gc78, 0}, {0, 0}, {0, 0}},
+C[ S[2] , -S[2] , V[1] ] == {{(-I)*gc78, 0}, {I*gc78, 0}},
 
-C[ S[1] , S[1] , S[2] , -S[2] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc79, 0}, {I*gc79, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[1] , S[1] , S[2] , -S[2] , V[1] ] == {{0, 0}, {0, 0}, {(-I)*gc79, 0}, {I*gc79, 0}},
 
-C[ S[2] , S[2] , -S[2] , -S[2] , V[1] ] == {{(-I)*gc80, 0}, {(-I)*gc80, 0}, {I*gc80, 0}, {I*gc80, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[2] , S[2] , -S[2] , -S[2] , V[1] ] == {{(-I)*gc80, 0}, {(-I)*gc80, 0}, {I*gc80, 0}, {I*gc80, 0}},
 
-C[ S[2] , -S[2] , S[7] , V[1] ] == {{(-81*I)*fpi^2*gc81*mrhoT^2*vh^2, 0}, {(81*I)*fpi^2*gc81*mrhoT^2*vh^2, 0}, {(-2*I)*contactRhoSCoeff*fv*gc81*gv*(9*vh + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs), 0}, {(2*I)*contactRhoSCoeff*fv*gc81*gv*(9*vh + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs), 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ S[2] , -S[2] , S[7] , V[1] ] == {{(-I)*gc81, 0}, {I*gc81, 0}, {0, 0}},
 
 C[ S[7] , V[1] , V[1] ] == {{(-I)*gc82, 0}, {I*gc82, 0}},
 
-C[ S[5] , S[5] , S[3] , -S[3] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-2*I)*gc83*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-2*I)*gc83*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc83*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc83*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc83*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc83*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-9*I)*gc83*mrhoT*vh, 0}, {(9*I)*gc83*mrhoT*vh, 0}, {(-I)*gc83*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc83*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc83*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc83*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-9*I)*gc83*mrhoT*vh, 0}, {(9*I)*gc83*mrhoT*vh, 0}, {(2*I)*gc83*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(2*I)*gc83*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(9*I)*gc83*mrhoT*vh, 0}, {(9*I)*gc83*mrhoT*vh, 0}, {(-36*I)*gc83*mrhoT*vh, 0}, {(-9*I)*gc83*mrhoT*vh, 0}, {(-9*I)*gc83*mrhoT*vh, 0}, {(36*I)*gc83*mrhoT*vh, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[2] , S[7] ] == {{I*gc83, 0}, {I*gc83, 0}, {0, 0}, {0, 0}},
 
-C[ S[5] , S[5] , S[4] , -S[4] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {(2*I)*gc84*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(2*I)*gc84*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc84*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc84*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc84*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc84*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-9*I)*gc84*mrhoT*vh, 0}, {(9*I)*gc84*mrhoT*vh, 0}, {I*gc84*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc84*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc84*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc84*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-9*I)*gc84*mrhoT*vh, 0}, {(9*I)*gc84*mrhoT*vh, 0}, {(-2*I)*gc84*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-2*I)*gc84*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(9*I)*gc84*mrhoT*vh, 0}, {(9*I)*gc84*mrhoT*vh, 0}, {(-36*I)*gc84*mrhoT*vh, 0}, {(-9*I)*gc84*mrhoT*vh, 0}, {(-9*I)*gc84*mrhoT*vh, 0}, {(36*I)*gc84*mrhoT*vh, 0}, {0, 0}, {0, 0}},
+C[ -F[3] , F[3] , S[7] ] == {{I*gc84, 0}, {I*gc84, 0}, {0, 0}, {0, 0}},
 
-C[ S[5] , S[3] , -S[3] , S[1] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc85*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(3*I)*gc85*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc85*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(3*I)*gc85*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(2*I)*gc85*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(2*I)*gc85*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(9*I)*gc85*mrhoT*vh, 0}, {0, 0}, {(2*I)*gc85*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-6*I)*gc85*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc85*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-3*I)*gc85*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-36*I)*gc85*mrhoT*vh, 0}, {(9*I)*gc85*mrhoT*vh, 0}, {(-I)*gc85*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-3*I)*gc85*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-9*I)*gc85*mrhoT*vh, 0}, {(36*I)*gc85*mrhoT*vh, 0}, {(-9*I)*gc85*mrhoT*vh, 0}, {0, 0}, {(-9*I)*gc85*mrhoT*vh, 0}, {(9*I)*gc85*mrhoT*vh, 0}, {(-9*I)*gc85*mrhoT*vh, 0}, {(9*I)*gc85*mrhoT*vh, 0}},
+C[ -F[2] , F[2] , V[1] ] == {{I*gc85, 0}, {I*gc85, 0}},
 
-C[ S[5] , S[3] , S[4] , -S[2] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-I)*gc86*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc86*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc86*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc86*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-4*I)*gc86*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(4*I)*gc86*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-9*I)*gc86*mrhoT*vh, 0}, {(-36*I)*gc86*mrhoT*vh, 0}, {0, 0}, {0, 0}, {(3*I)*gc86*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-3*I)*gc86*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {0, 0}, {(27*I)*gc86*mrhoT*vh, 0}, {(-3*I)*gc86*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(3*I)*gc86*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(9*I)*gc86*mrhoT*vh, 0}, {0, 0}, {(27*I)*gc86*mrhoT*vh, 0}, {(36*I)*gc86*mrhoT*vh, 0}, {(-27*I)*gc86*mrhoT*vh, 0}, {(-27*I)*gc86*mrhoT*vh, 0}, {(-9*I)*gc86*mrhoT*vh, 0}, {(9*I)*gc86*mrhoT*vh, 0}},
+C[ -F[2] , F[1] , S[3] , S[4] , V[1] ] == {{I*gc86, 0}, {0, 0}},
 
-C[ S[3] , S[3] , -S[3] , -S[3] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-I)*gc87, 0}, {(-I)*gc87, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-I)*gc87, 0}, {(-I)*gc87, 0}, {0, 0}, {0, 0}, {I*gc87, 0}, {I*gc87, 0}, {0, 0}, {I*gc87, 0}, {I*gc87, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[2] , V[1] ] == {{gc87, 0}, {0, 0}},
 
-C[ S[5] , -S[3] , -S[4] , S[2] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {(I/3)*gc88*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I/3)*gc88*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I/3)*gc88*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(I/3)*gc88*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {((4*I)/3)*gc88*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {((-4*I)/3)*gc88*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-3*I)*gc88*mrhoT*vh, 0}, {(-12*I)*gc88*mrhoT*vh, 0}, {0, 0}, {0, 0}, {(-I)*gc88*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc88*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {0, 0}, {(9*I)*gc88*mrhoT*vh, 0}, {I*gc88*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc88*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(3*I)*gc88*mrhoT*vh, 0}, {0, 0}, {(9*I)*gc88*mrhoT*vh, 0}, {(12*I)*gc88*mrhoT*vh, 0}, {(-9*I)*gc88*mrhoT*vh, 0}, {(-9*I)*gc88*mrhoT*vh, 0}, {(-3*I)*gc88*mrhoT*vh, 0}, {(3*I)*gc88*mrhoT*vh, 0}},
+C[ -F[2] , F[1] , S[1] , S[2] , V[1] ] == {{I*gc88, 0}, {0, 0}},
 
-C[ S[3] , -S[3] , V[2] ] == {{0, 0}, {0, 0}, {(-I)*gc89, 0}, {I*gc89, 0}},
+C[ -F[2] , F[1] , S[5] , S[4] , V[1] ] == {{I*gc89, 0}, {0, 0}},
 
-C[ S[3] , -S[3] , S[4] , -S[4] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc90*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc90*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {0, 0}, {0, 0}, {I*gc90*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc90*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {0, 0}, {(6*I)*gc90*mrhoT*vh, 0}, {I*gc90*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc90*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {0, 0}, {0, 0}, {(-6*I)*gc90*mrhoT*vh, 0}, {0, 0}, {(-I)*gc90*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc90*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {0, 0}, {(6*I)*gc90*mrhoT*vh, 0}, {(-3*I)*gc90*mrhoT*vh, 0}, {(-6*I)*gc90*mrhoT*vh, 0}, {0, 0}, {(3*I)*gc90*mrhoT*vh, 0}, {(-3*I)*gc90*mrhoT*vh, 0}, {(3*I)*gc90*mrhoT*vh, 0}},
+C[ -F[2] , F[1] , S[4] , V[1] ] == {{gc90, 0}, {0, 0}},
 
-C[ S[3] , -S[3] , S[1] , S[1] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-2*I)*gc91*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-2*I)*gc91*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc91*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc91*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc91*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc91*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(3*I)*gc91*mrhoT*vh, 0}, {(3*I)*gc91*mrhoT*vh, 0}, {(-I)*gc91*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc91*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc91*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc91*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-3*I)*gc91*mrhoT*vh, 0}, {(-3*I)*gc91*mrhoT*vh, 0}, {(2*I)*gc91*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(2*I)*gc91*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-3*I)*gc91*mrhoT*vh, 0}, {(3*I)*gc91*mrhoT*vh, 0}, {0, 0}, {(-3*I)*gc91*mrhoT*vh, 0}, {(3*I)*gc91*mrhoT*vh, 0}, {0, 0}, {(-12*I)*gc91*mrhoT*vh, 0}, {(12*I)*gc91*mrhoT*vh, 0}},
+C[ -F[2] , F[1] , S[4] , S[1] , V[1] ] == {{I*gc91, 0}, {0, 0}},
 
-C[ S[3] , -S[3] , S[2] , -S[2] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc92*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc92*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc92*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc92*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {0, 0}, {0, 0}, {(-6*I)*gc92*mrhoT*vh, 0}, {(-9*I)*gc92*mrhoT*vh, 0}, {0, 0}, {0, 0}, {I*gc92*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc92*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(9*I)*gc92*mrhoT*vh, 0}, {(6*I)*gc92*mrhoT*vh, 0}, {(-I)*gc92*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc92*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(6*I)*gc92*mrhoT*vh, 0}, {(-9*I)*gc92*mrhoT*vh, 0}, {(-12*I)*gc92*mrhoT*vh, 0}, {(9*I)*gc92*mrhoT*vh, 0}, {(-6*I)*gc92*mrhoT*vh, 0}, {(12*I)*gc92*mrhoT*vh, 0}, {(-6*I)*gc92*mrhoT*vh, 0}, {(6*I)*gc92*mrhoT*vh, 0}},
+C[ -F[2] , F[1] , -S[3] , S[2] , V[1] ] == {{I*gc92, 0}, {0, 0}},
 
-C[ S[5] , S[4] , -S[4] , S[1] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-I)*gc93*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-3*I)*gc93*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc93*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-3*I)*gc93*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-2*I)*gc93*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-2*I)*gc93*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(9*I)*gc93*mrhoT*vh, 0}, {0, 0}, {(-2*I)*gc93*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(6*I)*gc93*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc93*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(3*I)*gc93*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-36*I)*gc93*mrhoT*vh, 0}, {(9*I)*gc93*mrhoT*vh, 0}, {I*gc93*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(3*I)*gc93*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-9*I)*gc93*mrhoT*vh, 0}, {(36*I)*gc93*mrhoT*vh, 0}, {(-9*I)*gc93*mrhoT*vh, 0}, {0, 0}, {(-9*I)*gc93*mrhoT*vh, 0}, {(9*I)*gc93*mrhoT*vh, 0}, {(-9*I)*gc93*mrhoT*vh, 0}, {(9*I)*gc93*mrhoT*vh, 0}},
+C[ -F[2] , F[1] , S[5] , S[3] , S[4] ] == {{-2*gc93, 0}, {gc93, 0}, {gc93, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , -S[4] , V[1] , V[2] ] == {{0, 0}, {(-2*I)*gc94*gv, 0}, {(-2*I)*gc94*gv, 0}, {(-I)*fv*gc94, 0}, {(2*I)*gc94*gv, 0}, {(2*I)*gc94*gv, 0}, {I*fv*gc94, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[5] , S[4] ] == {{(-I)*gc94, 0}, {I*gc94, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , S[4] , -S[4] , -S[4] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-I)*gc95, 0}, {(-I)*gc95, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-I)*gc95, 0}, {(-I)*gc95, 0}, {0, 0}, {0, 0}, {I*gc95, 0}, {I*gc95, 0}, {0, 0}, {I*gc95, 0}, {I*gc95, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[5] , S[5] , S[4] ] == {{-gc95, 0}, {-gc95, 0}, {2*gc95, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , -S[4] , V[2] ] == {{0, 0}, {0, 0}, {(-I)*gc96, 0}, {I*gc96, 0}},
+C[ -F[2] , F[1] , S[5] , S[4] , S[1] ] == {{gc96, 0}, {-2*gc96, 0}, {gc96, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , -S[4] , S[1] , S[1] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {(2*I)*gc97*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(2*I)*gc97*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc97*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc97*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc97*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc97*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(3*I)*gc97*mrhoT*vh, 0}, {(3*I)*gc97*mrhoT*vh, 0}, {I*gc97*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc97*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc97*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc97*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-3*I)*gc97*mrhoT*vh, 0}, {(-3*I)*gc97*mrhoT*vh, 0}, {(-2*I)*gc97*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-2*I)*gc97*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-3*I)*gc97*mrhoT*vh, 0}, {(3*I)*gc97*mrhoT*vh, 0}, {0, 0}, {(-3*I)*gc97*mrhoT*vh, 0}, {(3*I)*gc97*mrhoT*vh, 0}, {0, 0}, {(-12*I)*gc97*mrhoT*vh, 0}, {(12*I)*gc97*mrhoT*vh, 0}},
+C[ -F[2] , F[1] , S[5] , -S[3] , S[2] ] == {{gc97, 0}, {-2*gc97, 0}, {gc97, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[4] , -S[4] , S[2] , -S[2] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-I)*gc98*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc98*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc98*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc98*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {0, 0}, {0, 0}, {(-6*I)*gc98*mrhoT*vh, 0}, {(-9*I)*gc98*mrhoT*vh, 0}, {0, 0}, {0, 0}, {(-I)*gc98*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc98*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(9*I)*gc98*mrhoT*vh, 0}, {(6*I)*gc98*mrhoT*vh, 0}, {I*gc98*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc98*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(6*I)*gc98*mrhoT*vh, 0}, {(-9*I)*gc98*mrhoT*vh, 0}, {(-12*I)*gc98*mrhoT*vh, 0}, {(9*I)*gc98*mrhoT*vh, 0}, {(-6*I)*gc98*mrhoT*vh, 0}, {(12*I)*gc98*mrhoT*vh, 0}, {(-6*I)*gc98*mrhoT*vh, 0}, {(6*I)*gc98*mrhoT*vh, 0}},
+C[ -F[2] , F[1] , S[3] , S[4] ] == {{(-I)*gc98, 0}, {I*gc98, 0}, {0, 0}, {0, 0}},
 
-C[ S[5] , S[1] , S[2] , -S[2] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-I)*gc99, 0}, {(-I)*gc99, 0}, {0, 0}, {I*gc99, 0}, {0, 0}, {I*gc99, 0}, {0, 0}, {0, 0}, {(-I)*gc99, 0}, {0, 0}, {(-I)*gc99, 0}, {0, 0}, {0, 0}, {0, 0}, {(2*I)*gc99, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[3] , S[4] , S[1] ] == {{-gc99, 0}, {gc99, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[3] , S[4] , S[1] , -S[2] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-2*I)*gc100*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-2*I)*gc100*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(3*I)*gc100*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc100*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-5*I)*gc100*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc100*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-9*I)*gc100*mrhoT*vh, 0}, {(27*I)*gc100*mrhoT*vh, 0}, {(3*I)*gc100*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc100*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-5*I)*gc100*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {I*gc100*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(9*I)*gc100*mrhoT*vh, 0}, {(-27*I)*gc100*mrhoT*vh, 0}, {(2*I)*gc100*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(2*I)*gc100*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(9*I)*gc100*mrhoT*vh, 0}, {(-9*I)*gc100*mrhoT*vh, 0}, {0, 0}, {(-27*I)*gc100*mrhoT*vh, 0}, {(27*I)*gc100*mrhoT*vh, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[3] , -S[3] , S[2] ] == {{gc100, 0}, {-2*gc100, 0}, {gc100, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -S[3] , -S[4] , S[1] , S[2] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {(2*I)*gc101*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(2*I)*gc101*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-3*I)*gc101*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc101*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(5*I)*gc101*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc101*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-9*I)*gc101*mrhoT*vh, 0}, {(27*I)*gc101*mrhoT*vh, 0}, {(-3*I)*gc101*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc101*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(5*I)*gc101*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-I)*gc101*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(9*I)*gc101*mrhoT*vh, 0}, {(-27*I)*gc101*mrhoT*vh, 0}, {(-2*I)*gc101*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(-2*I)*gc101*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs), 0}, {(9*I)*gc101*mrhoT*vh, 0}, {(-9*I)*gc101*mrhoT*vh, 0}, {0, 0}, {(-27*I)*gc101*mrhoT*vh, 0}, {(27*I)*gc101*mrhoT*vh, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[3] , -S[3] , S[4] ] == {{-2*gc101, 0}, {gc101, 0}, {gc101, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[2] , -S[2] , V[1] , V[2] ] == {{0, 0}, {(-2*I)*gc102*gv, 0}, {(-2*I)*gc102*gv, 0}, {(-I)*fv*gc102, 0}, {(2*I)*gc102*gv, 0}, {(2*I)*gc102*gv, 0}, {I*fv*gc102, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , -S[3] , S[2] ] == {{(-I)*gc102, 0}, {I*gc102, 0}, {0, 0}, {0, 0}},
 
-C[ S[1] , S[1] , S[2] , -S[2] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-I)*gc103, 0}, {I*gc103, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-I)*gc103, 0}, {I*gc103, 0}, {0, 0}, {0, 0}, {I*gc103, 0}, {I*gc103, 0}, {(-4*I)*gc103, 0}, {(-I)*gc103, 0}, {(-I)*gc103, 0}, {(4*I)*gc103, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[4] , -S[4] , S[2] ] == {{gc103, 0}, {-2*gc103, 0}, {gc103, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[2] , -S[2] , V[2] ] == {{0, 0}, {0, 0}, {(-I)*gc104, 0}, {I*gc104, 0}},
+C[ -F[2] , F[1] , S[4] ] == {{0, 0}, {0, 0}, {2*fpi*GF*Vus, 0}, {0, 0}},
 
-C[ S[2] , S[2] , -S[2] , -S[2] , V[2] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-I)*gc105, 0}, {(-I)*gc105, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {(-I)*gc105, 0}, {(-I)*gc105, 0}, {0, 0}, {0, 0}, {I*gc105, 0}, {I*gc105, 0}, {0, 0}, {I*gc105, 0}, {I*gc105, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[4] , S[4] , -S[4] ] == {{-gc105, 0}, {-gc105, 0}, {2*gc105, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ S[7] , V[1] , V[2] ] == {{(-I)*gc106, 0}, {I*gc106, 0}},
+C[ -F[2] , F[1] , S[4] , S[1] ] == {{(-I)*gc106, 0}, {I*gc106, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[2] , S[7] ] == {{I*gc107, 0}, {I*gc107, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[4] , S[1] , S[1] ] == {{-2*gc107, 0}, {gc107, 0}, {gc107, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[3] , F[3] , S[7] ] == {{I*gc108, 0}, {I*gc108, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[4] , S[2] , -S[2] ] == {{-gc108, 0}, {-gc108, 0}, {2*gc108, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[2] , V[1] ] == {{I*gc109, 0}, {I*gc109, 0}},
+C[ -F[2] , F[1] , S[1] , S[2] ] == {{(-I)*gc109, 0}, {I*gc109, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[5] , S[4] , V[2] ] == {{(-3*I)*gc110, 0}, {(-I)*gc110, 0}, {(-I)*gc110, 0}, {(3*I)*gc110, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[1] , S[1] , S[2] ] == {{-gc110, 0}, {-gc110, 0}, {2*gc110, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[3] , S[4] , V[2] ] == {{I*gc111, 0}, {(2*I)*gc111, 0}, {(2*I)*gc111, 0}, {(-I)*gc111, 0}, {(-I)*gc111, 0}, {I*gc111, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , -S[3] , S[1] , S[2] ] == {{0, 0}, {-gc111, 0}, {gc111, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[4] , S[1] , V[2] ] == {{0, 0}, {I*gc112, 0}, {I*gc112, 0}, {0, 0}, {(-I)*gc112, 0}, {I*gc112, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[2] ] == {{0, 0}, {0, 0}, {2*fpi*GF*Vud, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[5] , S[2] , V[2] ] == {{0, 0}, {I*gc113, 0}, {I*gc113, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[2] , S[2] , -S[2] ] == {{-gc113, 0}, {-gc113, 0}, {2*gc113, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[1] , S[2] , V[2] ] == {{(-I)*gc114, 0}, {0, 0}, {0, 0}, {I*gc114, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[3] , -S[4] , V[1] ] == {{I*gc114, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , -S[3] , S[2] , V[2] ] == {{(-2*I)*gc115, 0}, {(-I)*gc115, 0}, {(-I)*gc115, 0}, {(2*I)*gc115, 0}, {(-I)*gc115, 0}, {I*gc115, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[2] , V[1] ] == {{gc115, 0}, {0, 0}},
 
-C[ -F[1] , F[2] , S[5] , -S[4] , V[2] ] == {{(-3*I)*gc116, 0}, {I*gc116, 0}, {I*gc116, 0}, {(3*I)*gc116, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[1] , -S[2] , V[1] ] == {{I*gc116, 0}, {0, 0}},
 
-C[ -F[1] , F[2] , -S[3] , -S[4] , V[2] ] == {{I*gc117, 0}, {(-2*I)*gc117, 0}, {(-2*I)*gc117, 0}, {(-I)*gc117, 0}, {(-I)*gc117, 0}, {I*gc117, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[5] , -S[4] , V[1] ] == {{I*gc117, 0}, {0, 0}},
 
-C[ -F[1] , F[2] , -S[4] , S[1] , V[2] ] == {{0, 0}, {(-I)*gc118, 0}, {(-I)*gc118, 0}, {0, 0}, {(-I)*gc118, 0}, {I*gc118, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[4] , V[1] ] == {{gc118, 0}, {0, 0}},
 
-C[ -F[1] , F[2] , S[5] , -S[2] , V[2] ] == {{0, 0}, {I*gc119, 0}, {I*gc119, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[4] , S[1] , V[1] ] == {{I*gc119, 0}, {0, 0}},
 
-C[ -F[1] , F[2] , S[3] , -S[2] , V[2] ] == {{(-2*I)*gc120, 0}, {I*gc120, 0}, {I*gc120, 0}, {(2*I)*gc120, 0}, {(-I)*gc120, 0}, {I*gc120, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[3] , -S[2] , V[1] ] == {{I*gc120, 0}, {0, 0}},
 
-C[ -F[1] , F[2] , S[1] , -S[2] , V[2] ] == {{(-I)*gc121, 0}, {0, 0}, {0, 0}, {I*gc121, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[5] , -S[3] , -S[4] ] == {{-2*gc121, 0}, {gc121, 0}, {gc121, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[3] , S[4] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc122, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[5] , -S[4] ] == {{(-I)*gc122, 0}, {I*gc122, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[2] , V[1] ] == {{gc123, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[5] , S[5] , -S[4] ] == {{-gc123, 0}, {-gc123, 0}, {2*gc123, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[1] , S[2] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc124, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[5] , -S[4] , S[1] ] == {{gc124, 0}, {-2*gc124, 0}, {gc124, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[5] , S[4] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc125, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[5] , S[3] , -S[2] ] == {{gc125, 0}, {-2*gc125, 0}, {gc125, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[4] , V[1] ] == {{gc126, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[3] , -S[3] , -S[2] ] == {{-2*gc126, 0}, {gc126, 0}, {gc126, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[4] , S[1] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc127, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[3] , -S[3] , -S[4] ] == {{gc127, 0}, {-2*gc127, 0}, {gc127, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , -S[3] , S[2] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc128, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[3] , -S[2] ] == {{(-I)*gc128, 0}, {I*gc128, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[5] , S[3] , S[4] ] == {{-2*gc129, 0}, {gc129, 0}, {gc129, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[3] , -S[4] ] == {{(-I)*gc129, 0}, {I*gc129, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[5] , S[4] ] == {{(-I)*gc130, 0}, {I*gc130, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[3] , -S[4] , S[1] ] == {{-gc130, 0}, {gc130, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[5] , S[5] , S[4] ] == {{-gc131, 0}, {-gc131, 0}, {2*gc131, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[4] , -S[4] , -S[2] ] == {{-2*gc131, 0}, {gc131, 0}, {gc131, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[5] , S[4] , S[1] ] == {{gc132, 0}, {-2*gc132, 0}, {gc132, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[4] , -S[4] , -S[4] ] == {{-2*gc132, 0}, {gc132, 0}, {gc132, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[5] , -S[3] , S[2] ] == {{gc133, 0}, {-2*gc133, 0}, {gc133, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[4] ] == {{0, 0}, {0, 0}, {2*fpi*GF*Vus, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[3] , S[4] ] == {{(-I)*gc134, 0}, {I*gc134, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[4] , S[1] ] == {{(-I)*gc134, 0}, {I*gc134, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[3] , S[4] , S[1] ] == {{-gc135, 0}, {gc135, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[4] , S[1] , S[1] ] == {{-2*gc135, 0}, {gc135, 0}, {gc135, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[3] , -S[3] , S[2] ] == {{gc136, 0}, {-2*gc136, 0}, {gc136, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[4] , S[2] , -S[2] ] == {{gc136, 0}, {-2*gc136, 0}, {gc136, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[3] , -S[3] , S[4] ] == {{-2*gc137, 0}, {gc137, 0}, {gc137, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[1] , -S[2] ] == {{(-I)*gc137, 0}, {I*gc137, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , -S[3] , S[2] ] == {{(-I)*gc138, 0}, {I*gc138, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[1] , S[1] , -S[2] ] == {{-gc138, 0}, {-gc138, 0}, {2*gc138, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[4] , -S[4] , S[2] ] == {{gc139, 0}, {-2*gc139, 0}, {gc139, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[3] , S[1] , -S[2] ] == {{0, 0}, {-gc139, 0}, {gc139, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[4] ] == {{0, 0}, {0, 0}, {-2*fpi*(-GF)*Vus, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[2] , -S[2] , -S[2] ] == {{-2*gc140, 0}, {gc140, 0}, {gc140, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[4] , S[4] , -S[4] ] == {{-gc141, 0}, {-gc141, 0}, {2*gc141, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[2] ] == {{0, 0}, {0, 0}, {2*fpi*GF*Vud, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[4] , S[1] ] == {{(-I)*gc142, 0}, {I*gc142, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[2] , S[7] , V[1] ] == {{gc142, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[4] , S[1] , S[1] ] == {{-2*gc143, 0}, {gc143, 0}, {gc143, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[4] , S[7] , V[1] ] == {{gc143, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[4] , S[2] , -S[2] ] == {{-gc144, 0}, {-gc144, 0}, {2*gc144, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[5] , S[4] , S[7] ] == {{(-I)*gc144, 0}, {I*gc144, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[1] , S[2] ] == {{(-I)*gc145, 0}, {I*gc145, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[3] , S[4] , S[7] ] == {{(-I)*gc145, 0}, {I*gc145, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[1] , S[1] , S[2] ] == {{-gc146, 0}, {-gc146, 0}, {2*gc146, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , -S[3] , S[2] , S[7] ] == {{(-I)*gc146, 0}, {I*gc146, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , -S[3] , S[1] , S[2] ] == {{0, 0}, {-gc147, 0}, {gc147, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[4] , S[7] ] == {{gc147, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[2] ] == {{0, 0}, {0, 0}, {-2*fpi*(-GF)*Vud, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[4] , S[1] , S[7] ] == {{(-I)*gc148, 0}, {I*gc148, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[2] , S[2] , -S[2] ] == {{-gc149, 0}, {-gc149, 0}, {2*gc149, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[1] , S[2] , S[7] ] == {{(-I)*gc149, 0}, {I*gc149, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[2] , V[1] , V[2] ] == {{-gc150, 0}, {gc150, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[2] , F[1] , S[2] , S[7] ] == {{gc150, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[4] , V[1] , V[2] ] == {{-gc151, 0}, {gc151, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[2] , S[7] , V[1] ] == {{gc151, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[4] , V[2] ] == {{0, 0}, {-gc152, 0}, {gc152, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[4] , S[7] , V[1] ] == {{gc152, 0}, {0, 0}},
 
-C[ -F[2] , F[1] , S[2] , V[2] ] == {{0, 0}, {-gc153, 0}, {gc153, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[5] , -S[4] , S[7] ] == {{(-I)*gc153, 0}, {I*gc153, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[1] , F[2] , -S[3] , -S[4] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc154, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[3] , -S[2] , S[7] ] == {{(-I)*gc154, 0}, {I*gc154, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[1] , F[2] , -S[2] , V[1] ] == {{gc155, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[3] , -S[4] , S[7] ] == {{(-I)*gc155, 0}, {I*gc155, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[1] , F[2] , S[1] , -S[2] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc156, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[4] , S[7] ] == {{gc156, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[1] , F[2] , S[5] , -S[4] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc157, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , -S[4] , S[1] , S[7] ] == {{(-I)*gc157, 0}, {I*gc157, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[1] , F[2] , -S[4] , V[1] ] == {{gc158, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
+C[ -F[1] , F[2] , S[1] , -S[2] , S[7] ] == {{(-I)*gc158, 0}, {I*gc158, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
 
-C[ -F[1] , F[2] , -S[4] , S[1] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc159, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[3] , -S[2] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {I*gc160, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[5] , -S[3] , -S[4] ] == {{-2*gc161, 0}, {gc161, 0}, {gc161, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[5] , -S[4] ] == {{(-I)*gc162, 0}, {I*gc162, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[5] , S[5] , -S[4] ] == {{-gc163, 0}, {-gc163, 0}, {2*gc163, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[5] , -S[4] , S[1] ] == {{gc164, 0}, {-2*gc164, 0}, {gc164, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[5] , S[3] , -S[2] ] == {{gc165, 0}, {-2*gc165, 0}, {gc165, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[3] , -S[3] , -S[2] ] == {{-2*gc166, 0}, {gc166, 0}, {gc166, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[3] , -S[3] , -S[4] ] == {{gc167, 0}, {-2*gc167, 0}, {gc167, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[3] , -S[2] ] == {{(-I)*gc168, 0}, {I*gc168, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[3] , -S[4] ] == {{(-I)*gc169, 0}, {I*gc169, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[3] , -S[4] , S[1] ] == {{-gc170, 0}, {gc170, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[4] , -S[4] , -S[2] ] == {{-2*gc171, 0}, {gc171, 0}, {gc171, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[4] , -S[4] , -S[4] ] == {{-2*gc172, 0}, {gc172, 0}, {gc172, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[4] ] == {{0, 0}, {0, 0}, {-2*fpi*(-GF)*Vus, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[4] , S[1] ] == {{(-I)*gc174, 0}, {I*gc174, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[4] , S[1] , S[1] ] == {{-2*gc175, 0}, {gc175, 0}, {gc175, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[4] , S[2] , -S[2] ] == {{gc176, 0}, {-2*gc176, 0}, {gc176, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[1] , -S[2] ] == {{(-I)*gc177, 0}, {I*gc177, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[1] , S[1] , -S[2] ] == {{-gc178, 0}, {-gc178, 0}, {2*gc178, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[3] , S[1] , -S[2] ] == {{0, 0}, {-gc179, 0}, {gc179, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[2] , -S[2] , -S[2] ] == {{-2*gc180, 0}, {gc180, 0}, {gc180, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[2] ] == {{0, 0}, {0, 0}, {-2*fpi*(-GF)*Vud, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[2] , V[1] , V[2] ] == {{-gc182, 0}, {gc182, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[2] , V[2] ] == {{0, 0}, {-gc183, 0}, {gc183, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[2] , F[1] , S[2] , S[7] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {gc184, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[2] , F[1] , S[4] , S[7] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {gc185, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[2] , F[1] , S[5] , S[4] , S[7] ] == {{(-I)*gc186, 0}, {I*gc186, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[2] , F[1] , S[3] , S[4] , S[7] ] == {{(-I)*gc187, 0}, {I*gc187, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[2] , F[1] , -S[3] , S[2] , S[7] ] == {{(-I)*gc188, 0}, {I*gc188, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[2] , F[1] , S[4] , S[7] ] == {{gc189, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[2] , F[1] , S[4] , S[1] , S[7] ] == {{(-I)*gc190, 0}, {I*gc190, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[2] , F[1] , S[1] , S[2] , S[7] ] == {{(-I)*gc191, 0}, {I*gc191, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[2] , F[1] , S[2] , S[7] ] == {{gc192, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[2] , S[7] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {gc193, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[4] , S[7] , V[1] ] == {{0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {gc194, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[5] , -S[4] , S[7] ] == {{(-I)*gc195, 0}, {I*gc195, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[3] , -S[2] , S[7] ] == {{(-I)*gc196, 0}, {I*gc196, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[3] , -S[4] , S[7] ] == {{(-I)*gc197, 0}, {I*gc197, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[4] , S[7] ] == {{gc198, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[4] , S[1] , S[7] ] == {{(-I)*gc199, 0}, {I*gc199, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , S[1] , -S[2] , S[7] ] == {{(-I)*gc200, 0}, {I*gc200, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[2] , S[7] ] == {{gc201, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[4] , V[1] , V[2] ] == {{-gc202, 0}, {gc202, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}, {0, 0}},
-
-C[ -F[1] , F[2] , -S[4] , V[2] ] == {{0, 0}, {-gc203, 0}, {gc203, 0}, {0, 0}, {0, 0}, {0, 0}}
+C[ -F[1] , F[2] , -S[2] , S[7] ] == {{gc159, 0}, {0, 0}, {0, 0}, {0, 0}}
 
 }
 
@@ -578,177 +490,131 @@ M$FACouplings = {
      gc22 -> -(b0*(mdq - muq))/(3*Sqrt[3]*fpi^2),
      gc23 -> 1/(3*fpi^2),
      gc24 -> -1/(3*fpi^2),
-     gc25 -> -1/(81*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc26 -> (b0*(mdq + 16*msq + muq)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)))/(243*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc27 -> -1/(27*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc28 -> 1/(162*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc29 -> -2/(81*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc30 -> 1/(162*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc31 -> -1/(27*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc32 -> 1/(162*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc33 -> -2/(81*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc34 -> (b0*(mdq - muq)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)))/(27*Sqrt[3]*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc35 -> -(b0*(mdq - muq)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)))/(81*Sqrt[3]*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc36 -> 1/(162*Sqrt[3]*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc37 -> -1/(162*Sqrt[3]*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc38 -> -1/(27*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc39 -> (b0*(mdq + muq)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)))/(81*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc40 -> 1/(162*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc41 -> 1/(162*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc42 -> -(b0*(mdq - muq)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)))/(27*Sqrt[3]*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc43 -> (b0*(mdq + muq)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)))/(27*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc44 -> -1/(162*Sqrt[6]*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc45 -> -1/(162*Sqrt[2]*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc46 -> -1/(162*Sqrt[6]*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc47 -> -1/(162*Sqrt[2]*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc48 -> -1/(27*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc49 -> (b0*(mdq + muq)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)))/(81*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc50 -> 1/(162*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc51 -> 1/(162*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc52 -> -(b0*(mdq - muq)*(54*(3*gsGG)*vh - 32*(3*gsGG)^2*vs + 9*gsff*(9*vh + 16*(3*gsGG)*vs)))/(81*Sqrt[3]*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc53 -> 1/(81*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc54 -> -2/(81*fpi^2*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)*(9*vh + 4*(3*gsGG)*vs)),
-     gc55 -> (-16*b0*(9*gsff - 2*(3*gsGG))*(3*gsGG)*(mdq + 4*msq + muq))/(81*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc56 -> (-16*b0*(9*gsff - 2*(3*gsGG))*(3*gsGG)*(mdq + msq))/(27*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc57 -> (-16*b0*(9*gsff - 2*(3*gsGG))*(3*gsGG)*(msq + muq))/(27*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc58 -> (16*b0*(9*gsff - 2*(3*gsGG))*(3*gsGG)*(mdq - muq))/(27*Sqrt[3]*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc59 -> (-16*b0*(9*gsff - 2*(3*gsGG))*(3*gsGG)*(mdq + muq))/(27*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc60 -> (-16*b0*(9*gsff - 2*(3*gsGG))*(3*gsGG)*(mdq + muq))/(27*vh*(3*vh + 3*gsff*vs + 2*(3*gsGG)*vs)),
-     gc61 -> 2*qe^2,
-     gc62 -> 2*qe^2,
-     gc65 -> qe/(2*Sqrt[6]*fpi^2),
-     gc66 -> -qe/(2*Sqrt[6]*fpi^2),
-     gc67 -> qe/(6*fpi^2),
-     gc68 -> -qe/(2*Sqrt[2]*fpi^2),
-     gc69 -> qe/(6*fpi^2),
-     gc70 -> qe/(2*Sqrt[2]*fpi^2),
-     gc71 -> -qe,
-     gc72 -> qe/(2*fpi^2),
-     gc73 -> (4*qe)/(3*fpi^2),
-     gc74 -> qe/(2*Sqrt[3]*fpi^2),
-     gc75 -> qe/(6*fpi^2),
-     gc76 -> (2*qe)/(3*fpi^2),
-     gc77 -> (-4*(3*gsGG)*qe)/(81*fpi^2*mrhoT^2*vh^2*(9*vh + 4*(3*gsGG)*vs)),
-     gc78 -> -qe,
-     gc79 -> (2*qe)/(3*fpi^2),
-     gc80 -> (4*qe)/(3*fpi^2),
-     gc81 -> (-4*(3*gsGG)*qe)/(81*fpi^2*mrhoT^2*vh^2*(9*vh + 4*(3*gsGG)*vs)),
-     gc82 -> (alphaEM*(5*gsFF/24))/(2*Pi*vh),
-     gc83 -> -gv/(72*fpi^4*mrho*mrhoT*vh),
-     gc84 -> -gv/(72*fpi^4*mrho*mrhoT*vh),
-     gc85 -> gv/(72*Sqrt[3]*fpi^4*mrho*mrhoT*vh),
-     gc86 -> -gv/(36*Sqrt[6]*fpi^4*mrho*mrhoT*vh),
-     gc87 -> -gv/(3*fpi^4*mrho),
-     gc88 -> gv/(12*Sqrt[6]*fpi^4*mrho*mrhoT*vh),
-     gc89 -> (gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs))/(9*fpi^2*mrho*mrhoT*vh),
-     gc90 -> -gv/(18*fpi^4*mrho*mrhoT*vh),
-     gc91 -> -gv/(72*fpi^4*mrho*mrhoT*vh),
-     gc92 -> -gv/(36*fpi^4*mrho*mrhoT*vh),
-     gc93 -> -gv/(72*Sqrt[3]*fpi^4*mrho*mrhoT*vh),
-     gc94 -> (qe*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs))/(18*fpi^2*mrho*mrhoT*vh),
-     gc95 -> -gv/(3*fpi^4*mrho),
-     gc96 -> (gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs))/(9*fpi^2*mrho*mrhoT*vh),
-     gc97 -> -gv/(72*fpi^4*mrho*mrhoT*vh),
-     gc98 -> -gv/(36*fpi^4*mrho*mrhoT*vh),
-     gc99 -> -(gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs))/(9*Sqrt[3]*fpi^4*mrho*mrhoT*vh),
-     gc100 -> gv/(36*Sqrt[2]*fpi^4*mrho*mrhoT*vh),
-     gc101 -> -gv/(36*Sqrt[2]*fpi^4*mrho*mrhoT*vh),
-     gc102 -> (qe*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs))/(9*fpi^2*mrho*mrhoT*vh),
-     gc103 -> -gv/(3*fpi^4*mrho),
-     gc104 -> (2*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs))/(9*fpi^2*mrho*mrhoT*vh),
-     gc105 -> (-2*gv)/(3*fpi^4*mrho),
-     gc106 -> (-2*fv*(3*gsGG)*qe)/(9*mrhoT*vh),
-     gc107 -> -((gsff*ml)/vh),
-     gc108 -> -gsxx,
-     gc109 -> -qe,
-     gc110 -> ((-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vus)/(9*Sqrt[3]*fpi^2*mrho*mrhoT*vh),
-     gc111 -> (Sqrt[2]*(-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vud)/(9*fpi^2*mrho*mrhoT*vh),
-     gc112 -> ((-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vus)/(9*fpi^2*mrho*mrhoT*vh),
-     gc113 -> (4*(-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vud)/(9*Sqrt[3]*fpi^2*mrho*mrhoT*vh),
-     gc114 -> (4*(-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vud)/(9*fpi^2*mrho*mrhoT*vh),
-     gc115 -> -(Sqrt[2]*(-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vus)/(9*fpi^2*mrho*mrhoT*vh),
-     gc116 -> ((-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vus)/(9*Sqrt[3]*fpi^2*mrho*mrhoT*vh),
-     gc117 -> (Sqrt[2]*(-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vud)/(9*fpi^2*mrho*mrhoT*vh),
-     gc118 -> ((-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vus)/(9*fpi^2*mrho*mrhoT*vh),
-     gc119 -> (-4*(-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vud)/(9*Sqrt[3]*fpi^2*mrho*mrhoT*vh),
-     gc120 -> -(Sqrt[2]*(-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vus)/(9*fpi^2*mrho*mrhoT*vh),
-     gc121 -> (4*(-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vud)/(9*fpi^2*mrho*mrhoT*vh),
-     gc122 -> Sqrt[2]*(-GF)*qe*Vud,
-     gc123 -> -2*fpi*(-GF)*qe*Vud,
-     gc124 -> -2*(-GF)*qe*Vud,
-     gc125 -> -(Sqrt[3]*(-GF)*qe*Vus),
-     gc126 -> -2*fpi*(-GF)*qe*Vus,
-     gc127 -> -((-GF)*qe*Vus),
-     gc128 -> Sqrt[2]*(-GF)*qe*Vus,
-     gc129 -> -((Sqrt[2/3]*(-GF)*Vud)/fpi),
-     gc130 -> -(Sqrt[3]*(-GF)*Vus),
-     gc131 -> ((-GF)*Vus)/fpi,
-     gc132 -> -(((-GF)*Vus)/(Sqrt[3]*fpi)),
-     gc133 -> -((Sqrt[2/3]*(-GF)*Vus)/fpi),
-     gc134 -> Sqrt[2]*(-GF)*Vud,
-     gc135 -> -((Sqrt[2]*(-GF)*Vud)/fpi),
-     gc136 -> (2*(-GF)*Vud)/(3*fpi),
-     gc137 -> (2*(-GF)*Vus)/(3*fpi),
-     gc138 -> Sqrt[2]*(-GF)*Vus,
-     gc139 -> (2*(-GF)*Vud)/(3*fpi),
-     gc141 -> (-4*(-GF)*Vus)/(3*fpi),
-     gc142 -> (-GF)*Vus,
-     gc143 -> -((-GF)*Vus)/(3*fpi),
-     gc144 -> (-2*(-GF)*Vus)/(3*fpi),
-     gc145 -> -2*(-GF)*Vud,
-     gc146 -> (4*(-GF)*Vud)/(3*fpi),
-     gc147 -> -((Sqrt[2]*(-GF)*Vus)/fpi),
-     gc149 -> (-4*(-GF)*Vud)/(3*fpi),
-     gc150 -> (4*(-GF)*gv*qe*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vud)/(9*fpi*mrho*mrhoT*vh),
-     gc151 -> (2*(-GF)*gv*qe*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vus)/(9*fpi*mrho*mrhoT*vh),
-     gc152 -> (2*(-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vus)/(9*fpi*mrho*mrhoT*vh),
-     gc153 -> (4*(-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vud)/(9*fpi*mrho*mrhoT*vh),
-     gc154 -> Sqrt[2]*(-GF)*qe*Vud,
-     gc155 -> 2*fpi*(-GF)*qe*Vud,
-     gc156 -> -2*(-GF)*qe*Vud,
-     gc157 -> -(Sqrt[3]*(-GF)*qe*Vus),
-     gc158 -> 2*fpi*(-GF)*qe*Vus,
-     gc159 -> -((-GF)*qe*Vus),
-     gc160 -> Sqrt[2]*(-GF)*qe*Vus,
-     gc161 -> -((Sqrt[2/3]*(-GF)*Vud)/fpi),
-     gc162 -> Sqrt[3]*(-GF)*Vus,
-     gc163 -> ((-GF)*Vus)/fpi,
-     gc164 -> -(((-GF)*Vus)/(Sqrt[3]*fpi)),
-     gc165 -> -((Sqrt[2/3]*(-GF)*Vus)/fpi),
-     gc166 -> (2*(-GF)*Vud)/(3*fpi),
-     gc167 -> (2*(-GF)*Vus)/(3*fpi),
-     gc168 -> -(Sqrt[2]*(-GF)*Vus),
-     gc169 -> -(Sqrt[2]*(-GF)*Vud),
-     gc170 -> -((Sqrt[2]*(-GF)*Vud)/fpi),
-     gc171 -> (2*(-GF)*Vud)/(3*fpi),
-     gc172 -> (4*(-GF)*Vus)/(3*fpi),
-     gc174 -> -((-GF)*Vus),
-     gc175 -> -((-GF)*Vus)/(3*fpi),
-     gc176 -> (2*(-GF)*Vus)/(3*fpi),
-     gc177 -> 2*(-GF)*Vud,
-     gc178 -> (4*(-GF)*Vud)/(3*fpi),
-     gc179 -> -((Sqrt[2]*(-GF)*Vus)/fpi),
-     gc180 -> (4*(-GF)*Vud)/(3*fpi),
-     gc182 -> (4*(-GF)*gv*qe*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vud)/(9*fpi*mrho*mrhoT*vh),
-     gc183 -> (-4*(-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vud)/(9*fpi*mrho*mrhoT*vh),
-     gc184 -> (-8*fpi*(-GF)*(3*gsGG)*qe*Vud)/(9*vh + 4*(3*gsGG)*vs),
-     gc185 -> (-8*fpi*(-GF)*(3*gsGG)*qe*Vus)/(9*vh + 4*(3*gsGG)*vs),
-     gc186 -> (-4*Sqrt[3]*(-GF)*(3*gsGG)*Vus)/(9*vh + 4*(3*gsGG)*vs),
-     gc187 -> (4*Sqrt[2]*(-GF)*(3*gsGG)*Vud)/(9*vh + 4*(3*gsGG)*vs),
-     gc188 -> (4*Sqrt[2]*(-GF)*(3*gsGG)*Vus)/(9*vh + 4*(3*gsGG)*vs),
-     gc189 -> (-8*fpi*(-GF)*(3*gsGG)*Vus)/(9*vh + 4*(3*gsGG)*vs),
-     gc190 -> (4*(-GF)*(3*gsGG)*Vus)/(9*vh + 4*(3*gsGG)*vs),
-     gc191 -> (-8*(-GF)*(3*gsGG)*Vud)/(9*vh + 4*(3*gsGG)*vs),
-     gc192 -> (-8*fpi*(-GF)*(3*gsGG)*Vud)/(9*vh + 4*(3*gsGG)*vs),
-     gc193 -> (8*fpi*(-GF)*(3*gsGG)*qe*Vud)/(9*vh + 4*(3*gsGG)*vs),
-     gc194 -> (8*fpi*(-GF)*(3*gsGG)*qe*Vus)/(9*vh + 4*(3*gsGG)*vs),
-     gc195 -> (4*Sqrt[3]*(-GF)*(3*gsGG)*Vus)/(9*vh + 4*(3*gsGG)*vs),
-     gc196 -> (-4*Sqrt[2]*(-GF)*(3*gsGG)*Vus)/(9*vh + 4*(3*gsGG)*vs),
-     gc197 -> (-4*Sqrt[2]*(-GF)*(3*gsGG)*Vud)/(9*vh + 4*(3*gsGG)*vs),
-     gc198 -> (-8*fpi*(-GF)*(3*gsGG)*Vus)/(9*vh + 4*(3*gsGG)*vs),
-     gc199 -> (-4*(-GF)*(3*gsGG)*Vus)/(9*vh + 4*(3*gsGG)*vs),
-     gc200 -> (8*(-GF)*(3*gsGG)*Vud)/(9*vh + 4*(3*gsGG)*vs),
-     gc201 -> (-8*fpi*(-GF)*(3*gsGG)*Vud)/(9*vh + 4*(3*gsGG)*vs),
-     gc202 -> (2*(-GF)*gv*qe*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vus)/(9*fpi*mrho*mrhoT*vh),
-     gc203 -> (-2*(-GF)*gv*(9*mrho*vh + 9*mrhoT*vh + 2*(3*gsGG)*mrho*vs)*Vus)/(9*fpi*mrho*mrhoT*vh)};
+     gc25 -> -1/(243*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc26 -> -(b0*(mdq + 16*msq + muq)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)))/(729*fpi^2*Lam^3*vh^2),
+     gc27 -> -1/(81*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc28 -> 1/(486*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc29 -> -2/(243*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc30 -> 1/(486*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc31 -> -1/(81*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc32 -> 1/(486*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc33 -> -2/(243*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc34 -> -(b0*(mdq - muq)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)))/(81*Sqrt[3]*Lam^3*vh^2),
+     gc35 -> (b0*(mdq - muq)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)))/(243*Sqrt[3]*fpi^2*Lam^3*vh^2),
+     gc36 -> 1/(486*Sqrt[3]*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc37 -> -1/(486*Sqrt[3]*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc38 -> -1/(81*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc39 -> -(b0*(mdq + muq)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)))/(243*fpi^2*Lam^3*vh^2),
+     gc40 -> 1/(486*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc41 -> 1/(486*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc42 -> (b0*(mdq - muq)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)))/(81*Sqrt[3]*fpi^2*Lam^3*vh^2),
+     gc43 -> -(b0*(mdq + muq)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)))/(81*fpi^2*Lam^3*vh^2),
+     gc44 -> -1/(486*Sqrt[6]*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc45 -> -1/(486*Sqrt[2]*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc46 -> -1/(486*Sqrt[6]*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc47 -> -1/(486*Sqrt[2]*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc48 -> -1/(81*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc49 -> -(b0*(mdq + muq)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)))/(243*fpi^2*Lam^3*vh^2),
+     gc50 -> 1/(486*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc51 -> 1/(486*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc52 -> (b0*(mdq - muq)*(27*gsff^2*Lam^2*vs*(3*Lam + 4*gsGG*vs) - 2*gsGG*vh^2*(27*Lam^2 - 30*gsGG*Lam*vs + 8*gsGG^2*vs^2) + gsff*(-81*Lam^3*vh + 48*gsGG^2*Lam*vh*vs^2)))/(243*Sqrt[3]*fpi^2*Lam^3*vh^2),
+     gc53 -> 1/(243*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc54 -> -2/(243*fpi^2*Lam^3*vh^2*(9*Lam + 4*gsGG*vs)),
+     gc55 -> (4*b0*gsGG*(mdq + 4*msq + muq)*(9*gsff*Lam - 2*gsGG*vh)*(-3*Lam*vh + 3*gsff*Lam*vs + 2*gsGG*vh*vs))/(243*Lam^3*vh^2),
+     gc56 -> (4*b0*gsGG*(mdq + msq)*(9*gsff*Lam - 2*gsGG*vh)*(-3*Lam*vh + 3*gsff*Lam*vs + 2*gsGG*vh*vs))/(81*Lam^3*vh^2),
+     gc57 -> (4*b0*gsGG*(msq + muq)*(9*gsff*Lam - 2*gsGG*vh)*(-3*Lam*vh + 3*gsff*Lam*vs + 2*gsGG*vh*vs))/(81*Lam^3*vh^2),
+     gc58 -> (4*b0*gsGG*(mdq - muq)*(-9*gsff*Lam + 2*gsGG*vh)*(-3*Lam*vh + 3*gsff*Lam*vs + 2*gsGG*vh*vs))/(81*Sqrt[3]*Lam^3*vh^2),
+     gc59 -> (4*b0*gsGG*(mdq + muq)*(9*gsff*Lam - 2*gsGG*vh)*(-3*Lam*vh + 3*gsff*Lam*vs + 2*gsGG*vh*vs))/(81*Lam^3*vh^2),
+     gc60 -> (4*b0*gsGG*(mdq + muq)*(9*gsff*Lam - 2*gsGG*vh)*(-3*Lam*vh + 3*gsff*Lam*vs + 2*gsGG*vh*vs))/(81*Lam^3*vh^2),
+     gc65 -> -qe/(2*Sqrt[6]*fpi^2),
+     gc66 -> qe/(2*Sqrt[6]*fpi^2),
+     gc67 -> -qe/(6*fpi^2),
+     gc68 -> qe/(2*Sqrt[2]*fpi^2),
+     gc69 -> -qe/(6*fpi^2),
+     gc70 -> -qe/(2*Sqrt[2]*fpi^2),
+     gc71 -> qe,
+     gc72 -> -qe/(2*fpi^2),
+     gc73 -> (-4*qe)/(3*fpi^2),
+     gc74 -> -qe/(2*Sqrt[3]*fpi^2),
+     gc75 -> -qe/(6*fpi^2),
+     gc76 -> (-2*qe)/(3*fpi^2),
+     gc77 -> (4*gsGG*qe)/(9*Lam + 4*gsGG*vs),
+     gc78 -> qe,
+     gc79 -> (-2*qe)/(3*fpi^2),
+     gc80 -> (-4*qe)/(3*fpi^2),
+     gc81 -> (4*gsGG*qe)/(9*Lam + 4*gsGG*vs),
+     gc82 -> -((alphaEM*gsFF)/(Lam*Pi)),
+     gc83 -> -gsll,
+     gc84 -> -gsxx,
+     gc85 -> -qe,
+     gc86 -> Sqrt[2]*GF*qe*Vud,
+     gc87 -> -2*fpi*GF*qe*Vud,
+     gc88 -> -2*GF*qe*Vud,
+     gc89 -> -(Sqrt[3]*GF*qe*Vus),
+     gc90 -> -2*fpi*GF*qe*Vus,
+     gc91 -> -(GF*qe*Vus),
+     gc92 -> Sqrt[2]*GF*qe*Vus,
+     gc93 -> (Sqrt[2/3]*GF*Vud)/fpi,
+     gc94 -> Sqrt[3]*GF*Vus,
+     gc95 -> -((GF*Vus)/fpi),
+     gc96 -> (GF*Vus)/(Sqrt[3]*fpi),
+     gc97 -> (Sqrt[2/3]*GF*Vus)/fpi,
+     gc98 -> -(Sqrt[2]*GF*Vud),
+     gc99 -> (Sqrt[2]*GF*Vud)/fpi,
+     gc100 -> (-2*GF*Vud)/(3*fpi),
+     gc101 -> (-2*GF*Vus)/(3*fpi),
+     gc102 -> -(Sqrt[2]*GF*Vus),
+     gc103 -> (-2*GF*Vud)/(3*fpi),
+     gc105 -> (4*GF*Vus)/(3*fpi),
+     gc106 -> -(GF*Vus),
+     gc107 -> (GF*Vus)/(3*fpi),
+     gc108 -> (2*GF*Vus)/(3*fpi),
+     gc109 -> 2*GF*Vud,
+     gc110 -> (-4*GF*Vud)/(3*fpi),
+     gc111 -> (Sqrt[2]*GF*Vus)/fpi,
+     gc113 -> (4*GF*Vud)/(3*fpi),
+     gc114 -> Sqrt[2]*GF*qe*Vud,
+     gc115 -> 2*fpi*GF*qe*Vud,
+     gc116 -> -2*GF*qe*Vud,
+     gc117 -> -(Sqrt[3]*GF*qe*Vus),
+     gc118 -> 2*fpi*GF*qe*Vus,
+     gc119 -> -(GF*qe*Vus),
+     gc120 -> Sqrt[2]*GF*qe*Vus,
+     gc121 -> (Sqrt[2/3]*GF*Vud)/fpi,
+     gc122 -> -(Sqrt[3]*GF*Vus),
+     gc123 -> -((GF*Vus)/fpi),
+     gc124 -> (GF*Vus)/(Sqrt[3]*fpi),
+     gc125 -> (Sqrt[2/3]*GF*Vus)/fpi,
+     gc126 -> (-2*GF*Vud)/(3*fpi),
+     gc127 -> (-2*GF*Vus)/(3*fpi),
+     gc128 -> Sqrt[2]*GF*Vus,
+     gc129 -> Sqrt[2]*GF*Vud,
+     gc130 -> (Sqrt[2]*GF*Vud)/fpi,
+     gc131 -> (-2*GF*Vud)/(3*fpi),
+     gc132 -> (-4*GF*Vus)/(3*fpi),
+     gc134 -> GF*Vus,
+     gc135 -> (GF*Vus)/(3*fpi),
+     gc136 -> (-2*GF*Vus)/(3*fpi),
+     gc137 -> -2*GF*Vud,
+     gc138 -> (-4*GF*Vud)/(3*fpi),
+     gc139 -> (Sqrt[2]*GF*Vus)/fpi,
+     gc140 -> (-4*GF*Vud)/(3*fpi),
+     gc142 -> (-8*fpi*GF*gsGG*qe*Vud)/(9*Lam + 4*gsGG*vs),
+     gc143 -> (-8*fpi*GF*gsGG*qe*Vus)/(9*Lam + 4*gsGG*vs),
+     gc144 -> (4*Sqrt[3]*GF*gsGG*Vus)/(9*Lam + 4*gsGG*vs),
+     gc145 -> (-4*Sqrt[2]*GF*gsGG*Vud)/(9*Lam + 4*gsGG*vs),
+     gc146 -> (-4*Sqrt[2]*GF*gsGG*Vus)/(9*Lam + 4*gsGG*vs),
+     gc147 -> (8*fpi*GF*gsGG*Vus)/(9*Lam + 4*gsGG*vs),
+     gc148 -> (-4*GF*gsGG*Vus)/(9*Lam + 4*gsGG*vs),
+     gc149 -> (8*GF*gsGG*Vud)/(9*Lam + 4*gsGG*vs),
+     gc150 -> (8*fpi*GF*gsGG*Vud)/(9*Lam + 4*gsGG*vs),
+     gc151 -> (8*fpi*GF*gsGG*qe*Vud)/(9*Lam + 4*gsGG*vs),
+     gc152 -> (8*fpi*GF*gsGG*qe*Vus)/(9*Lam + 4*gsGG*vs),
+     gc153 -> (-4*Sqrt[3]*GF*gsGG*Vus)/(9*Lam + 4*gsGG*vs),
+     gc154 -> (4*Sqrt[2]*GF*gsGG*Vus)/(9*Lam + 4*gsGG*vs),
+     gc155 -> (4*Sqrt[2]*GF*gsGG*Vud)/(9*Lam + 4*gsGG*vs),
+     gc156 -> (8*fpi*GF*gsGG*Vus)/(9*Lam + 4*gsGG*vs),
+     gc157 -> (4*GF*gsGG*Vus)/(9*Lam + 4*gsGG*vs),
+     gc158 -> (-8*GF*gsGG*Vud)/(9*Lam + 4*gsGG*vs),
+     gc159 -> (8*fpi*GF*gsGG*Vud)/(9*Lam + 4*gsGG*vs)};
 

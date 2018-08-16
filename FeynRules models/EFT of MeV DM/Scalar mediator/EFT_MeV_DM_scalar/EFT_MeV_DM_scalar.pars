@@ -12,11 +12,16 @@ M$ExtParams = {
 	fpi -> 0.093,
 	fv -> 0.165,
 	GF -> 0.00001166,
-	gsff -> 1,
+	gsdd -> 1,
+	gsee -> 1,
 	gsFF -> 1,
 	gsGG -> 1,
+	gsll -> 1,
+	gsss -> 1,
+	gsuu -> 1,
 	gsxx -> 1,
 	gv -> 0.055,
+	Lam -> 1,
 	mdq -> 0.0048,
 	me -> 0.000511,
 	ml -> 1,
@@ -56,7 +61,8 @@ M$Masses = {
 
 M$Widths = {
 	rhowidth -> 1,
-	swidth -> 1
+	swidth -> 1,
+	Wl -> 1
 };
 
 (***********************************************)

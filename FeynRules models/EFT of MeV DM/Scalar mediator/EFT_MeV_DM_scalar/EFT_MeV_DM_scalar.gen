@@ -95,17 +95,12 @@ G[-1][s1 F[j1], s2 F[j2], s3 S[j3], s4 S[j4], s5 S[j5]].{NonCommutative[DiracSla
 	 (* FFSSV *)
 
 AnalyticalCoupling[s1 F[j1, mom1], s2 F[j2, mom2], s3 S[j3, mom3], s4 S[j4, mom4], s5 V[j5, mom5, {li5}] ] ==
-G[-1][s1 F[j1], s2 F[j2], s3 S[j3], s4 S[j4], s5 V[j5]].{ScalarProduct[mom4,mom5]NonCommutative[DiracMatrix[li5], ChiralityProjector[-1] ], FourVector[mom4, li5]NonCommutative[DiracSlash[mom3 ], ChiralityProjector[-1] ], FourVector[mom3, li5]NonCommutative[DiracSlash[mom4 ], ChiralityProjector[-1] ], FourVector[mom4, li5]NonCommutative[DiracSlash[mom5 ], ChiralityProjector[-1] ], ScalarProduct[mom3,mom5]NonCommutative[DiracMatrix[li5], ChiralityProjector[-1] ], FourVector[mom3, li5]NonCommutative[DiracSlash[mom5 ], ChiralityProjector[-1] ], NonCommutative[DiracMatrix[li5], ChiralityProjector[-1] ], NonCommutative[DiracMatrix[li5], ChiralityProjector[+1] ], ScalarProduct[mom3,mom5]NonCommutative[DiracMatrix[li5], ChiralityProjector[+1] ], ScalarProduct[mom4,mom5]NonCommutative[DiracMatrix[li5], ChiralityProjector[+1] ], FourVector[mom4, li5]NonCommutative[DiracSlash[mom3 ], ChiralityProjector[+1] ], FourVector[mom3, li5]NonCommutative[DiracSlash[mom4 ], ChiralityProjector[+1] ], FourVector[mom3, li5]NonCommutative[DiracSlash[mom5 ], ChiralityProjector[+1] ], FourVector[mom4, li5]NonCommutative[DiracSlash[mom5 ], ChiralityProjector[+1] ]},
+G[-1][s1 F[j1], s2 F[j2], s3 S[j3], s4 S[j4], s5 V[j5]].{NonCommutative[DiracMatrix[li5], ChiralityProjector[-1] ], NonCommutative[DiracMatrix[li5], ChiralityProjector[+1] ]},
 
 	 (* FFSV *)
 
 AnalyticalCoupling[s1 F[j1, mom1], s2 F[j2, mom2], s3 S[j3, mom3], s4 V[j4, mom4, {li4}] ] ==
-G[-1][s1 F[j1], s2 F[j2], s3 S[j3], s4 V[j4]].{NonCommutative[DiracMatrix[li4], ChiralityProjector[-1] ], ScalarProduct[mom3,mom4]NonCommutative[DiracMatrix[li4], ChiralityProjector[-1] ], FourVector[mom3, li4]NonCommutative[DiracSlash[mom4 ], ChiralityProjector[-1] ], NonCommutative[DiracMatrix[li4], ChiralityProjector[+1] ], ScalarProduct[mom3,mom4]NonCommutative[DiracMatrix[li4], ChiralityProjector[+1] ], FourVector[mom3, li4]NonCommutative[DiracSlash[mom4 ], ChiralityProjector[+1] ]},
-
-	 (* FFSVV *)
-
-AnalyticalCoupling[s1 F[j1, mom1], s2 F[j2, mom2], s3 S[j3, mom3], s4 V[j4, mom4, {li4}], s5 V[j5, mom5, {li5}] ] ==
-G[-1][s1 F[j1], s2 F[j2], s3 S[j3], s4 V[j4], s5 V[j5]].{FourVector[mom5, li4]NonCommutative[DiracMatrix[li5], ChiralityProjector[-1] ], MetricTensor[li4 ,li5 ]NonCommutative[DiracSlash[mom5 ], ChiralityProjector[-1] ], FourVector[mom5, li4]NonCommutative[DiracMatrix[li5], ChiralityProjector[+1] ], MetricTensor[li4 ,li5 ]NonCommutative[DiracSlash[mom5 ], ChiralityProjector[+1] ], FourVector[mom4, li5]NonCommutative[DiracMatrix[li4], ChiralityProjector[-1] ], FourVector[mom4, li5]NonCommutative[DiracMatrix[li4], ChiralityProjector[+1] ], MetricTensor[li4 ,li5 ]NonCommutative[DiracSlash[mom4 ], ChiralityProjector[-1] ], MetricTensor[li4 ,li5 ]NonCommutative[DiracSlash[mom4 ], ChiralityProjector[+1] ]},
+G[-1][s1 F[j1], s2 F[j2], s3 S[j3], s4 V[j4]].{NonCommutative[DiracMatrix[li4], ChiralityProjector[-1] ], NonCommutative[DiracMatrix[li4], ChiralityProjector[+1] ]},
 
 	 (* FFV *)
 
@@ -130,12 +125,12 @@ G[+1][s1 S[j1], s2 S[j2], s3 S[j3], s4 S[j4], s5 S[j5]].{1, ScalarProduct[mom1,m
 	 (* SSSSV *)
 
 AnalyticalCoupling[s1 S[j1, mom1], s2 S[j2, mom2], s3 S[j3, mom3], s4 S[j4, mom4], s5 V[j5, mom5, {li5}] ] ==
-G[+1][s1 S[j1], s2 S[j2], s3 S[j3], s4 S[j4], s5 V[j5]].{FourVector[mom1, li5], FourVector[mom2, li5], FourVector[mom3, li5], FourVector[mom4, li5], FourVector[mom3, li5]ScalarProduct[mom1,mom2], FourVector[mom4, li5]ScalarProduct[mom1,mom2], FourVector[mom2, li5]ScalarProduct[mom1,mom3], FourVector[mom4, li5]ScalarProduct[mom1,mom3], FourVector[mom2, li5]ScalarProduct[mom1,mom4], FourVector[mom3, li5]ScalarProduct[mom1,mom4], FourVector[mom3, li5]ScalarProduct[mom1,mom5], FourVector[mom4, li5]ScalarProduct[mom1,mom5], FourVector[mom1, li5]ScalarProduct[mom2,mom3], FourVector[mom4, li5]ScalarProduct[mom2,mom3], FourVector[mom1, li5]ScalarProduct[mom2,mom4], FourVector[mom3, li5]ScalarProduct[mom2,mom4], FourVector[mom3, li5]ScalarProduct[mom2,mom5], FourVector[mom4, li5]ScalarProduct[mom2,mom5], FourVector[mom1, li5]ScalarProduct[mom3,mom4], FourVector[mom2, li5]ScalarProduct[mom3,mom4], FourVector[mom1, li5]ScalarProduct[mom3,mom5], FourVector[mom2, li5]ScalarProduct[mom3,mom5], FourVector[mom4, li5]ScalarProduct[mom3,mom5], FourVector[mom1, li5]ScalarProduct[mom4,mom5], FourVector[mom2, li5]ScalarProduct[mom4,mom5], FourVector[mom3, li5]ScalarProduct[mom4,mom5], FourVector[mom2, li5]ScalarProduct[mom1,mom5], FourVector[mom1, li5]ScalarProduct[mom2,mom5]},
+G[+1][s1 S[j1], s2 S[j2], s3 S[j3], s4 S[j4], s5 V[j5]].{FourVector[mom1, li5], FourVector[mom2, li5], FourVector[mom3, li5], FourVector[mom4, li5]},
 
 	 (* SSSV *)
 
 AnalyticalCoupling[s1 S[j1, mom1], s2 S[j2, mom2], s3 S[j3, mom3], s4 V[j4, mom4, {li4}] ] ==
-G[+1][s1 S[j1], s2 S[j2], s3 S[j3], s4 V[j4]].{FourVector[mom1, li4], FourVector[mom2, li4], FourVector[mom2, li4]ScalarProduct[mom1,mom4], FourVector[mom1, li4]ScalarProduct[mom2,mom4], FourVector[mom3, li4], FourVector[mom3, li4]ScalarProduct[mom1,mom4], FourVector[mom1, li4]ScalarProduct[mom3,mom4], FourVector[mom3, li4]ScalarProduct[mom2,mom4], FourVector[mom2, li4]ScalarProduct[mom3,mom4]},
+G[+1][s1 S[j1], s2 S[j2], s3 S[j3], s4 V[j4]].{FourVector[mom1, li4], FourVector[mom2, li4], FourVector[mom3, li4]},
 
 	 (* SSSVV *)
 
@@ -145,12 +140,12 @@ G[+1][s1 S[j1], s2 S[j2], s3 S[j3], s4 V[j4], s5 V[j5]].{MetricTensor[li4 ,li5 ]
 	 (* SSV *)
 
 AnalyticalCoupling[s1 S[j1, mom1], s2 S[j2, mom2], s3 V[j3, mom3, {li3}] ] ==
-G[+1][s1 S[j1], s2 S[j2], s3 V[j3]].{FourVector[mom1, li3], FourVector[mom2, li3], FourVector[mom2, li3]ScalarProduct[mom1,mom3], FourVector[mom1, li3]ScalarProduct[mom2,mom3]},
+G[+1][s1 S[j1], s2 S[j2], s3 V[j3]].{FourVector[mom1, li3], FourVector[mom2, li3]},
 
 	 (* SSVV *)
 
 AnalyticalCoupling[s1 S[j1, mom1], s2 S[j2, mom2], s3 V[j3, mom3, {li3}], s4 V[j4, mom4, {li4}] ] ==
-G[+1][s1 S[j1], s2 S[j2], s3 V[j3], s4 V[j4]].{MetricTensor[li3 ,li4 ], FourVector[mom1, li4]FourVector[mom4, li3], FourVector[mom2, li4]FourVector[mom4, li3], FourVector[mom3, li4]FourVector[mom4, li3], MetricTensor[li3 ,li4 ]ScalarProduct[mom1,mom4], MetricTensor[li3 ,li4 ]ScalarProduct[mom2,mom4], MetricTensor[li3 ,li4 ]ScalarProduct[mom3,mom4], FourVector[mom1, li3]FourVector[mom3, li4], FourVector[mom2, li3]FourVector[mom3, li4], MetricTensor[li3 ,li4 ]ScalarProduct[mom1,mom3], MetricTensor[li3 ,li4 ]ScalarProduct[mom2,mom3]},
+G[+1][s1 S[j1], s2 S[j2], s3 V[j3], s4 V[j4]].{MetricTensor[li3 ,li4 ]},
 
 	 (* SVV *)
 

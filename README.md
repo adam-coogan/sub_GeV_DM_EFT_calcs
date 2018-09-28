@@ -21,7 +21,9 @@ Each of the subdirectories contains the FR model files and a `write_<mediator>_m
 
 ## `sub_GeV_DM_EFT_calcs/Simplified model amplitudes/`
 
-Contains a directory for each mediator with a file to compute DM self-annihilation cross sections, mediator decay widths, and some FSR spectra, and to write them to files that can easily be reformatted into python functions.
+Contains a directory for each mediator with a file to compute DM self-annihilation cross sections and mediator decay widths, and to write them to files that can easily be reformatted into python functions.
+
+For the scalar and vector, the files ending in `_to_llg.nb` and `_to_pmg.nb` contain the leptonic and pion FSR spectra, respectively. The pseudoscalar model's leptonic FSR spectrum is found in `pseudoscalar_mediator.nb`.
 
 TODO: Logan, could you put the FSR spectra in here?
 

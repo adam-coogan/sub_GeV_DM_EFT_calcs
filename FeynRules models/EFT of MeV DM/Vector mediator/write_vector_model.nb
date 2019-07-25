@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     81853,       2233]
-NotebookOptionsPosition[     77810,       2103]
-NotebookOutlinePosition[     78281,       2122]
-CellTagsIndexPosition[     78238,       2119]
+NotebookDataLength[     53710,       1474]
+NotebookOptionsPosition[     49814,       1349]
+NotebookOutlinePosition[     50285,       1368]
+CellTagsIndexPosition[     50242,       1365]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -90,7 +90,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.747292452193222*^9}],
 
 Cell[BoxData[
  FormBox[
@@ -107,7 +108,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801174603`*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.747292452193923*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Authors: A. Alloul, N. Christensen, C. Degrande, C. Duhr, B. \
@@ -118,7 +120,8 @@ Fuks\"\>", TraditionalForm]], "Print",
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801192427`*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.74729245220708*^9}],
 
 Cell[BoxData[
  FormBox["\<\" \"\>", TraditionalForm]], "Print",
@@ -128,7 +131,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.737588480120399*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.747292452208407*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Please cite:\"\>", TraditionalForm]], "Print",
@@ -138,7 +142,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.737588480121573*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.7472924522102137`*^9}],
 
 Cell[BoxData[
  FormBox["\<\"    - Comput.Phys.Commun.185:2250-2300,2014 \
@@ -149,7 +154,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801228037`*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.7472924522132607`*^9}],
 
 Cell[BoxData[
  FormBox["\<\"    - Comput.Phys.Commun.180:1614-1641,2009 \
@@ -160,7 +166,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801240177`*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.747292452214487*^9}],
 
 Cell[BoxData[
  FormBox["\<\" \"\>", TraditionalForm]], "Print",
@@ -170,7 +177,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.737588480125181*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.7472924522156487`*^9}],
 
 Cell[BoxData[
  FormBox["\<\"http://feynrules.phys.ucl.ac.be\"\>", TraditionalForm]], "Print",\
@@ -181,7 +189,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.73758848012645*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.747292452217864*^9}],
 
 Cell[BoxData[
  FormBox["\<\" \"\>", TraditionalForm]], "Print",
@@ -191,7 +200,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.73758848012774*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.747292452218998*^9}],
 
 Cell[BoxData[
  FormBox["\<\"The FeynRules palette can be opened using the command \
@@ -202,7 +212,8 @@ FRPalette[].\"\>", TraditionalForm]], "Print",
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.737588480129064*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.7472924522212067`*^9}],
 
 Cell[BoxData[
  FormBox["\<\"This model implementation was created by\"\>", 
@@ -213,7 +224,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884804543867`*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.7472924525566063`*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Adam Coogan\"\>", TraditionalForm]], "Print",
@@ -223,7 +235,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.737588480455598*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.747292452557845*^9}],
 
 Cell[BoxData[
  FormBox["\<\"Logan Morrison\"\>", TraditionalForm]], "Print",
@@ -233,7 +246,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884804569483`*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.74729245255935*^9}],
 
 Cell[BoxData[
  FormBox[
@@ -247,7 +261,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884804582*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.747292452560568*^9}],
 
 Cell[BoxData[
  FormBox["\<\"For more information, type ModelInformation[].\"\>", 
@@ -258,7 +273,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884804594584`*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.747292452562043*^9}],
 
 Cell[BoxData[
  FormBox["\<\"\"\>", TraditionalForm]], "Print",
@@ -268,7 +284,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884804605722`*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.7472924525632763`*^9}],
 
 Cell[BoxData[
  FormBox["\<\"   - Loading particle classes.\"\>", TraditionalForm]], "Print",\
@@ -279,7 +296,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884804617567`*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.747292452564541*^9}],
 
 Cell[BoxData[
  FormBox["\<\"   - Loading gauge group classes.\"\>", 
@@ -290,7 +308,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.737588480508041*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.7472924526188803`*^9}],
 
 Cell[BoxData[
  FormBox["\<\"   - Loading parameter classes.\"\>", TraditionalForm]], "Print",\
@@ -301,7 +320,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.737588480509306*^9}],
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.7472924526201067`*^9}],
 
 Cell[BoxData[
  FormBox[
@@ -317,7 +337,8 @@ Cell[BoxData[
    3.733760360058343*^9, 3.733760367114842*^9}, 3.733762386585113*^9, {
    3.733854756071725*^9, 3.73385476388426*^9}, 3.733860975756115*^9, 
    3.733867820728765*^9, 3.734013363823839*^9, 3.7340987552219*^9, 
-   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884805754423`*^9}]
+   3.734113537563307*^9, 3.73411488227864*^9, 3.7375884801167603`*^9, 
+   3.747292452621932*^9}]
 }, Closed]]
 }, Closed]]
 }, Closed]],
@@ -361,6 +382,15 @@ Cell[BoxData[{
  CellChangeTimes->{{3.733854783615608*^9, 3.733854794980836*^9}, {
    3.734013305344717*^9, 3.734013333104656*^9}, {3.734013390927436*^9, 
    3.734013402354957*^9}, 3.734098760289645*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["LWZW"], "Input"],
+
+Cell[BoxData[
+ FormBox["$Aborted", TraditionalForm]], "Output",
+ CellChangeTimes->{3.747292471322824*^9}]
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -557,7 +587,7 @@ Cell[BoxData[
  CellChangeTimes->{{3.734009870994196*^9, 3.734009877323537*^9}, {
   3.73400993546486*^9, 3.73400995079389*^9}, {3.7340132914172897`*^9, 
   3.734013295589733*^9}, {3.734013337299781*^9, 3.734013343028226*^9}}]
-}, Open  ]],
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -910,8 +940,6 @@ Cell[BoxData[{
   RowBox[{"%", "//", "FeynmanRules"}], "//", "Simplify"}]}], "Input",
  CellChangeTimes->{{3.7340995384468403`*^9, 3.734099599799501*^9}}],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[{
  RowBox[{
   RowBox[{
@@ -947,829 +975,7 @@ Cell[BoxData[{
  CellChangeTimes->{{3.734099009600368*^9, 3.734099015961635*^9}, {
   3.734100095005683*^9, 3.734100104657131*^9}, {3.734100185539131*^9, 
   3.734100308937148*^9}, {3.734100361860839*^9, 3.734100431896578*^9}, {
-  3.7341005033651333`*^9, 3.734100509626652*^9}}],
-
-Cell[CellGroupData[{
-
-Cell[BoxData[
- FormBox[
-  StyleBox["\<\"Starting Feynman rule calculation.\"\>",
-   StripOnInput->False,
-   LineColor->RGBColor[1, 0.5, 0],
-   FrontFaceColor->RGBColor[1, 0.5, 0],
-   BackFaceColor->RGBColor[1, 0.5, 0],
-   GraphicsColor->RGBColor[1, 0.5, 0],
-   FontWeight->Bold,
-   FontColor->RGBColor[1, 0.5, 0]], TraditionalForm]], "Print",
- CellChangeTimes->{3.734100432693006*^9, 3.734100510423954*^9}],
-
-Cell[BoxData[
- FormBox["\<\"Expanding the Lagrangian...\"\>", TraditionalForm]], "Print",
- CellChangeTimes->{3.734100432693006*^9, 3.734100510424934*^9}],
-
-Cell[BoxData[
- FormBox["\<\"Collecting the different structures that enter the vertex.\"\>",
-   TraditionalForm]], "Print",
- CellChangeTimes->{3.734100432693006*^9, 3.734100515867111*^9}],
-
-Cell[BoxData[
- FormBox[
-  InterpretationBox[
-   RowBox[{
-   "6", "\[InvisibleSpace]", "\<\" possible non-zero vertices have been found \
--> starting the computation: \"\>", "\[InvisibleSpace]", 
-    DynamicBox[ToBoxes[FeynRules`FR$FeynmanRules, TraditionalForm],
-     ImageSizeCache->{171., {3., 10.}}], "\[InvisibleSpace]", "\<\" / \"\>", 
-    "\[InvisibleSpace]", "6", "\[InvisibleSpace]", "\<\".\"\>"}],
-   SequenceForm[
-   6, " possible non-zero vertices have been found -> starting the \
-computation: ", 
-    Dynamic[FeynRules`FR$FeynmanRules], " / ", 6, "."],
-   Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.734100432693006*^9, 3.7341005159245377`*^9}],
-
-Cell[BoxData[
- FormBox[
-  InterpretationBox[
-   RowBox[{"5", "\[InvisibleSpace]", "\<\" vertices obtained.\"\>"}],
-   SequenceForm[5, " vertices obtained."],
-   Editable->False], TraditionalForm]], "Print",
- CellChangeTimes->{3.734100432693006*^9, 3.7341005176649237`*^9}]
-}, Closed]],
-
-Cell[BoxData[
- FormBox[
-  RowBox[{"(", "\[NoBreak]", GridBox[{
-     {
-      RowBox[{"(", "\[NoBreak]", GridBox[{
-         {"k0", "1"},
-         {
-          FormBox[
-           SuperscriptBox["k0", "\[Dagger]"],
-           TraditionalForm], "2"},
-         {"omega", "3"},
-         {"Vec", "4"}
-        },
-        GridBoxAlignment->{
-         "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
-          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
-        GridBoxSpacings->{"Columns" -> {
-            Offset[0.27999999999999997`], {
-             Offset[0.7]}, 
-            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
-          "Rows" -> {
-            Offset[0.2], {
-             Offset[0.4]}, 
-            Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
-      FractionBox[
-       RowBox[{"\[ImaginaryI]", " ", 
-        SqrtBox["3"], " ", 
-        RowBox[{"(", 
-         RowBox[{
-          FormBox[
-           RowBox[{"ComposedChar", "(", 
-            RowBox[{"\<\"g\"\>", ",", "\<\"Vdd\"\>"}], ")"}],
-           TraditionalForm], "-", 
-          FormBox[
-           RowBox[{"ComposedChar", "(", 
-            RowBox[{"\<\"g\"\>", ",", "\<\"Vss\"\>"}], ")"}],
-           TraditionalForm]}], ")"}], " ", 
-        RowBox[{"(", 
-         RowBox[{
-          RowBox[{"2", " ", 
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-            TraditionalForm], " ", 
-           FormBox[
-            TemplateBox[{"\"p\"","1",FormBox[
-               SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-             "Subsuperscript"],
-            TraditionalForm], " ", 
-           FormBox[
-            TemplateBox[{"\"p\"","3",FormBox[
-               SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-             "Subsuperscript"],
-            TraditionalForm]}], "+", 
-          RowBox[{"2", " ", 
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-            TraditionalForm], " ", 
-           FormBox[
-            TemplateBox[{"\"p\"","2",FormBox[
-               SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-             "Subsuperscript"],
-            TraditionalForm], " ", 
-           FormBox[
-            TemplateBox[{"\"p\"","3",FormBox[
-               SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-             "Subsuperscript"],
-            TraditionalForm]}], "+", 
-          RowBox[{
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"F\"\>", ",", "\<\"V\"\>"}], ")"}],
-            TraditionalForm], " ", 
-           FormBox[
-            TemplateBox[{"\"p\"","4",FormBox[
-               SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-             "Subsuperscript"],
-            TraditionalForm], " ", 
-           FormBox[
-            TemplateBox[{"\"p\"","3",FormBox[
-               SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-             "Subsuperscript"],
-            TraditionalForm]}], "-", 
-          RowBox[{"2", " ", 
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-            TraditionalForm], " ", 
-           FormBox[
-            SubscriptBox["\[Eta]", 
-             RowBox[{
-              FormBox[
-               SubscriptBox["\<\"\[Mu]\"\>", "3"],
-               TraditionalForm], ",", 
-              FormBox[
-               SubscriptBox["\<\"\[Mu]\"\>", "4"],
-               TraditionalForm]}]],
-            TraditionalForm], " ", 
-           FormBox[
-            RowBox[{
-             SubscriptBox["\<\"p\"\>", "1"], ".", 
-             SubscriptBox["\<\"p\"\>", "3"]}],
-            TraditionalForm]}], "-", 
-          RowBox[{"2", " ", 
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-            TraditionalForm], " ", 
-           FormBox[
-            SubscriptBox["\[Eta]", 
-             RowBox[{
-              FormBox[
-               SubscriptBox["\<\"\[Mu]\"\>", "3"],
-               TraditionalForm], ",", 
-              FormBox[
-               SubscriptBox["\<\"\[Mu]\"\>", "4"],
-               TraditionalForm]}]],
-            TraditionalForm], " ", 
-           FormBox[
-            RowBox[{
-             SubscriptBox["\<\"p\"\>", "2"], ".", 
-             SubscriptBox["\<\"p\"\>", "3"]}],
-            TraditionalForm]}], "-", 
-          RowBox[{
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"F\"\>", ",", "\<\"V\"\>"}], ")"}],
-            TraditionalForm], " ", 
-           FormBox[
-            SubscriptBox["\[Eta]", 
-             RowBox[{
-              FormBox[
-               SubscriptBox["\<\"\[Mu]\"\>", "3"],
-               TraditionalForm], ",", 
-              FormBox[
-               SubscriptBox["\<\"\[Mu]\"\>", "4"],
-               TraditionalForm]}]],
-            TraditionalForm], " ", 
-           FormBox[
-            RowBox[{
-             SubscriptBox["\<\"p\"\>", "3"], ".", 
-             SubscriptBox["\<\"p\"\>", "4"]}],
-            TraditionalForm]}]}], ")"}]}], 
-       RowBox[{"2", " ", 
-        SuperscriptBox[
-         FormBox[
-          RowBox[{"ComposedChar", "(", 
-           RowBox[{"\<\"f\"\>", ",", "\<\"\\\\pi\"\>"}], ")"}],
-          TraditionalForm], "2"], " ", 
-        FormBox[
-         RowBox[{"ComposedChar", "(", 
-          RowBox[{"\<\"m\"\>", ",", "\<\"R\"\>"}], ")"}],
-         TraditionalForm]}]]},
-     {
-      RowBox[{"(", "\[NoBreak]", GridBox[{
-         {"km", "1"},
-         {
-          FormBox[
-           SuperscriptBox["km", "\[Dagger]"],
-           TraditionalForm], "2"},
-         {"omega", "3"},
-         {"Vec", "4"}
-        },
-        GridBoxAlignment->{
-         "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
-          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
-        GridBoxSpacings->{"Columns" -> {
-            Offset[0.27999999999999997`], {
-             Offset[0.7]}, 
-            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
-          "Rows" -> {
-            Offset[0.2], {
-             Offset[0.4]}, 
-            Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
-      RowBox[{"-", 
-       FractionBox[
-        RowBox[{"\[ImaginaryI]", " ", 
-         SqrtBox["3"], " ", 
-         RowBox[{"(", 
-          RowBox[{
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"g\"\>", ",", "\<\"Vss\"\>"}], ")"}],
-            TraditionalForm], "-", 
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"g\"\>", ",", "\<\"Vuu\"\>"}], ")"}],
-            TraditionalForm]}], ")"}], " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","1",FormBox[
-                SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","3",FormBox[
-                SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm]}], "+", 
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","2",FormBox[
-                SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","3",FormBox[
-                SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm]}], "+", 
-           RowBox[{
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"F\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","4",FormBox[
-                SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","3",FormBox[
-                SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm]}], "-", 
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             SubscriptBox["\[Eta]", 
-              RowBox[{
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "3"],
-                TraditionalForm], ",", 
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "4"],
-                TraditionalForm]}]],
-             TraditionalForm], " ", 
-            FormBox[
-             RowBox[{
-              SubscriptBox["\<\"p\"\>", "1"], ".", 
-              SubscriptBox["\<\"p\"\>", "3"]}],
-             TraditionalForm]}], "-", 
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             SubscriptBox["\[Eta]", 
-              RowBox[{
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "3"],
-                TraditionalForm], ",", 
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "4"],
-                TraditionalForm]}]],
-             TraditionalForm], " ", 
-            FormBox[
-             RowBox[{
-              SubscriptBox["\<\"p\"\>", "2"], ".", 
-              SubscriptBox["\<\"p\"\>", "3"]}],
-             TraditionalForm]}], "-", 
-           RowBox[{
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"F\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             SubscriptBox["\[Eta]", 
-              RowBox[{
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "3"],
-                TraditionalForm], ",", 
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "4"],
-                TraditionalForm]}]],
-             TraditionalForm], " ", 
-            FormBox[
-             RowBox[{
-              SubscriptBox["\<\"p\"\>", "3"], ".", 
-              SubscriptBox["\<\"p\"\>", "4"]}],
-             TraditionalForm]}]}], ")"}]}], 
-        RowBox[{"2", " ", 
-         SuperscriptBox[
-          FormBox[
-           RowBox[{"ComposedChar", "(", 
-            RowBox[{"\<\"f\"\>", ",", "\<\"\\\\pi\"\>"}], ")"}],
-           TraditionalForm], "2"], " ", 
-         FormBox[
-          RowBox[{"ComposedChar", "(", 
-           RowBox[{"\<\"m\"\>", ",", "\<\"R\"\>"}], ")"}],
-          TraditionalForm]}]]}]},
-     {
-      RowBox[{"(", "\[NoBreak]", GridBox[{
-         {"k0", "1"},
-         {
-          FormBox[
-           SuperscriptBox["k0", "\[Dagger]"],
-           TraditionalForm], "2"},
-         {"rho", "3"},
-         {"Vec", "4"}
-        },
-        GridBoxAlignment->{
-         "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
-          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
-        GridBoxSpacings->{"Columns" -> {
-            Offset[0.27999999999999997`], {
-             Offset[0.7]}, 
-            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
-          "Rows" -> {
-            Offset[0.2], {
-             Offset[0.4]}, 
-            Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
-      RowBox[{"-", 
-       FractionBox[
-        RowBox[{"\[ImaginaryI]", " ", 
-         RowBox[{"(", 
-          RowBox[{
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"g\"\>", ",", "\<\"Vdd\"\>"}], ")"}],
-            TraditionalForm], "-", 
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"g\"\>", ",", "\<\"Vss\"\>"}], ")"}],
-            TraditionalForm]}], ")"}], " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","1",FormBox[
-                SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","3",FormBox[
-                SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm]}], "+", 
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","2",FormBox[
-                SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","3",FormBox[
-                SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm]}], "+", 
-           RowBox[{
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"F\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","4",FormBox[
-                SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","3",FormBox[
-                SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm]}], "-", 
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             SubscriptBox["\[Eta]", 
-              RowBox[{
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "3"],
-                TraditionalForm], ",", 
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "4"],
-                TraditionalForm]}]],
-             TraditionalForm], " ", 
-            FormBox[
-             RowBox[{
-              SubscriptBox["\<\"p\"\>", "1"], ".", 
-              SubscriptBox["\<\"p\"\>", "3"]}],
-             TraditionalForm]}], "-", 
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             SubscriptBox["\[Eta]", 
-              RowBox[{
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "3"],
-                TraditionalForm], ",", 
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "4"],
-                TraditionalForm]}]],
-             TraditionalForm], " ", 
-            FormBox[
-             RowBox[{
-              SubscriptBox["\<\"p\"\>", "2"], ".", 
-              SubscriptBox["\<\"p\"\>", "3"]}],
-             TraditionalForm]}], "-", 
-           RowBox[{
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"F\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             SubscriptBox["\[Eta]", 
-              RowBox[{
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "3"],
-                TraditionalForm], ",", 
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "4"],
-                TraditionalForm]}]],
-             TraditionalForm], " ", 
-            FormBox[
-             RowBox[{
-              SubscriptBox["\<\"p\"\>", "3"], ".", 
-              SubscriptBox["\<\"p\"\>", "4"]}],
-             TraditionalForm]}]}], ")"}]}], 
-        RowBox[{"2", " ", 
-         SuperscriptBox[
-          FormBox[
-           RowBox[{"ComposedChar", "(", 
-            RowBox[{"\<\"f\"\>", ",", "\<\"\\\\pi\"\>"}], ")"}],
-           TraditionalForm], "2"], " ", 
-         FormBox[
-          RowBox[{"ComposedChar", "(", 
-           RowBox[{"\<\"m\"\>", ",", "\<\"R\"\>"}], ")"}],
-          TraditionalForm]}]]}]},
-     {
-      RowBox[{"(", "\[NoBreak]", GridBox[{
-         {"km", "1"},
-         {
-          FormBox[
-           SuperscriptBox["km", "\[Dagger]"],
-           TraditionalForm], "2"},
-         {"rho", "3"},
-         {"Vec", "4"}
-        },
-        GridBoxAlignment->{
-         "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
-          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
-        GridBoxSpacings->{"Columns" -> {
-            Offset[0.27999999999999997`], {
-             Offset[0.7]}, 
-            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
-          "Rows" -> {
-            Offset[0.2], {
-             Offset[0.4]}, 
-            Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
-      RowBox[{"-", 
-       FractionBox[
-        RowBox[{"\[ImaginaryI]", " ", 
-         RowBox[{"(", 
-          RowBox[{
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"g\"\>", ",", "\<\"Vss\"\>"}], ")"}],
-            TraditionalForm], "-", 
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"g\"\>", ",", "\<\"Vuu\"\>"}], ")"}],
-            TraditionalForm]}], ")"}], " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","1",FormBox[
-                SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","3",FormBox[
-                SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm]}], "+", 
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","2",FormBox[
-                SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","3",FormBox[
-                SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm]}], "+", 
-           RowBox[{
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"F\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","4",FormBox[
-                SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","3",FormBox[
-                SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm]}], "-", 
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             SubscriptBox["\[Eta]", 
-              RowBox[{
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "3"],
-                TraditionalForm], ",", 
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "4"],
-                TraditionalForm]}]],
-             TraditionalForm], " ", 
-            FormBox[
-             RowBox[{
-              SubscriptBox["\<\"p\"\>", "1"], ".", 
-              SubscriptBox["\<\"p\"\>", "3"]}],
-             TraditionalForm]}], "-", 
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             SubscriptBox["\[Eta]", 
-              RowBox[{
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "3"],
-                TraditionalForm], ",", 
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "4"],
-                TraditionalForm]}]],
-             TraditionalForm], " ", 
-            FormBox[
-             RowBox[{
-              SubscriptBox["\<\"p\"\>", "2"], ".", 
-              SubscriptBox["\<\"p\"\>", "3"]}],
-             TraditionalForm]}], "-", 
-           RowBox[{
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"F\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             SubscriptBox["\[Eta]", 
-              RowBox[{
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "3"],
-                TraditionalForm], ",", 
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "4"],
-                TraditionalForm]}]],
-             TraditionalForm], " ", 
-            FormBox[
-             RowBox[{
-              SubscriptBox["\<\"p\"\>", "3"], ".", 
-              SubscriptBox["\<\"p\"\>", "4"]}],
-             TraditionalForm]}]}], ")"}]}], 
-        RowBox[{"2", " ", 
-         SuperscriptBox[
-          FormBox[
-           RowBox[{"ComposedChar", "(", 
-            RowBox[{"\<\"f\"\>", ",", "\<\"\\\\pi\"\>"}], ")"}],
-           TraditionalForm], "2"], " ", 
-         FormBox[
-          RowBox[{"ComposedChar", "(", 
-           RowBox[{"\<\"m\"\>", ",", "\<\"R\"\>"}], ")"}],
-          TraditionalForm]}]]}]},
-     {
-      RowBox[{"(", "\[NoBreak]", GridBox[{
-         {"pim", "1"},
-         {
-          FormBox[
-           SuperscriptBox["pim", "\[Dagger]"],
-           TraditionalForm], "2"},
-         {"rho", "3"},
-         {"Vec", "4"}
-        },
-        GridBoxAlignment->{
-         "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, 
-          "Rows" -> {{Baseline}}, "RowsIndexed" -> {}},
-        GridBoxSpacings->{"Columns" -> {
-            Offset[0.27999999999999997`], {
-             Offset[0.7]}, 
-            Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, 
-          "Rows" -> {
-            Offset[0.2], {
-             Offset[0.4]}, 
-            Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
-      RowBox[{"-", 
-       FractionBox[
-        RowBox[{"\[ImaginaryI]", " ", 
-         RowBox[{"(", 
-          RowBox[{
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"g\"\>", ",", "\<\"Vdd\"\>"}], ")"}],
-            TraditionalForm], "-", 
-           FormBox[
-            RowBox[{"ComposedChar", "(", 
-             RowBox[{"\<\"g\"\>", ",", "\<\"Vuu\"\>"}], ")"}],
-            TraditionalForm]}], ")"}], " ", 
-         RowBox[{"(", 
-          RowBox[{
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","1",FormBox[
-                SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","3",FormBox[
-                SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm]}], "+", 
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","2",FormBox[
-                SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","3",FormBox[
-                SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm]}], "+", 
-           RowBox[{
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"F\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","4",FormBox[
-                SubscriptBox["\"\[Mu]\"", "3"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm], " ", 
-            FormBox[
-             TemplateBox[{"\"p\"","3",FormBox[
-                SubscriptBox["\"\[Mu]\"", "4"], TraditionalForm]},
-              "Subsuperscript"],
-             TraditionalForm]}], "-", 
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             SubscriptBox["\[Eta]", 
-              RowBox[{
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "3"],
-                TraditionalForm], ",", 
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "4"],
-                TraditionalForm]}]],
-             TraditionalForm], " ", 
-            FormBox[
-             RowBox[{
-              SubscriptBox["\<\"p\"\>", "1"], ".", 
-              SubscriptBox["\<\"p\"\>", "3"]}],
-             TraditionalForm]}], "-", 
-           RowBox[{"2", " ", 
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"G\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             SubscriptBox["\[Eta]", 
-              RowBox[{
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "3"],
-                TraditionalForm], ",", 
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "4"],
-                TraditionalForm]}]],
-             TraditionalForm], " ", 
-            FormBox[
-             RowBox[{
-              SubscriptBox["\<\"p\"\>", "2"], ".", 
-              SubscriptBox["\<\"p\"\>", "3"]}],
-             TraditionalForm]}], "-", 
-           RowBox[{
-            FormBox[
-             RowBox[{"ComposedChar", "(", 
-              RowBox[{"\<\"F\"\>", ",", "\<\"V\"\>"}], ")"}],
-             TraditionalForm], " ", 
-            FormBox[
-             SubscriptBox["\[Eta]", 
-              RowBox[{
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "3"],
-                TraditionalForm], ",", 
-               FormBox[
-                SubscriptBox["\<\"\[Mu]\"\>", "4"],
-                TraditionalForm]}]],
-             TraditionalForm], " ", 
-            FormBox[
-             RowBox[{
-              SubscriptBox["\<\"p\"\>", "3"], ".", 
-              SubscriptBox["\<\"p\"\>", "4"]}],
-             TraditionalForm]}]}], ")"}]}], 
-        RowBox[{
-         SuperscriptBox[
-          FormBox[
-           RowBox[{"ComposedChar", "(", 
-            RowBox[{"\<\"f\"\>", ",", "\<\"\\\\pi\"\>"}], ")"}],
-           TraditionalForm], "2"], " ", 
-         FormBox[
-          RowBox[{"ComposedChar", "(", 
-           RowBox[{"\<\"m\"\>", ",", "\<\"R\"\>"}], ")"}],
-          TraditionalForm]}]]}]}
-    },
-    GridBoxAlignment->{
-     "Columns" -> {{Center}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
-      "RowsIndexed" -> {}},
-    GridBoxSpacings->{"Columns" -> {
-        Offset[0.27999999999999997`], {
-         Offset[0.7]}, 
-        Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
-        Offset[0.2], {
-         Offset[0.4]}, 
-        Offset[0.2]}, "RowsIndexed" -> {}}], "\[NoBreak]", ")"}], 
-  TraditionalForm]], "Output",
- CellChangeTimes->{3.734100468670455*^9, 3.7341005177196007`*^9}]
-}, Closed]]
+  3.7341005033651333`*^9, 3.734100509626652*^9}}]
 }, Closed]]
 }, Closed]],
 
@@ -1940,7 +1146,7 @@ Cell[BoxData[
   3.737584715670155*^9, 3.737588859865141*^9, {3.7375888947072077`*^9, 
    3.737588902543055*^9}, {3.737588940279541*^9, 3.737589041542831*^9}, 
    3.737589090663163*^9}]
-}, Open  ]],
+}, Closed]],
 
 Cell[TextData[{
  Cell[BoxData[
@@ -2097,9 +1303,49 @@ Cell[BoxData[
   TraditionalForm]], "Output",
  CellChangeTimes->{{3.737589248674281*^9, 3.737589277269877*^9}, {
   3.737589644568973*^9, 3.737589671400263*^9}}]
-}, Open  ]]
-}, Open  ]]
-}, Open  ]]
+}, Closed]],
+
+Cell[TextData[{
+ "This simplies thanks to the \[Epsilon] tensor\[CloseCurlyQuote]s \
+antisymmetry:\n\n\t",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{"\[ScriptCapitalL]", "\[Superset]", 
+    RowBox[{
+     FractionBox["e", 
+      RowBox[{"8", 
+       SuperscriptBox["\[Pi]", "2"], 
+       SubscriptBox["f", "\[Pi]"]}]], 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"2", 
+        SubscriptBox["g", "Vu"]}], "+", 
+       SubscriptBox["g", "Vd"]}], ")"}], " ", 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["\[Epsilon]", "\[Mu]\[Nu]\[Rho]\[Sigma]"], "(", 
+       RowBox[{
+        SubscriptBox["\[PartialD]", "\[Mu]"], 
+        SuperscriptBox["\[Pi]", "0"]}], ")"}], " ", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["\[PartialD]", "\[Nu]"], 
+          SubscriptBox["V", "\[Rho]"]}], ")"}], 
+        SubscriptBox["A", "\[Sigma]"]}], "+", 
+       RowBox[{
+        SubscriptBox["V", "\[Nu]"], "(", 
+        RowBox[{
+         SubscriptBox["\[PartialD]", "\[Rho]"], 
+         SubscriptBox["A", "\[Sigma]"]}], ")"}]}], "]"}]}]}], 
+   TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.747298813302568*^9, 3.747298987415676*^9}}]
+}, Closed]]
+}, Closed]]
 },
 Evaluator->"feynrules",
 WindowSize->{1440, 855},
@@ -2129,112 +1375,107 @@ Cell[969, 36, 93, 1, 32, "Subsection"],
 Cell[CellGroupData[{
 Cell[1087, 41, 1693, 39, 157, "Input"],
 Cell[CellGroupData[{
-Cell[2805, 84, 522, 8, 25, "Print"],
-Cell[3330, 94, 808, 15, 25, "Print"],
-Cell[4141, 111, 574, 9, 25, "Print"],
-Cell[4718, 122, 506, 8, 23, "Print"],
-Cell[5227, 132, 517, 8, 23, "Print"],
-Cell[5747, 142, 571, 9, 25, "Print"],
-Cell[6321, 153, 571, 9, 25, "Print"],
-Cell[6895, 164, 506, 8, 23, "Print"],
-Cell[7404, 174, 537, 9, 25, "Print"],
-Cell[7944, 185, 505, 8, 23, "Print"],
-Cell[8452, 195, 573, 9, 25, "Print"],
-Cell[9028, 206, 550, 9, 25, "Print"],
-Cell[9581, 217, 516, 8, 25, "Print"],
-Cell[10100, 227, 521, 8, 25, "Print"],
-Cell[10624, 237, 649, 12, 23, "Print"],
-Cell[11276, 251, 556, 9, 25, "Print"],
-Cell[11835, 262, 507, 8, 23, "Print"],
-Cell[12345, 272, 539, 9, 25, "Print"],
-Cell[12887, 283, 541, 9, 25, "Print"],
-Cell[13431, 294, 538, 9, 25, "Print"],
-Cell[13972, 305, 735, 14, 42, "Print"]
+Cell[2805, 84, 548, 9, 25, "Print"],
+Cell[3356, 95, 834, 16, 25, "Print"],
+Cell[4193, 113, 599, 10, 25, "Print"],
+Cell[4795, 125, 534, 9, 23, "Print"],
+Cell[5332, 136, 547, 9, 23, "Print"],
+Cell[5882, 147, 599, 10, 25, "Print"],
+Cell[6484, 159, 597, 10, 25, "Print"],
+Cell[7084, 171, 536, 9, 23, "Print"],
+Cell[7623, 182, 566, 10, 25, "Print"],
+Cell[8192, 194, 534, 9, 23, "Print"],
+Cell[8729, 205, 603, 10, 25, "Print"],
+Cell[9335, 217, 578, 10, 25, "Print"],
+Cell[9916, 229, 544, 9, 25, "Print"],
+Cell[10463, 240, 546, 9, 25, "Print"],
+Cell[11012, 251, 679, 13, 23, "Print"],
+Cell[11694, 266, 582, 10, 25, "Print"],
+Cell[12279, 278, 535, 9, 23, "Print"],
+Cell[12817, 289, 565, 10, 25, "Print"],
+Cell[13385, 301, 571, 10, 25, "Print"],
+Cell[13959, 313, 568, 10, 25, "Print"],
+Cell[14530, 325, 761, 15, 42, "Print"]
 }, Closed]]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[14768, 326, 108, 1, 32, "Subsection"],
-Cell[14879, 329, 1092, 33, 72, "Input"],
+Cell[15352, 347, 108, 1, 32, "Subsection"],
+Cell[15463, 350, 1092, 33, 72, "Input"],
 Cell[CellGroupData[{
-Cell[15996, 366, 2152, 31, 37, "Input"],
+Cell[16580, 387, 30, 0, 37, "Input"],
+Cell[16613, 389, 105, 2, 41, "Output"]
+}, Closed]],
 Cell[CellGroupData[{
-Cell[18173, 401, 151, 3, 25, "Print"],
-Cell[18327, 406, 136, 3, 25, "Print"],
-Cell[18466, 411, 140, 3, 23, "Print"],
-Cell[18609, 416, 287, 7, 25, "Print"],
-Cell[18899, 425, 392, 10, 25, "Print"],
-Cell[19294, 437, 131, 2, 25, "Print"],
-Cell[19428, 441, 361, 8, 25, "Print"],
-Cell[19792, 451, 165, 3, 25, "Print"],
-Cell[19960, 456, 664, 14, 25, "Print"],
-Cell[20627, 472, 252, 6, 23, "Print"],
-Cell[20882, 480, 374, 9, 25, "Print"],
-Cell[21259, 491, 406, 10, 25, "Print"]
+Cell[16755, 396, 2152, 31, 37, "Input"],
+Cell[CellGroupData[{
+Cell[18932, 431, 151, 3, 25, "Print"],
+Cell[19086, 436, 136, 3, 25, "Print"],
+Cell[19225, 441, 140, 3, 23, "Print"],
+Cell[19368, 446, 287, 7, 25, "Print"],
+Cell[19658, 455, 392, 10, 25, "Print"],
+Cell[20053, 467, 131, 2, 25, "Print"],
+Cell[20187, 471, 361, 8, 25, "Print"],
+Cell[20551, 481, 165, 3, 25, "Print"],
+Cell[20719, 486, 664, 14, 25, "Print"],
+Cell[21386, 502, 252, 6, 23, "Print"],
+Cell[21641, 510, 374, 9, 25, "Print"],
+Cell[22018, 521, 406, 10, 25, "Print"]
 }, Closed]]
 }, Closed]],
-Cell[21692, 505, 120, 2, 34, "Input"],
+Cell[22451, 535, 120, 2, 34, "Input"],
 Cell[CellGroupData[{
-Cell[21837, 511, 563, 12, 55, "Input"],
-Cell[22403, 525, 306, 5, 42, "Output"],
-Cell[22712, 532, 284, 5, 42, "Output"]
+Cell[22596, 541, 563, 12, 55, "Input"],
+Cell[23162, 555, 306, 5, 42, "Output"],
+Cell[23471, 562, 284, 5, 42, "Output"]
 }, Closed]],
-Cell[23011, 540, 511, 11, 52, "Input"],
-Cell[23525, 553, 294, 5, 37, "Input"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[23856, 563, 125, 1, 32, "Subsection"],
-Cell[CellGroupData[{
-Cell[24006, 568, 1696, 47, 91, "Input"],
-Cell[25705, 617, 2507, 73, 64, "Output"]
+Cell[23770, 570, 511, 11, 52, "Input"],
+Cell[24284, 583, 294, 5, 37, "Input"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[28249, 695, 569, 16, 53, "Input"],
-Cell[28821, 713, 2115, 68, 64, "Output"]
-}, Closed]]
+Cell[24615, 593, 125, 1, 32, "Subsection"],
+Cell[CellGroupData[{
+Cell[24765, 598, 1696, 47, 91, "Input"],
+Cell[26464, 647, 2507, 73, 64, "Output"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[30985, 787, 120, 1, 32, "Subsection"],
-Cell[31108, 790, 639, 17, 37, "Input"],
-Cell[31750, 809, 1138, 31, 72, "Input"],
-Cell[CellGroupData[{
-Cell[32913, 844, 100, 1, 31, "Subsubsection"],
-Cell[33016, 847, 106, 1, 30, "Text"],
-Cell[33125, 850, 799, 23, 89, "Input"],
-Cell[33927, 875, 101, 1, 30, "Text"],
-Cell[34031, 878, 1088, 32, 123, "Input"],
-Cell[CellGroupData[{
-Cell[35144, 914, 1201, 35, 140, "Input"],
-Cell[CellGroupData[{
-Cell[36370, 953, 406, 10, 25, "Print"],
-Cell[36779, 965, 153, 2, 25, "Print"],
-Cell[36935, 969, 187, 3, 25, "Print"],
-Cell[37125, 974, 680, 14, 25, "Print"],
-Cell[37808, 990, 272, 6, 23, "Print"]
-}, Closed]],
-Cell[38095, 999, 28193, 771, 401, "Output"]
-}, Closed]]
+Cell[29008, 725, 569, 16, 53, "Input"],
+Cell[29580, 743, 2115, 68, 64, "Output"]
 }, Closed]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[66349, 1777, 160, 3, 32, "Subsection"],
-Cell[66512, 1782, 118, 2, 37, "Input"],
-Cell[66633, 1786, 1094, 24, 37, "Input"],
-Cell[67730, 1812, 612, 14, 37, "Input"],
-Cell[68345, 1828, 326, 10, 31, "Text"],
-Cell[68674, 1840, 882, 23, 37, "Input"],
+Cell[31744, 817, 120, 1, 32, "Subsection"],
+Cell[31867, 820, 639, 17, 37, "Input"],
+Cell[32509, 839, 1138, 31, 72, "Input"],
 Cell[CellGroupData[{
-Cell[69581, 1867, 2035, 49, 72, "Input"],
-Cell[71619, 1918, 772, 23, 42, "Output"]
-}, Open  ]],
-Cell[72406, 1944, 355, 10, 33, "Text"],
-Cell[72764, 1956, 964, 24, 37, "Input"],
+Cell[33672, 874, 100, 1, 31, "Subsubsection"],
+Cell[33775, 877, 106, 1, 30, "Text"],
+Cell[33884, 880, 799, 23, 89, "Input"],
+Cell[34686, 905, 101, 1, 30, "Text"],
+Cell[34790, 908, 1088, 32, 123, "Input"],
+Cell[35881, 942, 1201, 35, 140, "Input"]
+}, Closed]]
+}, Closed]],
 Cell[CellGroupData[{
-Cell[73753, 1984, 2118, 47, 72, "Input"],
-Cell[75874, 2033, 1896, 65, 62, "Output"]
-}, Open  ]]
-}, Open  ]]
-}, Open  ]]
+Cell[37131, 983, 160, 3, 32, "Subsection"],
+Cell[37294, 988, 118, 2, 37, "Input"],
+Cell[37415, 992, 1094, 24, 72, "Input"],
+Cell[38512, 1018, 612, 14, 55, "Input"],
+Cell[39127, 1034, 326, 10, 31, "Text"],
+Cell[39456, 1046, 882, 23, 55, "Input"],
+Cell[CellGroupData[{
+Cell[40363, 1073, 2035, 49, 106, "Input"],
+Cell[42401, 1124, 772, 23, 42, "Output"]
+}, Closed]],
+Cell[43188, 1150, 355, 10, 33, "Text"],
+Cell[43546, 1162, 964, 24, 55, "Input"],
+Cell[CellGroupData[{
+Cell[44535, 1190, 2118, 47, 123, "Input"],
+Cell[46656, 1239, 1896, 65, 62, "Output"]
+}, Closed]],
+Cell[48567, 1307, 1219, 38, 81, "Text"]
+}, Closed]]
+}, Closed]]
 }
 ]
 *)
